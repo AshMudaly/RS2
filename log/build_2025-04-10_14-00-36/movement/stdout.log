@@ -1,0 +1,9 @@
+running develop
+running egg_info
+creating movement.egg-info
+writing movement.egg-info/PKG-INFO
+writing dependency_links to movement.egg-info/dependency_links.txt
+writing entry points to movement.egg-info/entry_points.txt
+writing requirements to movement.egg-info/requires.txt
+writing top-level names to movement.egg-info/top_level.txt
+writing manifest file 'movement.egg-info/SOURCES.txt'
