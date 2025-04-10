@@ -11,7 +11,7 @@ class TrollMovement(Node):  # Rename class to match file purpose
         super().__init__('trollmovement')  # Use 'trollmovement' for the node name
         
         # Initialize move group commander for the UR3e
-        self.move_group = MoveGroupCommander("ur3e_arm")
+        self.move_group = MoveGroupCommander("ur_manipulator")
 
         # Define the desired joint angles (replace with desired angles)
         joint_goal = self.move_group.get_current_joint_values()
