@@ -1,0 +1,19 @@
+running develop
+running egg_info
+creating moving_ur3e.egg-info
+writing moving_ur3e.egg-info/PKG-INFO
+writing dependency_links to moving_ur3e.egg-info/dependency_links.txt
+writing entry points to moving_ur3e.egg-info/entry_points.txt
+writing requirements to moving_ur3e.egg-info/requires.txt
+writing top-level names to moving_ur3e.egg-info/top_level.txt
+writing manifest file 'moving_ur3e.egg-info/SOURCES.txt'
+reading manifest file 'moving_ur3e.egg-info/SOURCES.txt'
+writing manifest file 'moving_ur3e.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ashmu/ros2_ws/install/moving_ur3e/lib/python3.10/site-packages/moving-ur3e.egg-link (link to .)
+Installing trollmovement script to /home/ashmu/ros2_ws/install/moving_ur3e/lib/moving_ur3e
+
+Installed /home/ashmu/ros2_ws/build/moving_ur3e
+running symlink_data
+creating /home/ashmu/ros2_ws/install/moving_ur3e/share/ament_index/resource_index/packagenames
+symbolically linking /home/ashmu/ros2_ws/build/moving_ur3e/resource/moving_ur3e -> /home/ashmu/ros2_ws/install/moving_ur3e/share/ament_index/resource_index/packagenames

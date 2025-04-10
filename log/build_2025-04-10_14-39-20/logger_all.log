@@ -1,0 +1,412 @@
+[0.066s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.066s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7cae3a74ab90>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7cae3a74a560>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7cae3a74a560>>, mixin_verb=('build',))
+[0.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.166s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ashmu/ros2_ws'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Description) by extensions ['ignore', 'ignore_ament_install']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Description) by extension 'ignore'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Description) by extension 'ignore_ament_install'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Description) by extensions ['colcon_pkg']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Description) by extension 'colcon_pkg'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Description) by extensions ['colcon_meta']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Description) by extension 'colcon_meta'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Description) by extensions ['ros']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Description) by extension 'ros'
+[0.176s] DEBUG:colcon.colcon_core.package_identification:Package 'src/Universal_Robots_ROS2_Description' with type 'ros.ament_cmake' and name 'ur_description'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extensions ['ignore', 'ignore_ament_install']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extension 'ignore'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extension 'ignore_ament_install'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extensions ['colcon_pkg']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extension 'colcon_pkg'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extensions ['colcon_meta']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extension 'colcon_meta'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extensions ['ros']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extension 'ros'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extensions ['cmake', 'python']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extension 'cmake'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extension 'python'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extensions ['python_setup_py']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation) by extension 'python_setup_py'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo) by extension 'ignore'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo) by extension 'ignore_ament_install'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo) by extensions ['colcon_pkg']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo) by extension 'colcon_pkg'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo) by extensions ['colcon_meta']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo) by extension 'colcon_meta'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo) by extensions ['ros']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo) by extension 'ros'
+[0.177s] DEBUG:colcon.colcon_core.package_identification:Package 'src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo' with type 'ros.ament_cmake' and name 'ur_simulation_gazebo'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/moving_ur3e) by extensions ['ignore', 'ignore_ament_install']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/moving_ur3e) by extension 'ignore'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/moving_ur3e) by extension 'ignore_ament_install'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/moving_ur3e) by extensions ['colcon_pkg']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/moving_ur3e) by extension 'colcon_pkg'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/moving_ur3e) by extensions ['colcon_meta']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/moving_ur3e) by extension 'colcon_meta'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/moving_ur3e) by extensions ['ros']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/moving_ur3e) by extension 'ros'
+[0.178s] DEBUG:colcon.colcon_core.package_identification:Package 'src/moving_ur3e' with type 'ros.ament_python' and name 'moving_ur3e'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/pymoveit2) by extensions ['ignore', 'ignore_ament_install']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/pymoveit2) by extension 'ignore'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/pymoveit2) by extension 'ignore_ament_install'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/pymoveit2) by extensions ['colcon_pkg']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/pymoveit2) by extension 'colcon_pkg'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/pymoveit2) by extensions ['colcon_meta']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/pymoveit2) by extension 'colcon_meta'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/pymoveit2) by extensions ['ros']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/pymoveit2) by extension 'ros'
+[0.178s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pymoveit2' with type 'ros.ament_cmake' and name 'pymoveit2'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur3e-codebase) by extensions ['ignore', 'ignore_ament_install']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur3e-codebase) by extension 'ignore'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur3e-codebase) by extension 'ignore_ament_install'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur3e-codebase) by extensions ['colcon_pkg']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur3e-codebase) by extension 'colcon_pkg'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur3e-codebase) by extensions ['colcon_meta']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur3e-codebase) by extension 'colcon_meta'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur3e-codebase) by extensions ['ros']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur3e-codebase) by extension 'ros'
+[0.180s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ur3e-codebase' with type 'ros.ament_python' and name 'ur3e_control_package'
+[0.180s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.180s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.180s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.180s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.180s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.199s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.199s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.200s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ashmu/ros2_ws/install/ur_simulation_gazebo' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.200s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ashmu/ros2_ws/install/ur_description' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.200s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ashmu/ros2_ws/install/ur3e_control_package' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.200s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ashmu/ros2_ws/install/moving_ur3e' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.200s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ashmu/ros2_ws/install/pymoveit2' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.200s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ashmu/ros2_ws/install/ur_simulation_gazebo' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.200s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ashmu/ros2_ws/install/ur_description' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.200s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ashmu/ros2_ws/install/pymoveit2' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.201s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/ashmu/ros2_ws/install
+[0.202s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 393 installed packages in /opt/ros/humble
+[0.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.235s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'ur_description' is in: /opt/ros/humble
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding ur_description
+
+This may be promoted to an error in a future release of colcon-override-check.
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'moving_ur3e' build argument 'cmake_args' from command line to 'None'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'moving_ur3e' build argument 'cmake_target' from command line to 'None'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'moving_ur3e' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'moving_ur3e' build argument 'cmake_clean_cache' from command line to 'False'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'moving_ur3e' build argument 'cmake_clean_first' from command line to 'False'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'moving_ur3e' build argument 'cmake_force_configure' from command line to 'False'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'moving_ur3e' build argument 'ament_cmake_args' from command line to 'None'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'moving_ur3e' build argument 'catkin_cmake_args' from command line to 'None'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'moving_ur3e' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.236s] DEBUG:colcon.colcon_core.verb:Building package 'moving_ur3e' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ashmu/ros2_ws/build/moving_ur3e', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ashmu/ros2_ws/install/moving_ur3e', 'merge_install': False, 'path': '/home/ashmu/ros2_ws/src/moving_ur3e', 'symlink_install': True, 'test_result_base': None}
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_args' from command line to 'None'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_target' from command line to 'None'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_clean_first' from command line to 'False'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_force_configure' from command line to 'False'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'ament_cmake_args' from command line to 'None'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.236s] DEBUG:colcon.colcon_core.verb:Building package 'pymoveit2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ashmu/ros2_ws/build/pymoveit2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ashmu/ros2_ws/install/pymoveit2', 'merge_install': False, 'path': '/home/ashmu/ros2_ws/src/pymoveit2', 'symlink_install': True, 'test_result_base': None}
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'ur_description' build argument 'cmake_args' from command line to 'None'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'ur_description' build argument 'cmake_target' from command line to 'None'
+[0.236s] Level 5:colcon.colcon_core.verb:set package 'ur_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.237s] Level 5:colcon.colcon_core.verb:set package 'ur_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.237s] Level 5:colcon.colcon_core.verb:set package 'ur_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.237s] Level 5:colcon.colcon_core.verb:set package 'ur_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.237s] Level 5:colcon.colcon_core.verb:set package 'ur_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.237s] Level 5:colcon.colcon_core.verb:set package 'ur_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.237s] Level 5:colcon.colcon_core.verb:set package 'ur_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.237s] DEBUG:colcon.colcon_core.verb:Building package 'ur_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ashmu/ros2_ws/build/ur_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ashmu/ros2_ws/install/ur_description', 'merge_install': False, 'path': '/home/ashmu/ros2_ws/src/Universal_Robots_ROS2_Description', 'symlink_install': True, 'test_result_base': None}
+[0.237s] Level 5:colcon.colcon_core.verb:set package 'ur3e_control_package' build argument 'cmake_args' from command line to 'None'
+[0.237s] Level 5:colcon.colcon_core.verb:set package 'ur3e_control_package' build argument 'cmake_target' from command line to 'None'
+[0.237s] Level 5:colcon.colcon_core.verb:set package 'ur3e_control_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.237s] Level 5:colcon.colcon_core.verb:set package 'ur3e_control_package' build argument 'cmake_clean_cache' from command line to 'False'
+[0.237s] Level 5:colcon.colcon_core.verb:set package 'ur3e_control_package' build argument 'cmake_clean_first' from command line to 'False'
+[0.237s] Level 5:colcon.colcon_core.verb:set package 'ur3e_control_package' build argument 'cmake_force_configure' from command line to 'False'
+[0.237s] Level 5:colcon.colcon_core.verb:set package 'ur3e_control_package' build argument 'ament_cmake_args' from command line to 'None'
+[0.237s] Level 5:colcon.colcon_core.verb:set package 'ur3e_control_package' build argument 'catkin_cmake_args' from command line to 'None'
+[0.237s] Level 5:colcon.colcon_core.verb:set package 'ur3e_control_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.237s] DEBUG:colcon.colcon_core.verb:Building package 'ur3e_control_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ashmu/ros2_ws/build/ur3e_control_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ashmu/ros2_ws/install/ur3e_control_package', 'merge_install': False, 'path': '/home/ashmu/ros2_ws/src/ur3e-codebase', 'symlink_install': True, 'test_result_base': None}
+[0.237s] Level 5:colcon.colcon_core.verb:set package 'ur_simulation_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.237s] Level 5:colcon.colcon_core.verb:set package 'ur_simulation_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.237s] Level 5:colcon.colcon_core.verb:set package 'ur_simulation_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.237s] Level 5:colcon.colcon_core.verb:set package 'ur_simulation_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.237s] Level 5:colcon.colcon_core.verb:set package 'ur_simulation_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.237s] Level 5:colcon.colcon_core.verb:set package 'ur_simulation_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.237s] Level 5:colcon.colcon_core.verb:set package 'ur_simulation_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.237s] Level 5:colcon.colcon_core.verb:set package 'ur_simulation_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.237s] Level 5:colcon.colcon_core.verb:set package 'ur_simulation_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.237s] DEBUG:colcon.colcon_core.verb:Building package 'ur_simulation_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ashmu/ros2_ws/build/ur_simulation_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ashmu/ros2_ws/install/ur_simulation_gazebo', 'merge_install': False, 'path': '/home/ashmu/ros2_ws/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo', 'symlink_install': True, 'test_result_base': None}
+[0.237s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.238s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.238s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ashmu/ros2_ws/src/pymoveit2' with build type 'ament_cmake'
+[0.239s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ashmu/ros2_ws/src/pymoveit2'
+[0.240s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.240s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.240s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.243s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ashmu/ros2_ws/src/Universal_Robots_ROS2_Description' with build type 'ament_cmake'
+[0.243s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ashmu/ros2_ws/src/Universal_Robots_ROS2_Description'
+[0.243s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.243s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.246s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ashmu/ros2_ws/src/moving_ur3e' with build type 'ament_python'
+[0.246s] Level 1:colcon.colcon_core.shell:create_environment_hook('moving_ur3e', 'ament_prefix_path')
+[0.247s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmu/ros2_ws/install/moving_ur3e/share/moving_ur3e/hook/ament_prefix_path.ps1'
+[0.247s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ashmu/ros2_ws/install/moving_ur3e/share/moving_ur3e/hook/ament_prefix_path.dsv'
+[0.248s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmu/ros2_ws/install/moving_ur3e/share/moving_ur3e/hook/ament_prefix_path.sh'
+[0.249s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.249s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.255s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ashmu/ros2_ws/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/install/ur3e_control_package:/home/ashmu/ros2_ws/install/moving_ur3e:/opt/ros/humble /usr/bin/cmake /home/ashmu/ros2_ws/src/pymoveit2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ashmu/ros2_ws/install/pymoveit2
+[0.258s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ashmu/ros2_ws/build/ur_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/install/ur3e_control_package:/home/ashmu/ros2_ws/install/moving_ur3e:/opt/ros/humble /usr/bin/cmake /home/ashmu/ros2_ws/src/Universal_Robots_ROS2_Description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ashmu/ros2_ws/install/ur_description
+[0.447s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'moving_ur3e' doesn't explicitly install a marker in the package index (colcon-ros currently does it implicitly but that fallback will be removed in the future)
+[0.447s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'moving_ur3e' doesn't explicitly install the 'package.xml' file (colcon-ros currently does it implicitly but that fallback will be removed in the future)
+[0.447s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ashmu/ros2_ws/src/moving_ur3e'
+[0.447s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.447s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.732s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ashmu/ros2_ws/build/moving_ur3e': PYTHONPATH=/home/ashmu/ros2_ws/build/moving_ur3e/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ashmu/ros2_ws/install/moving_ur3e/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ashmu/ros2_ws/build/moving_ur3e/build --no-deps symlink_data
+[0.952s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ashmu/ros2_ws/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/install/ur3e_control_package:/home/ashmu/ros2_ws/install/moving_ur3e:/opt/ros/humble /usr/bin/cmake /home/ashmu/ros2_ws/src/pymoveit2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ashmu/ros2_ws/install/pymoveit2
+[0.954s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ashmu/ros2_ws/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/install/ur3e_control_package:/home/ashmu/ros2_ws/install/moving_ur3e:/opt/ros/humble /usr/bin/cmake --build /home/ashmu/ros2_ws/build/pymoveit2 -- -j12 -l12
+[1.068s] Level 1:colcon.colcon_core.shell:create_environment_hook('moving_ur3e', 'pythonpath_develop')
+[1.068s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmu/ros2_ws/build/moving_ur3e/share/moving_ur3e/hook/pythonpath_develop.ps1'
+[1.068s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ashmu/ros2_ws/build/moving_ur3e' returned '0': PYTHONPATH=/home/ashmu/ros2_ws/build/moving_ur3e/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ashmu/ros2_ws/install/moving_ur3e/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ashmu/ros2_ws/build/moving_ur3e/build --no-deps symlink_data
+[1.069s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ashmu/ros2_ws/build/moving_ur3e/share/moving_ur3e/hook/pythonpath_develop.dsv'
+[1.069s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmu/ros2_ws/build/moving_ur3e/share/moving_ur3e/hook/pythonpath_develop.sh'
+[1.071s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/moving_ur3e' for CMake module files
+[1.071s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/moving_ur3e' for CMake config files
+[1.072s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/moving_ur3e/lib'
+[1.072s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/moving_ur3e/bin'
+[1.072s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/moving_ur3e/lib/pkgconfig/moving_ur3e.pc'
+[1.072s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/moving_ur3e/lib/python3.10/site-packages'
+[1.072s] Level 1:colcon.colcon_core.shell:create_environment_hook('moving_ur3e', 'pythonpath')
+[1.072s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmu/ros2_ws/install/moving_ur3e/share/moving_ur3e/hook/pythonpath.ps1'
+[1.073s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ashmu/ros2_ws/install/moving_ur3e/share/moving_ur3e/hook/pythonpath.dsv'
+[1.073s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmu/ros2_ws/install/moving_ur3e/share/moving_ur3e/hook/pythonpath.sh'
+[1.073s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/moving_ur3e/bin'
+[1.073s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moving_ur3e)
+[1.074s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/moving_ur3e/share/moving_ur3e/package.ps1'
+[1.074s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ashmu/ros2_ws/install/moving_ur3e/share/moving_ur3e/package.dsv'
+[1.075s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/moving_ur3e/share/moving_ur3e/package.sh'
+[1.077s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/moving_ur3e/share/moving_ur3e/package.bash'
+[1.077s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/moving_ur3e/share/moving_ur3e/package.zsh'
+[1.078s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ashmu/ros2_ws/install/moving_ur3e/share/colcon-core/packages/moving_ur3e)
+[1.279s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ashmu/ros2_ws/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/install/ur3e_control_package:/home/ashmu/ros2_ws/install/moving_ur3e:/opt/ros/humble /usr/bin/cmake --build /home/ashmu/ros2_ws/build/pymoveit2 -- -j12 -l12
+[1.291s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ashmu/ros2_ws/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/install/ur3e_control_package:/home/ashmu/ros2_ws/install/moving_ur3e:/opt/ros/humble /usr/bin/cmake --install /home/ashmu/ros2_ws/build/pymoveit2
+[1.400s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ashmu/ros2_ws/build/ur_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/install/ur3e_control_package:/home/ashmu/ros2_ws/install/moving_ur3e:/opt/ros/humble /usr/bin/cmake /home/ashmu/ros2_ws/src/Universal_Robots_ROS2_Description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ashmu/ros2_ws/install/ur_description
+[1.401s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ashmu/ros2_ws/build/ur_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/install/ur3e_control_package:/home/ashmu/ros2_ws/install/moving_ur3e:/opt/ros/humble /usr/bin/cmake --build /home/ashmu/ros2_ws/build/ur_description -- -j12 -l12
+[1.443s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ashmu/ros2_ws/build/ur_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/install/ur3e_control_package:/home/ashmu/ros2_ws/install/moving_ur3e:/opt/ros/humble /usr/bin/cmake --build /home/ashmu/ros2_ws/build/ur_description -- -j12 -l12
+[1.445s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ashmu/ros2_ws/build/ur_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/install/ur3e_control_package:/home/ashmu/ros2_ws/install/moving_ur3e:/opt/ros/humble /usr/bin/cmake --install /home/ashmu/ros2_ws/build/ur_description
+[1.820s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pymoveit2)
+[1.821s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ashmu/ros2_ws/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/install/ur3e_control_package:/home/ashmu/ros2_ws/install/moving_ur3e:/opt/ros/humble /usr/bin/cmake --install /home/ashmu/ros2_ws/build/pymoveit2
+[1.821s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/pymoveit2' for CMake module files
+[1.822s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/pymoveit2' for CMake config files
+[1.822s] Level 1:colcon.colcon_core.shell:create_environment_hook('pymoveit2', 'cmake_prefix_path')
+[1.822s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmu/ros2_ws/install/pymoveit2/share/pymoveit2/hook/cmake_prefix_path.ps1'
+[1.823s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ashmu/ros2_ws/install/pymoveit2/share/pymoveit2/hook/cmake_prefix_path.dsv'
+[1.823s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmu/ros2_ws/install/pymoveit2/share/pymoveit2/hook/cmake_prefix_path.sh'
+[1.824s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/pymoveit2/lib'
+[1.824s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/pymoveit2/bin'
+[1.824s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/pymoveit2/lib/pkgconfig/pymoveit2.pc'
+[1.824s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/pymoveit2/lib/python3.10/site-packages'
+[1.824s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/pymoveit2/bin'
+[1.824s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/pymoveit2/share/pymoveit2/package.ps1'
+[1.825s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ashmu/ros2_ws/install/pymoveit2/share/pymoveit2/package.dsv'
+[1.825s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/pymoveit2/share/pymoveit2/package.sh'
+[1.826s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/pymoveit2/share/pymoveit2/package.bash'
+[1.826s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/pymoveit2/share/pymoveit2/package.zsh'
+[1.826s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ashmu/ros2_ws/install/pymoveit2/share/colcon-core/packages/pymoveit2)
+[1.827s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pymoveit2)
+[1.827s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/pymoveit2' for CMake module files
+[1.827s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/pymoveit2' for CMake config files
+[1.828s] Level 1:colcon.colcon_core.shell:create_environment_hook('pymoveit2', 'cmake_prefix_path')
+[1.828s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmu/ros2_ws/install/pymoveit2/share/pymoveit2/hook/cmake_prefix_path.ps1'
+[1.829s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ashmu/ros2_ws/install/pymoveit2/share/pymoveit2/hook/cmake_prefix_path.dsv'
+[1.829s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmu/ros2_ws/install/pymoveit2/share/pymoveit2/hook/cmake_prefix_path.sh'
+[1.830s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/pymoveit2/lib'
+[1.830s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/pymoveit2/bin'
+[1.830s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/pymoveit2/lib/pkgconfig/pymoveit2.pc'
+[1.830s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/pymoveit2/lib/python3.10/site-packages'
+[1.830s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/pymoveit2/bin'
+[1.831s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/pymoveit2/share/pymoveit2/package.ps1'
+[1.831s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ashmu/ros2_ws/install/pymoveit2/share/pymoveit2/package.dsv'
+[1.832s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/pymoveit2/share/pymoveit2/package.sh'
+[1.832s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/pymoveit2/share/pymoveit2/package.bash'
+[1.833s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/pymoveit2/share/pymoveit2/package.zsh'
+[1.833s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ashmu/ros2_ws/install/pymoveit2/share/colcon-core/packages/pymoveit2)
+[1.833s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ashmu/ros2_ws/src/ur3e-codebase' with build type 'ament_python'
+[1.834s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur3e_control_package', 'ament_prefix_path')
+[1.834s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmu/ros2_ws/install/ur3e_control_package/share/ur3e_control_package/hook/ament_prefix_path.ps1'
+[1.835s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ashmu/ros2_ws/install/ur3e_control_package/share/ur3e_control_package/hook/ament_prefix_path.dsv'
+[1.835s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmu/ros2_ws/install/ur3e_control_package/share/ur3e_control_package/hook/ament_prefix_path.sh'
+[1.836s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.836s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.074s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ashmu/ros2_ws/src/ur3e-codebase'
+[2.075s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.075s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.385s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ashmu/ros2_ws/build/ur3e_control_package': CMAKE_PREFIX_PATH=/home/ashmu/ros2_ws/install/pymoveit2:/home/ashmu/ros2_ws/install/ur_simulation_gazebo:/home/ashmu/ros2_ws/install/ur_description PYTHONPATH=/home/ashmu/ros2_ws/build/ur3e_control_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ashmu/ros2_ws/install/ur3e_control_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ashmu/ros2_ws/build/ur3e_control_package/build --no-deps symlink_data
+[2.765s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur3e_control_package', 'pythonpath_develop')
+[2.765s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmu/ros2_ws/build/ur3e_control_package/share/ur3e_control_package/hook/pythonpath_develop.ps1'
+[2.766s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ashmu/ros2_ws/build/ur3e_control_package' returned '0': CMAKE_PREFIX_PATH=/home/ashmu/ros2_ws/install/pymoveit2:/home/ashmu/ros2_ws/install/ur_simulation_gazebo:/home/ashmu/ros2_ws/install/ur_description PYTHONPATH=/home/ashmu/ros2_ws/build/ur3e_control_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ashmu/ros2_ws/install/ur3e_control_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ashmu/ros2_ws/build/ur3e_control_package/build --no-deps symlink_data
+[2.766s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ashmu/ros2_ws/build/ur3e_control_package/share/ur3e_control_package/hook/pythonpath_develop.dsv'
+[2.767s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmu/ros2_ws/build/ur3e_control_package/share/ur3e_control_package/hook/pythonpath_develop.sh'
+[2.767s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur3e_control_package' for CMake module files
+[2.767s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur3e_control_package' for CMake config files
+[2.768s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur3e_control_package/lib'
+[2.768s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur3e_control_package/bin'
+[2.768s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur3e_control_package/lib/pkgconfig/ur3e_control_package.pc'
+[2.768s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur3e_control_package/lib/python3.10/site-packages'
+[2.768s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur3e_control_package', 'pythonpath')
+[2.769s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmu/ros2_ws/install/ur3e_control_package/share/ur3e_control_package/hook/pythonpath.ps1'
+[2.769s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ashmu/ros2_ws/install/ur3e_control_package/share/ur3e_control_package/hook/pythonpath.dsv'
+[2.769s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmu/ros2_ws/install/ur3e_control_package/share/ur3e_control_package/hook/pythonpath.sh'
+[2.769s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur3e_control_package/bin'
+[2.769s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur3e_control_package)
+[2.770s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/ur3e_control_package/share/ur3e_control_package/package.ps1'
+[2.770s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ashmu/ros2_ws/install/ur3e_control_package/share/ur3e_control_package/package.dsv'
+[2.770s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/ur3e_control_package/share/ur3e_control_package/package.sh'
+[2.771s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/ur3e_control_package/share/ur3e_control_package/package.bash'
+[2.771s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/ur3e_control_package/share/ur3e_control_package/package.zsh'
+[2.771s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ashmu/ros2_ws/install/ur3e_control_package/share/colcon-core/packages/ur3e_control_package)
+[3.369s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur_description)
+[3.369s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur_description' for CMake module files
+[3.370s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ashmu/ros2_ws/build/ur_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/install/ur3e_control_package:/home/ashmu/ros2_ws/install/moving_ur3e:/opt/ros/humble /usr/bin/cmake --install /home/ashmu/ros2_ws/build/ur_description
+[3.370s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur_description' for CMake config files
+[3.372s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_description', 'cmake_prefix_path')
+[3.372s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmu/ros2_ws/install/ur_description/share/ur_description/hook/cmake_prefix_path.ps1'
+[3.373s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ashmu/ros2_ws/install/ur_description/share/ur_description/hook/cmake_prefix_path.dsv'
+[3.373s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmu/ros2_ws/install/ur_description/share/ur_description/hook/cmake_prefix_path.sh'
+[3.373s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur_description/bin'
+[3.373s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur_description/lib/pkgconfig/ur_description.pc'
+[3.374s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur_description/lib/python3.10/site-packages'
+[3.374s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur_description/bin'
+[3.374s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/ur_description/share/ur_description/package.ps1'
+[3.374s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ashmu/ros2_ws/install/ur_description/share/ur_description/package.dsv'
+[3.375s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/ur_description/share/ur_description/package.sh'
+[3.375s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/ur_description/share/ur_description/package.bash'
+[3.375s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/ur_description/share/ur_description/package.zsh'
+[3.375s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ashmu/ros2_ws/install/ur_description/share/colcon-core/packages/ur_description)
+[3.376s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur_description)
+[3.376s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur_description' for CMake module files
+[3.376s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur_description' for CMake config files
+[3.378s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_description', 'cmake_prefix_path')
+[3.378s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmu/ros2_ws/install/ur_description/share/ur_description/hook/cmake_prefix_path.ps1'
+[3.379s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ashmu/ros2_ws/install/ur_description/share/ur_description/hook/cmake_prefix_path.dsv'
+[3.379s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmu/ros2_ws/install/ur_description/share/ur_description/hook/cmake_prefix_path.sh'
+[3.379s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur_description/bin'
+[3.379s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur_description/lib/pkgconfig/ur_description.pc'
+[3.380s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur_description/lib/python3.10/site-packages'
+[3.380s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur_description/bin'
+[3.380s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/ur_description/share/ur_description/package.ps1'
+[3.380s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ashmu/ros2_ws/install/ur_description/share/ur_description/package.dsv'
+[3.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/ur_description/share/ur_description/package.sh'
+[3.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/ur_description/share/ur_description/package.bash'
+[3.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/ur_description/share/ur_description/package.zsh'
+[3.382s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ashmu/ros2_ws/install/ur_description/share/colcon-core/packages/ur_description)
+[3.382s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ashmu/ros2_ws/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo' with build type 'ament_cmake'
+[3.382s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ashmu/ros2_ws/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo'
+[3.382s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.382s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.391s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ashmu/ros2_ws/build/ur_simulation_gazebo': CMAKE_PREFIX_PATH=/home/ashmu/ros2_ws/install/ur_description:/home/ashmu/ros2_ws/install/ur_simulation_gazebo:/home/ashmu/ros2_ws/install/pymoveit2:/home/ashmu/ros2_ws/install/ur3e_control_package:/home/ashmu/ros2_ws/install/moving_ur3e:/opt/ros/humble /usr/bin/cmake /home/ashmu/ros2_ws/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ashmu/ros2_ws/install/ur_simulation_gazebo
+[4.037s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ashmu/ros2_ws/build/ur_simulation_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/ashmu/ros2_ws/install/ur_description:/home/ashmu/ros2_ws/install/ur_simulation_gazebo:/home/ashmu/ros2_ws/install/pymoveit2:/home/ashmu/ros2_ws/install/ur3e_control_package:/home/ashmu/ros2_ws/install/moving_ur3e:/opt/ros/humble /usr/bin/cmake /home/ashmu/ros2_ws/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ashmu/ros2_ws/install/ur_simulation_gazebo
+[4.038s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ashmu/ros2_ws/build/ur_simulation_gazebo': CMAKE_PREFIX_PATH=/home/ashmu/ros2_ws/install/ur_description:/home/ashmu/ros2_ws/install/ur_simulation_gazebo:/home/ashmu/ros2_ws/install/pymoveit2:/home/ashmu/ros2_ws/install/ur3e_control_package:/home/ashmu/ros2_ws/install/moving_ur3e:/opt/ros/humble /usr/bin/cmake --build /home/ashmu/ros2_ws/build/ur_simulation_gazebo -- -j12 -l12
+[4.076s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ashmu/ros2_ws/build/ur_simulation_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/ashmu/ros2_ws/install/ur_description:/home/ashmu/ros2_ws/install/ur_simulation_gazebo:/home/ashmu/ros2_ws/install/pymoveit2:/home/ashmu/ros2_ws/install/ur3e_control_package:/home/ashmu/ros2_ws/install/moving_ur3e:/opt/ros/humble /usr/bin/cmake --build /home/ashmu/ros2_ws/build/ur_simulation_gazebo -- -j12 -l12
+[4.078s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ashmu/ros2_ws/build/ur_simulation_gazebo': CMAKE_PREFIX_PATH=/home/ashmu/ros2_ws/install/ur_description:/home/ashmu/ros2_ws/install/ur_simulation_gazebo:/home/ashmu/ros2_ws/install/pymoveit2:/home/ashmu/ros2_ws/install/ur3e_control_package:/home/ashmu/ros2_ws/install/moving_ur3e:/opt/ros/humble /usr/bin/cmake --install /home/ashmu/ros2_ws/build/ur_simulation_gazebo
+[4.255s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur_simulation_gazebo)
+[4.256s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur_simulation_gazebo' for CMake module files
+[4.256s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ashmu/ros2_ws/build/ur_simulation_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/ashmu/ros2_ws/install/ur_description:/home/ashmu/ros2_ws/install/ur_simulation_gazebo:/home/ashmu/ros2_ws/install/pymoveit2:/home/ashmu/ros2_ws/install/ur3e_control_package:/home/ashmu/ros2_ws/install/moving_ur3e:/opt/ros/humble /usr/bin/cmake --install /home/ashmu/ros2_ws/build/ur_simulation_gazebo
+[4.256s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur_simulation_gazebo' for CMake config files
+[4.257s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_simulation_gazebo', 'cmake_prefix_path')
+[4.257s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmu/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/hook/cmake_prefix_path.ps1'
+[4.257s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ashmu/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/hook/cmake_prefix_path.dsv'
+[4.257s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmu/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/hook/cmake_prefix_path.sh'
+[4.258s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur_simulation_gazebo/bin'
+[4.258s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur_simulation_gazebo/lib/pkgconfig/ur_simulation_gazebo.pc'
+[4.258s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur_simulation_gazebo/lib/python3.10/site-packages'
+[4.258s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur_simulation_gazebo/bin'
+[4.258s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.ps1'
+[4.259s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ashmu/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.dsv'
+[4.259s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.sh'
+[4.259s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.bash'
+[4.259s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.zsh'
+[4.260s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ashmu/ros2_ws/install/ur_simulation_gazebo/share/colcon-core/packages/ur_simulation_gazebo)
+[4.260s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur_simulation_gazebo)
+[4.260s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur_simulation_gazebo' for CMake module files
+[4.261s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur_simulation_gazebo' for CMake config files
+[4.261s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_simulation_gazebo', 'cmake_prefix_path')
+[4.261s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmu/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/hook/cmake_prefix_path.ps1'
+[4.261s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ashmu/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/hook/cmake_prefix_path.dsv'
+[4.262s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ashmu/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/hook/cmake_prefix_path.sh'
+[4.262s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur_simulation_gazebo/bin'
+[4.262s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur_simulation_gazebo/lib/pkgconfig/ur_simulation_gazebo.pc'
+[4.262s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur_simulation_gazebo/lib/python3.10/site-packages'
+[4.262s] Level 1:colcon.colcon_core.environment:checking '/home/ashmu/ros2_ws/install/ur_simulation_gazebo/bin'
+[4.263s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.ps1'
+[4.263s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ashmu/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.dsv'
+[4.263s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.sh'
+[4.264s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.bash'
+[4.264s] INFO:colcon.colcon_core.shell:Creating package script '/home/ashmu/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.zsh'
+[4.264s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ashmu/ros2_ws/install/ur_simulation_gazebo/share/colcon-core/packages/ur_simulation_gazebo)
+[4.264s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.265s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.265s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.265s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.269s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.269s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.269s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.279s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.279s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ashmu/ros2_ws/install/local_setup.ps1'
+[4.280s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ashmu/ros2_ws/install/_local_setup_util_ps1.py'
+[4.282s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ashmu/ros2_ws/install/setup.ps1'
+[4.283s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ashmu/ros2_ws/install/local_setup.sh'
+[4.284s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ashmu/ros2_ws/install/_local_setup_util_sh.py'
+[4.284s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ashmu/ros2_ws/install/setup.sh'
+[4.285s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ashmu/ros2_ws/install/local_setup.bash'
+[4.285s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ashmu/ros2_ws/install/setup.bash'
+[4.286s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ashmu/ros2_ws/install/local_setup.zsh'
+[4.286s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ashmu/ros2_ws/install/setup.zsh'

@@ -1,8 +1,0 @@
-running develop
-running egg_info
-writing ../../build/movement/movement.egg-info/PKG-INFO
-writing dependency_links to ../../build/movement/movement.egg-info/dependency_links.txt
-writing entry points to ../../build/movement/movement.egg-info/entry_points.txt
-writing requirements to ../../build/movement/movement.egg-info/requires.txt
-writing top-level names to ../../build/movement/movement.egg-info/top_level.txt
-error: package directory 'movement' does not exist

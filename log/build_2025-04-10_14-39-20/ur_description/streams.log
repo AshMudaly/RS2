@@ -1,0 +1,206 @@
+[0.014s] Invoking command in '/home/ashmu/ros2_ws/build/ur_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/install/ur3e_control_package:/home/ashmu/ros2_ws/install/moving_ur3e:/opt/ros/humble /usr/bin/cmake /home/ashmu/ros2_ws/src/Universal_Robots_ROS2_Description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ashmu/ros2_ws/install/ur_description
+[0.058s] -- The C compiler identification is GNU 11.4.0
+[0.108s] -- The CXX compiler identification is GNU 11.4.0
+[0.116s] -- Detecting C compiler ABI info
+[0.186s] -- Detecting C compiler ABI info - done
+[0.192s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.192s] -- Detecting C compile features
+[0.193s] -- Detecting C compile features - done
+[0.195s] -- Detecting CXX compiler ABI info
+[0.276s] -- Detecting CXX compiler ABI info - done
+[0.283s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.283s] -- Detecting CXX compile features
+[0.283s] -- Detecting CXX compile features - done
+[0.286s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.429s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.495s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.530s] -- Found ament_cmake_pytest: 1.3.11 (/opt/ros/humble/share/ament_cmake_pytest/cmake)
+[1.147s] -- Configuring done
+[1.150s] -- Generating done
+[1.151s] -- Build files have been written to: /home/ashmu/ros2_ws/build/ur_description
+[1.156s] Invoked command in '/home/ashmu/ros2_ws/build/ur_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/install/ur3e_control_package:/home/ashmu/ros2_ws/install/moving_ur3e:/opt/ros/humble /usr/bin/cmake /home/ashmu/ros2_ws/src/Universal_Robots_ROS2_Description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ashmu/ros2_ws/install/ur_description
+[1.158s] Invoking command in '/home/ashmu/ros2_ws/build/ur_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/install/ur3e_control_package:/home/ashmu/ros2_ws/install/moving_ur3e:/opt/ros/humble /usr/bin/cmake --build /home/ashmu/ros2_ws/build/ur_description -- -j12 -l12
+[1.199s] Invoked command in '/home/ashmu/ros2_ws/build/ur_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/install/ur3e_control_package:/home/ashmu/ros2_ws/install/moving_ur3e:/opt/ros/humble /usr/bin/cmake --build /home/ashmu/ros2_ws/build/ur_description -- -j12 -l12
+[1.202s] Invoking command in '/home/ashmu/ros2_ws/build/ur_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/install/ur3e_control_package:/home/ashmu/ros2_ws/install/moving_ur3e:/opt/ros/humble /usr/bin/cmake --install /home/ashmu/ros2_ws/build/ur_description
+[1.208s] -- Install configuration: ""
+[1.209s] -- Execute custom install script
+[1.210s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/initial_positions.yaml
+[1.219s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur10/default_kinematics.yaml
+[1.228s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur10/joint_limits.yaml
+[1.238s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur10/physical_parameters.yaml
+[1.248s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur10/visual_parameters.yaml
+[1.259s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur10e/default_kinematics.yaml
+[1.268s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur10e/joint_limits.yaml
+[1.278s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur10e/physical_parameters.yaml
+[1.289s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur10e/visual_parameters.yaml
+[1.300s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur12e/default_kinematics.yaml
+[1.314s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur12e/joint_limits.yaml
+[1.325s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur12e/physical_parameters.yaml
+[1.335s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur12e/visual_parameters.yaml
+[1.345s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur16e/default_kinematics.yaml
+[1.354s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur16e/joint_limits.yaml
+[1.365s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur16e/physical_parameters.yaml
+[1.375s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur16e/visual_parameters.yaml
+[1.385s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur20/default_kinematics.yaml
+[1.395s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur20/joint_limits.yaml
+[1.405s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur20/physical_parameters.yaml
+[1.414s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur20/visual_parameters.yaml
+[1.424s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur3/default_kinematics.yaml
+[1.436s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur3/joint_limits.yaml
+[1.446s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur3/physical_parameters.yaml
+[1.457s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur3/visual_parameters.yaml
+[1.467s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur30/default_kinematics.yaml
+[1.478s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur30/joint_limits.yaml
+[1.489s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur30/physical_parameters.yaml
+[1.500s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur30/visual_parameters.yaml
+[1.511s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur3e/default_kinematics.yaml
+[1.521s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur3e/joint_limits.yaml
+[1.534s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur3e/physical_parameters.yaml
+[1.544s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur3e/visual_parameters.yaml
+[1.555s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur5/default_kinematics.yaml
+[1.565s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur5/joint_limits.yaml
+[1.576s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur5/physical_parameters.yaml
+[1.588s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur5/visual_parameters.yaml
+[1.598s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur5e/default_kinematics.yaml
+[1.609s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur5e/joint_limits.yaml
+[1.621s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur5e/physical_parameters.yaml
+[1.632s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur5e/visual_parameters.yaml
+[1.643s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur7e/default_kinematics.yaml
+[1.653s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur7e/joint_limits.yaml
+[1.667s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur7e/physical_parameters.yaml
+[1.680s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/config/ur7e/visual_parameters.yaml
+[1.691s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/launch/view_ur.launch.py
+[1.705s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10/collision/base.stl
+[1.717s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10/collision/forearm.stl
+[1.728s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10/collision/shoulder.stl
+[1.740s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10/collision/upperarm.stl
+[1.752s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10/collision/wrist1.stl
+[1.763s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10/collision/wrist2.stl
+[1.775s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10/collision/wrist3.stl
+[1.788s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10/visual/base.dae
+[1.802s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10/visual/forearm.dae
+[1.816s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10/visual/shoulder.dae
+[1.827s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10/visual/upperarm.dae
+[1.838s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10/visual/wrist1.dae
+[1.848s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10/visual/wrist2.dae
+[1.859s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10/visual/wrist3.dae
+[1.870s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10e/collision/base.stl
+[1.880s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10e/collision/forearm.stl
+[1.891s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10e/collision/shoulder.stl
+[1.902s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10e/collision/upperarm.stl
+[1.914s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10e/collision/wrist1.stl
+[1.925s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10e/collision/wrist2.stl
+[1.935s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10e/collision/wrist3.stl
+[1.945s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10e/visual/base.dae
+[1.955s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10e/visual/forearm.dae
+[1.963s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10e/visual/shoulder.dae
+[1.974s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10e/visual/upperarm.dae
+[1.986s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10e/visual/wrist1.dae
+[1.996s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10e/visual/wrist2.dae
+[2.007s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur10e/visual/wrist3.dae
+[2.017s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur16e/collision/forearm.stl
+[2.028s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur16e/collision/upperarm.stl
+[2.039s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur16e/visual/forearm.dae
+[2.050s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur16e/visual/upperarm.dae
+[2.059s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur20/LICENSE.txt
+[2.068s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur20/collision/base.stl
+[2.077s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur20/collision/forearm.stl
+[2.090s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur20/collision/shoulder.stl
+[2.102s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur20/collision/upperarm.stl
+[2.113s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur20/collision/wrist1.stl
+[2.126s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur20/collision/wrist2.stl
+[2.137s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur20/collision/wrist3.stl
+[2.148s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur20/visual/UR20_DIFF_8bit_2K.png
+[2.160s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur20/visual/base.dae
+[2.171s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur20/visual/forearm.dae
+[2.180s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur20/visual/shoulder.dae
+[2.189s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur20/visual/upperarm.dae
+[2.200s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur20/visual/wrist1.dae
+[2.210s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur20/visual/wrist2.dae
+[2.219s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur20/visual/wrist3.dae
+[2.229s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3/collision/base.stl
+[2.242s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3/collision/forearm.stl
+[2.252s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3/collision/shoulder.stl
+[2.263s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3/collision/upperarm.stl
+[2.275s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3/collision/wrist1.stl
+[2.284s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3/collision/wrist2.stl
+[2.293s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3/collision/wrist3.stl
+[2.304s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3/visual/base.dae
+[2.314s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3/visual/forearm.dae
+[2.325s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3/visual/shoulder.dae
+[2.338s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3/visual/upperarm.dae
+[2.348s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3/visual/wrist1.dae
+[2.359s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3/visual/wrist2.dae
+[2.371s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3/visual/wrist3.dae
+[2.381s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur30/LICENSE.txt
+[2.392s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur30/collision/forearm.stl
+[2.403s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur30/collision/upperarm.stl
+[2.415s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur30/visual/UR30_DIFF_8bit_2K.png
+[2.425s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur30/visual/forearm.dae
+[2.437s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur30/visual/upperarm.dae
+[2.446s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3e/collision/base.stl
+[2.456s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3e/collision/forearm.stl
+[2.464s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3e/collision/shoulder.stl
+[2.476s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3e/collision/upperarm.stl
+[2.489s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3e/collision/wrist1.stl
+[2.501s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3e/collision/wrist2.stl
+[2.513s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3e/collision/wrist3.stl
+[2.524s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3e/visual/base.dae
+[2.536s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3e/visual/forearm.dae
+[2.545s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3e/visual/shoulder.dae
+[2.555s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3e/visual/upperarm.dae
+[2.564s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3e/visual/wrist1.dae
+[2.574s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3e/visual/wrist2.dae
+[2.584s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur3e/visual/wrist3.dae
+[2.593s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5/collision/base.stl
+[2.601s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5/collision/forearm.stl
+[2.610s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5/collision/shoulder.stl
+[2.621s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5/collision/upperarm.stl
+[2.631s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5/collision/wrist1.stl
+[2.641s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5/collision/wrist2.stl
+[2.649s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5/collision/wrist3.stl
+[2.659s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5/visual/base.dae
+[2.669s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5/visual/forearm.dae
+[2.679s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5/visual/shoulder.dae
+[2.688s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5/visual/upperarm.dae
+[2.697s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5/visual/wrist1.dae
+[2.706s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5/visual/wrist2.dae
+[2.713s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5/visual/wrist3.dae
+[2.722s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5e/collision/base.stl
+[2.733s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5e/collision/forearm.stl
+[2.742s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5e/collision/shoulder.stl
+[2.751s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5e/collision/upperarm.stl
+[2.760s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5e/collision/wrist1.stl
+[2.769s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5e/collision/wrist2.stl
+[2.778s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5e/collision/wrist3.stl
+[2.786s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5e/visual/base.dae
+[2.797s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5e/visual/forearm.dae
+[2.807s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5e/visual/shoulder.dae
+[2.819s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5e/visual/upperarm.dae
+[2.829s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5e/visual/wrist1.dae
+[2.842s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5e/visual/wrist2.dae
+[2.854s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/meshes/ur5e/visual/wrist3.dae
+[2.865s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/rviz/view_robot.rviz
+[2.876s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/urdf/inc/ur_common.xacro
+[2.887s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/urdf/inc/ur_transmissions.xacro
+[2.899s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/urdf/ur.ros2_control.xacro
+[2.911s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/urdf/ur.urdf.xacro
+[2.922s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/urdf/ur_macro.xacro
+[2.935s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/test/test_ur_urdf_xacro.py
+[2.946s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/test/test_view_ur_launch.py
+[2.957s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ament_index/resource_index/package_run_dependencies/ur_description
+[2.969s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ament_index/resource_index/parent_prefix_path/ur_description
+[2.980s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/environment/ament_prefix_path.sh
+[2.991s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/environment/ament_prefix_path.dsv
+[3.003s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/environment/path.sh
+[3.014s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/environment/path.dsv
+[3.023s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/local_setup.bash
+[3.035s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/local_setup.sh
+[3.045s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/local_setup.zsh
+[3.054s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/local_setup.dsv
+[3.065s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/package.dsv
+[3.076s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ament_index/resource_index/packages/ur_description
+[3.087s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/cmake/ur_descriptionConfig.cmake
+[3.101s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/cmake/ur_descriptionConfig-version.cmake
+[3.113s] -- Symlinking: /home/ashmu/ros2_ws/install/ur_description/share/ur_description/package.xml
+[3.126s] Invoked command in '/home/ashmu/ros2_ws/build/ur_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/install/ur3e_control_package:/home/ashmu/ros2_ws/install/moving_ur3e:/opt/ros/humble /usr/bin/cmake --install /home/ashmu/ros2_ws/build/ur_description

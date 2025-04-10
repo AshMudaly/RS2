@@ -1,0 +1,30 @@
+running develop
+Removing /home/ashmu/ros2_ws/install/moving_ur3e/lib/python3.10/site-packages/moving-ur3e.egg-link (link to .)
+running egg_info
+writing ../../build/moving_ur3e/moving_ur3e.egg-info/PKG-INFO
+writing dependency_links to ../../build/moving_ur3e/moving_ur3e.egg-info/dependency_links.txt
+writing entry points to ../../build/moving_ur3e/moving_ur3e.egg-info/entry_points.txt
+writing requirements to ../../build/moving_ur3e/moving_ur3e.egg-info/requires.txt
+writing top-level names to ../../build/moving_ur3e/moving_ur3e.egg-info/top_level.txt
+reading manifest file '../../build/moving_ur3e/moving_ur3e.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/moving_ur3e/moving_ur3e.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ashmu/ros2_ws/build/moving_ur3e/build
+creating /home/ashmu/ros2_ws/build/moving_ur3e/build/lib
+creating /home/ashmu/ros2_ws/build/moving_ur3e/build/lib/moving_ur3e
+copying moving_ur3e/__init__.py -> /home/ashmu/ros2_ws/build/moving_ur3e/build/lib/moving_ur3e
+running install
+running install_lib
+creating /home/ashmu/ros2_ws/install/moving_ur3e/lib/python3.10/site-packages/moving_ur3e
+copying /home/ashmu/ros2_ws/build/moving_ur3e/build/lib/moving_ur3e/__init__.py -> /home/ashmu/ros2_ws/install/moving_ur3e/lib/python3.10/site-packages/moving_ur3e
+byte-compiling /home/ashmu/ros2_ws/install/moving_ur3e/lib/python3.10/site-packages/moving_ur3e/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying resource/moving_ur3e -> /home/ashmu/ros2_ws/install/moving_ur3e/share/ament_index/resource_index/packages
+copying package.xml -> /home/ashmu/ros2_ws/install/moving_ur3e/share/moving_ur3e
+running install_egg_info
+Copying ../../build/moving_ur3e/moving_ur3e.egg-info to /home/ashmu/ros2_ws/install/moving_ur3e/lib/python3.10/site-packages/moving_ur3e-0.0.0-py3.10.egg-info
+running install_scripts
+Installing troll_mover script to /home/ashmu/ros2_ws/install/moving_ur3e/lib/moving_ur3e
+writing list of installed files to '/home/ashmu/ros2_ws/build/moving_ur3e/install.log'

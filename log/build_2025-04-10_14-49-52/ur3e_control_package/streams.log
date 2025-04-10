@@ -1,0 +1,18 @@
+[0.514s] Invoking command in '/home/ashmu/ros2_ws/build/ur3e_control_package': CMAKE_PREFIX_PATH=/home/ashmu/ros2_ws/install/pymoveit2:/home/ashmu/ros2_ws/install/ur_simulation_gazebo:/home/ashmu/ros2_ws/install/ur_description PYTHONPATH=/home/ashmu/ros2_ws/build/ur3e_control_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ashmu/ros2_ws/install/ur3e_control_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ashmu/ros2_ws/build/ur3e_control_package/build --no-deps symlink_data
+[0.711s] running develop
+[0.816s] running egg_info
+[0.816s] writing ur3e_control_package.egg-info/PKG-INFO
+[0.817s] writing dependency_links to ur3e_control_package.egg-info/dependency_links.txt
+[0.817s] writing entry points to ur3e_control_package.egg-info/entry_points.txt
+[0.817s] writing requirements to ur3e_control_package.egg-info/requires.txt
+[0.817s] writing top-level names to ur3e_control_package.egg-info/top_level.txt
+[0.818s] reading manifest file 'ur3e_control_package.egg-info/SOURCES.txt'
+[0.819s] writing manifest file 'ur3e_control_package.egg-info/SOURCES.txt'
+[0.820s] running build_ext
+[0.820s] Creating /home/ashmu/ros2_ws/install/ur3e_control_package/lib/python3.10/site-packages/ur3e-control-package.egg-link (link to .)
+[0.820s] Installing initials_demo script to /home/ashmu/ros2_ws/install/ur3e_control_package/lib/ur3e_control_package
+[0.821s] Installing move_command script to /home/ashmu/ros2_ws/install/ur3e_control_package/lib/ur3e_control_package
+[0.821s] Installing spawn_entities script to /home/ashmu/ros2_ws/install/ur3e_control_package/lib/ur3e_control_package
+[0.821s] 
+[0.821s] Installed /home/ashmu/ros2_ws/build/ur3e_control_package
+[0.821s] running symlink_data

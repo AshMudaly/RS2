@@ -1,0 +1,8 @@
+running develop
+running egg_info
+writing moving_ur3e.egg-info/PKG-INFO
+writing dependency_links to moving_ur3e.egg-info/dependency_links.txt
+writing entry points to moving_ur3e.egg-info/entry_points.txt
+writing requirements to moving_ur3e.egg-info/requires.txt
+writing top-level names to moving_ur3e.egg-info/top_level.txt
+error: package directory 'moving_ur3e' does not exist

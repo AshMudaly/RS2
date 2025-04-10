@@ -4,12 +4,11 @@ import rclpy
 from rclpy.node import Node
 from moveit_commander.robot_trajectory import RobotTrajectory
 from moveit_commander import MoveGroupCommander
-from moveit_commander.robot_trajectory import RobotTrajectory
 from geometry_msgs.msg import PoseStamped
 
-class UR3eMoveToJoint(Node):
+class TrollMovement(Node):  # Rename class to match file purpose
     def __init__(self):
-        super().__init__('ur3e_move_to_joint')
+        super().__init__('trollmovement')  # Use 'trollmovement' for the node name
         
         # Initialize move group commander for the UR3e
         self.move_group = MoveGroupCommander("ur3e_arm")
@@ -34,9 +33,9 @@ class UR3eMoveToJoint(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    ur3e_move = UR3eMoveToJoint()
-    rclpy.spin(ur3e_move)
-    ur3e_move.destroy_node()
+    troll_move = TrollMovement()  # Match the class name here
+    rclpy.spin(troll_move)
+    troll_move.destroy_node()
     rclpy.shutdown()
 
 if __name__ == '__main__':

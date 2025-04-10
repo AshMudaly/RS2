@@ -1,0 +1,22 @@
+[2.501s] Invoking command in '/home/ashmu/ros2_ws/src/moving_ur3e': PYTHONPATH=/home/ashmu/ros2_ws/build/moving_ur3e/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ashmu/ros2_ws/install/moving_ur3e/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/moving_ur3e build --build-base /home/ashmu/ros2_ws/build/moving_ur3e/build install --record /home/ashmu/ros2_ws/build/moving_ur3e/install.log --single-version-externally-managed install_data
+[2.967s] running egg_info
+[2.968s] writing ../../build/moving_ur3e/moving_ur3e.egg-info/PKG-INFO
+[2.969s] writing dependency_links to ../../build/moving_ur3e/moving_ur3e.egg-info/dependency_links.txt
+[2.969s] writing entry points to ../../build/moving_ur3e/moving_ur3e.egg-info/entry_points.txt
+[2.969s] writing requirements to ../../build/moving_ur3e/moving_ur3e.egg-info/requires.txt
+[2.970s] writing top-level names to ../../build/moving_ur3e/moving_ur3e.egg-info/top_level.txt
+[2.973s] reading manifest file '../../build/moving_ur3e/moving_ur3e.egg-info/SOURCES.txt'
+[2.973s] adding license file 'LICENSE'
+[2.974s] writing manifest file '../../build/moving_ur3e/moving_ur3e.egg-info/SOURCES.txt'
+[2.975s] running build
+[2.975s] running build_py
+[2.975s] running install
+[2.975s] running install_lib
+[2.978s] running install_data
+[2.978s] running install_egg_info
+[2.981s] removing '/home/ashmu/ros2_ws/install/moving_ur3e/lib/python3.10/site-packages/moving_ur3e-0.0.0-py3.10.egg-info' (and everything under it)
+[2.982s] Copying ../../build/moving_ur3e/moving_ur3e.egg-info to /home/ashmu/ros2_ws/install/moving_ur3e/lib/python3.10/site-packages/moving_ur3e-0.0.0-py3.10.egg-info
+[2.984s] running install_scripts
+[3.024s] Installing troll_mover script to /home/ashmu/ros2_ws/install/moving_ur3e/lib/moving_ur3e
+[3.025s] writing list of installed files to '/home/ashmu/ros2_ws/build/moving_ur3e/install.log'
+[3.083s] Invoked command in '/home/ashmu/ros2_ws/src/moving_ur3e' returned '0': PYTHONPATH=/home/ashmu/ros2_ws/build/moving_ur3e/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ashmu/ros2_ws/install/moving_ur3e/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/moving_ur3e build --build-base /home/ashmu/ros2_ws/build/moving_ur3e/build install --record /home/ashmu/ros2_ws/build/moving_ur3e/install.log --single-version-externally-managed install_data

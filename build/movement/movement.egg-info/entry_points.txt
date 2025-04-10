@@ -1,3 +1,0 @@
-[console_scripts]
-move_to_joint_state = movement.scripts.move_to_joint_state:main
-
