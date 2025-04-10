@@ -1,0 +1,10 @@
+[0.444s] Invoking command in '/home/ashmu/ros2_ws/build/movement': PYTHONPATH=/home/ashmu/ros2_ws/build/movement/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ashmu/ros2_ws/install/movement/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ashmu/ros2_ws/build/movement/build --no-deps symlink_data
+[0.651s] running develop
+[0.760s] running egg_info
+[0.760s] writing movement.egg-info/PKG-INFO
+[0.760s] writing dependency_links to movement.egg-info/dependency_links.txt
+[0.760s] writing entry points to movement.egg-info/entry_points.txt
+[0.760s] writing requirements to movement.egg-info/requires.txt
+[0.761s] writing top-level names to movement.egg-info/top_level.txt
+[0.762s] error: package directory 'movement' does not exist
+[0.823s] Invoked command in '/home/ashmu/ros2_ws/build/movement' returned '1': PYTHONPATH=/home/ashmu/ros2_ws/build/movement/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ashmu/ros2_ws/install/movement/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ashmu/ros2_ws/build/movement/build --no-deps symlink_data
