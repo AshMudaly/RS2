@@ -1,0 +1,12 @@
+package.xml
+setup.cfg
+setup.py
+moving_ur3e.egg-info/PKG-INFO
+moving_ur3e.egg-info/SOURCES.txt
+moving_ur3e.egg-info/dependency_links.txt
+moving_ur3e.egg-info/entry_points.txt
+moving_ur3e.egg-info/requires.txt
+moving_ur3e.egg-info/top_level.txt
+moving_ur3e.egg-info/zip-safe
+resource/moving_ur3e
+scripts/trollmovement.py

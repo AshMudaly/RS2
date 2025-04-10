@@ -1,6 +1,0 @@
-source;share/moving_ur3e/hook/pythonpath.ps1
-source;share/moving_ur3e/hook/pythonpath.dsv
-source;share/moving_ur3e/hook/pythonpath.sh
-source;share/moving_ur3e/hook/ament_prefix_path.ps1
-source;share/moving_ur3e/hook/ament_prefix_path.dsv
-source;share/moving_ur3e/hook/ament_prefix_path.sh
