@@ -1,3 +1,0 @@
-[console_scripts]
-troll_mover = moving_ur3e.scripts.trollmovement:main
-

@@ -1,7 +1,0 @@
-# Ignore specific repositories and directories
-/src/Universal_Robots_ROS2_Description/
-/src/Universal_Robots_ROS2_Gazebo_Simulation/
-/src/pymoveit2/
-/src/ur3e-codebase/
-
-
