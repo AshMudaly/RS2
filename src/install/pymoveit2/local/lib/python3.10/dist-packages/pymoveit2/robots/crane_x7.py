@@ -1,1 +1,0 @@
-/home/ashmu/ros2_ws/src/pymoveit2/pymoveit2/robots/crane_x7.py

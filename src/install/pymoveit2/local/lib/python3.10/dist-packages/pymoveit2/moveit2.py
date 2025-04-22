@@ -1,1 +1,0 @@
-/home/ashmu/ros2_ws/src/pymoveit2/pymoveit2/moveit2.py
