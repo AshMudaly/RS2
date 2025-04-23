@@ -1,0 +1,24 @@
+[0.667s] Invoking command in '/home/ashmu/ros2_ws/RS2/build/my_ur3_controller': PYTHONPATH=/home/ashmu/ros2_ws/RS2/build/my_ur3_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ashmu/ros2_ws/RS2/install/my_ur3_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ashmu/ros2_ws/RS2/build/my_ur3_controller/build --no-deps symlink_data
+[0.840s] running develop
+[0.938s] running egg_info
+[0.938s] creating my_ur3_controller.egg-info
+[0.938s] writing my_ur3_controller.egg-info/PKG-INFO
+[0.939s] writing dependency_links to my_ur3_controller.egg-info/dependency_links.txt
+[0.939s] writing entry points to my_ur3_controller.egg-info/entry_points.txt
+[0.939s] writing requirements to my_ur3_controller.egg-info/requires.txt
+[0.939s] writing top-level names to my_ur3_controller.egg-info/top_level.txt
+[0.939s] writing manifest file 'my_ur3_controller.egg-info/SOURCES.txt'
+[0.941s] reading manifest file 'my_ur3_controller.egg-info/SOURCES.txt'
+[0.941s] writing manifest file 'my_ur3_controller.egg-info/SOURCES.txt'
+[0.942s] running build_ext
+[0.943s] Creating /home/ashmu/ros2_ws/RS2/install/my_ur3_controller/lib/python3.10/site-packages/my-ur3-controller.egg-link (link to .)
+[0.943s] Installing spawn_node script to /home/ashmu/ros2_ws/RS2/install/my_ur3_controller/lib/my_ur3_controller
+[0.943s] 
+[0.943s] Installed /home/ashmu/ros2_ws/RS2/build/my_ur3_controller
+[0.943s] running symlink_data
+[0.943s] creating /home/ashmu/ros2_ws/RS2/install/my_ur3_controller/share/ament_index
+[0.943s] creating /home/ashmu/ros2_ws/RS2/install/my_ur3_controller/share/ament_index/resource_index
+[0.943s] creating /home/ashmu/ros2_ws/RS2/install/my_ur3_controller/share/ament_index/resource_index/packages
+[0.943s] symbolically linking /home/ashmu/ros2_ws/RS2/build/my_ur3_controller/resource/my_ur3_controller -> /home/ashmu/ros2_ws/RS2/install/my_ur3_controller/share/ament_index/resource_index/packages
+[0.943s] symbolically linking /home/ashmu/ros2_ws/RS2/build/my_ur3_controller/package.xml -> /home/ashmu/ros2_ws/RS2/install/my_ur3_controller/share/my_ur3_controller
+[0.983s] Invoked command in '/home/ashmu/ros2_ws/RS2/build/my_ur3_controller' returned '0': PYTHONPATH=/home/ashmu/ros2_ws/RS2/build/my_ur3_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ashmu/ros2_ws/RS2/install/my_ur3_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ashmu/ros2_ws/RS2/build/my_ur3_controller/build --no-deps symlink_data

@@ -1,0 +1,22 @@
+[0.664s] Invoking command in '/home/ashmu/ros2_ws/RS2/build/ur3e_spawn_pkg': PYTHONPATH=/home/ashmu/ros2_ws/RS2/build/ur3e_spawn_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ashmu/ros2_ws/RS2/install/ur3e_spawn_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ashmu/ros2_ws/RS2/build/ur3e_spawn_pkg/build --no-deps symlink_data
+[0.833s] running develop
+[0.930s] running egg_info
+[0.930s] creating ur3e_spawn_pkg.egg-info
+[0.930s] writing ur3e_spawn_pkg.egg-info/PKG-INFO
+[0.931s] writing dependency_links to ur3e_spawn_pkg.egg-info/dependency_links.txt
+[0.931s] writing entry points to ur3e_spawn_pkg.egg-info/entry_points.txt
+[0.931s] writing requirements to ur3e_spawn_pkg.egg-info/requires.txt
+[0.931s] writing top-level names to ur3e_spawn_pkg.egg-info/top_level.txt
+[0.931s] writing manifest file 'ur3e_spawn_pkg.egg-info/SOURCES.txt'
+[0.934s] reading manifest file 'ur3e_spawn_pkg.egg-info/SOURCES.txt'
+[0.934s] writing manifest file 'ur3e_spawn_pkg.egg-info/SOURCES.txt'
+[0.935s] running build_ext
+[0.936s] Creating /home/ashmu/ros2_ws/RS2/install/ur3e_spawn_pkg/lib/python3.10/site-packages/ur3e-spawn-pkg.egg-link (link to .)
+[0.936s] Installing spawn_ur3e script to /home/ashmu/ros2_ws/RS2/install/ur3e_spawn_pkg/lib/ur3e_spawn_pkg
+[0.937s] 
+[0.937s] Installed /home/ashmu/ros2_ws/RS2/build/ur3e_spawn_pkg
+[0.937s] running symlink_data
+[0.937s] symbolically linking /home/ashmu/ros2_ws/RS2/build/ur3e_spawn_pkg/package.xml -> /home/ashmu/ros2_ws/RS2/install/ur3e_spawn_pkg/share/ur3e_spawn_pkg
+[0.937s] creating /home/ashmu/ros2_ws/RS2/install/ur3e_spawn_pkg/share/ur3e_spawn_pkg/launch
+[0.937s] symbolically linking /home/ashmu/ros2_ws/RS2/build/ur3e_spawn_pkg/launch/spawn_ur3e.launch.py -> /home/ashmu/ros2_ws/RS2/install/ur3e_spawn_pkg/share/ur3e_spawn_pkg/launch
+[0.987s] Invoked command in '/home/ashmu/ros2_ws/RS2/build/ur3e_spawn_pkg' returned '0': PYTHONPATH=/home/ashmu/ros2_ws/RS2/build/ur3e_spawn_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ashmu/ros2_ws/RS2/install/ur3e_spawn_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ashmu/ros2_ws/RS2/build/ur3e_spawn_pkg/build --no-deps symlink_data
