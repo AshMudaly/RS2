@@ -1,0 +1,3 @@
+source;share/svg_generation/environment/ament_prefix_path.sh
+source;share/svg_generation/environment/path.sh
+source;share/svg_generation/environment/pythonpath.sh

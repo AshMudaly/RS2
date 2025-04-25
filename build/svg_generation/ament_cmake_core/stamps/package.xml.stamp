@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>svg_generation</name>
+  <version>0.0.0</version>
+  <description>SVG Generation for Visualization in RViz</description>
+  <maintainer email="your_email@example.com">Your Name</maintainer>
+  <license>MIT</license>
+
+  <!-- ROS 2 dependencies -->
+  <depend>rclpy</depend>  <!-- ROS 2 Python client library -->
+  <depend>visualization_msgs</depend>  <!-- For Marker messages -->
+  
+  <!-- Additional dependencies for the SVG parsing -->
+  <exec_depend>svgpathtools</exec_depend>  <!-- To parse SVG files -->
+  
+  <!-- Build dependencies -->
+  <build_depend>ament_cmake</build_depend>
+  <build_depend>rosidl_default_generators</build_depend>
+  
+  <!-- Test dependencies if any -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+</package>
+

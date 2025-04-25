@@ -1,0 +1,10 @@
+Built target ament_cmake_python_copy_svg_generation_setup
+Built target ament_cmake_python_copy_svg_generation
+running egg_info
+writing svg_generation.egg-info/PKG-INFO
+writing dependency_links to svg_generation.egg-info/dependency_links.txt
+writing top-level names to svg_generation.egg-info/top_level.txt
+reading manifest file 'svg_generation.egg-info/SOURCES.txt'
+writing manifest file 'svg_generation.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_svg_generation_egg
+-- Install configuration: ""

@@ -1,0 +1,6 @@
+[31mCMake Error at cmake_install.cmake:46 (file):
+  file INSTALL cannot find
+  "/home/ashmu/ros2_ws/RS2/src/svg_generation/scripts/svg_reader.py": No such
+  file or directory.
+
+[0m

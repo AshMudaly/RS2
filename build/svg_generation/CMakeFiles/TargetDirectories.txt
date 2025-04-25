@@ -1,0 +1,12 @@
+/home/ashmu/ros2_ws/RS2/build/svg_generation/CMakeFiles/uninstall.dir
+/home/ashmu/ros2_ws/RS2/build/svg_generation/CMakeFiles/svg_generation_uninstall.dir
+/home/ashmu/ros2_ws/RS2/build/svg_generation/CMakeFiles/ament_cmake_python_copy_svg_generation.dir
+/home/ashmu/ros2_ws/RS2/build/svg_generation/CMakeFiles/ament_cmake_python_copy_svg_generation_setup.dir
+/home/ashmu/ros2_ws/RS2/build/svg_generation/CMakeFiles/ament_cmake_python_build_svg_generation_egg.dir
+/home/ashmu/ros2_ws/RS2/build/svg_generation/CMakeFiles/test.dir
+/home/ashmu/ros2_ws/RS2/build/svg_generation/CMakeFiles/edit_cache.dir
+/home/ashmu/ros2_ws/RS2/build/svg_generation/CMakeFiles/rebuild_cache.dir
+/home/ashmu/ros2_ws/RS2/build/svg_generation/CMakeFiles/list_install_components.dir
+/home/ashmu/ros2_ws/RS2/build/svg_generation/CMakeFiles/install.dir
+/home/ashmu/ros2_ws/RS2/build/svg_generation/CMakeFiles/install/local.dir
+/home/ashmu/ros2_ws/RS2/build/svg_generation/CMakeFiles/install/strip.dir

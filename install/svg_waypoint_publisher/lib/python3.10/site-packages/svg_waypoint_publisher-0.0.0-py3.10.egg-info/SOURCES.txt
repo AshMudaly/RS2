@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/svg_waypoint_publisher/svg_waypoint_publisher.egg-info/PKG-INFO
+../../build/svg_waypoint_publisher/svg_waypoint_publisher.egg-info/SOURCES.txt
+../../build/svg_waypoint_publisher/svg_waypoint_publisher.egg-info/dependency_links.txt
+../../build/svg_waypoint_publisher/svg_waypoint_publisher.egg-info/entry_points.txt
+../../build/svg_waypoint_publisher/svg_waypoint_publisher.egg-info/requires.txt
+../../build/svg_waypoint_publisher/svg_waypoint_publisher.egg-info/top_level.txt
+../../build/svg_waypoint_publisher/svg_waypoint_publisher.egg-info/zip-safe
+resource/svg_waypoint_publisher
+svg_waypoint_publisher/__init__.py
+svg_waypoint_publisher/waypoint_publisher.py
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

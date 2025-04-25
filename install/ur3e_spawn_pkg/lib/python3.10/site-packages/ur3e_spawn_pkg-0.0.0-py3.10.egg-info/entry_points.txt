@@ -1,3 +1,0 @@
-[console_scripts]
-spawn_ur3e = ur3e_spawn_pkg.spawn_ur3e:main
-

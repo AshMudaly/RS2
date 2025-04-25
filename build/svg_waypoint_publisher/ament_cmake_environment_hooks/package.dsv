@@ -1,0 +1,4 @@
+source;share/svg_waypoint_publisher/local_setup.bash
+source;share/svg_waypoint_publisher/local_setup.dsv
+source;share/svg_waypoint_publisher/local_setup.sh
+source;share/svg_waypoint_publisher/local_setup.zsh

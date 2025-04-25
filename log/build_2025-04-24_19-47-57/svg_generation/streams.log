@@ -1,0 +1,42 @@
+[0.025s] Invoking command in '/home/ashmu/ros2_ws/RS2/build/svg_generation': /usr/bin/cmake --build /home/ashmu/ros2_ws/RS2/build/svg_generation -- -j12 -l12
+[0.136s] Built target ament_cmake_python_copy_svg_generation_setup
+[0.136s] Built target ament_cmake_python_copy_svg_generation
+[0.328s] running egg_info
+[0.328s] writing svg_generation.egg-info/PKG-INFO
+[0.328s] writing dependency_links to svg_generation.egg-info/dependency_links.txt
+[0.328s] writing top-level names to svg_generation.egg-info/top_level.txt
+[0.331s] reading manifest file 'svg_generation.egg-info/SOURCES.txt'
+[0.331s] writing manifest file 'svg_generation.egg-info/SOURCES.txt'
+[0.368s] Built target ament_cmake_python_build_svg_generation_egg
+[0.388s] Invoked command in '/home/ashmu/ros2_ws/RS2/build/svg_generation' returned '0': /usr/bin/cmake --build /home/ashmu/ros2_ws/RS2/build/svg_generation -- -j12 -l12
+[0.401s] Invoking command in '/home/ashmu/ros2_ws/RS2/build/svg_generation': /usr/bin/cmake --install /home/ashmu/ros2_ws/RS2/build/svg_generation
+[0.412s] -- Install configuration: ""
+[0.412s] -- Installing: /home/ashmu/ros2_ws/RS2/install/svg_generation/lib/svg_generation/svg_reader.py
+[0.412s] -- Up-to-date: /home/ashmu/ros2_ws/RS2/install/svg_generation/share/svg_generation/environment/pythonpath.sh
+[0.412s] -- Up-to-date: /home/ashmu/ros2_ws/RS2/install/svg_generation/share/svg_generation/environment/pythonpath.dsv
+[0.412s] -- Up-to-date: /home/ashmu/ros2_ws/RS2/install/svg_generation/local/lib/python3.10/dist-packages/svg_generation-0.0.0-py3.10.egg-info
+[0.412s] -- Installing: /home/ashmu/ros2_ws/RS2/install/svg_generation/local/lib/python3.10/dist-packages/svg_generation-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.412s] -- Installing: /home/ashmu/ros2_ws/RS2/install/svg_generation/local/lib/python3.10/dist-packages/svg_generation-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.412s] -- Installing: /home/ashmu/ros2_ws/RS2/install/svg_generation/local/lib/python3.10/dist-packages/svg_generation-0.0.0-py3.10.egg-info/PKG-INFO
+[0.412s] -- Installing: /home/ashmu/ros2_ws/RS2/install/svg_generation/local/lib/python3.10/dist-packages/svg_generation-0.0.0-py3.10.egg-info/top_level.txt
+[0.412s] -- Up-to-date: /home/ashmu/ros2_ws/RS2/install/svg_generation/local/lib/python3.10/dist-packages/svg_generation
+[0.413s] -- Installing: /home/ashmu/ros2_ws/RS2/install/svg_generation/local/lib/python3.10/dist-packages/svg_generation/svg_reader.py
+[0.413s] -- Up-to-date: /home/ashmu/ros2_ws/RS2/install/svg_generation/local/lib/python3.10/dist-packages/svg_generation/__init__.py
+[0.446s] Listing '/home/ashmu/ros2_ws/RS2/install/svg_generation/local/lib/python3.10/dist-packages/svg_generation'...
+[0.446s] Compiling '/home/ashmu/ros2_ws/RS2/install/svg_generation/local/lib/python3.10/dist-packages/svg_generation/svg_reader.py'...
+[0.449s] -- Up-to-date: /home/ashmu/ros2_ws/RS2/install/svg_generation/share/ament_index/resource_index/package_run_dependencies/svg_generation
+[0.450s] -- Up-to-date: /home/ashmu/ros2_ws/RS2/install/svg_generation/share/ament_index/resource_index/parent_prefix_path/svg_generation
+[0.450s] -- Up-to-date: /home/ashmu/ros2_ws/RS2/install/svg_generation/share/svg_generation/environment/ament_prefix_path.sh
+[0.450s] -- Up-to-date: /home/ashmu/ros2_ws/RS2/install/svg_generation/share/svg_generation/environment/ament_prefix_path.dsv
+[0.450s] -- Up-to-date: /home/ashmu/ros2_ws/RS2/install/svg_generation/share/svg_generation/environment/path.sh
+[0.450s] -- Up-to-date: /home/ashmu/ros2_ws/RS2/install/svg_generation/share/svg_generation/environment/path.dsv
+[0.450s] -- Up-to-date: /home/ashmu/ros2_ws/RS2/install/svg_generation/share/svg_generation/local_setup.bash
+[0.450s] -- Up-to-date: /home/ashmu/ros2_ws/RS2/install/svg_generation/share/svg_generation/local_setup.sh
+[0.450s] -- Up-to-date: /home/ashmu/ros2_ws/RS2/install/svg_generation/share/svg_generation/local_setup.zsh
+[0.450s] -- Up-to-date: /home/ashmu/ros2_ws/RS2/install/svg_generation/share/svg_generation/local_setup.dsv
+[0.450s] -- Installing: /home/ashmu/ros2_ws/RS2/install/svg_generation/share/svg_generation/package.dsv
+[0.451s] -- Up-to-date: /home/ashmu/ros2_ws/RS2/install/svg_generation/share/ament_index/resource_index/packages/svg_generation
+[0.451s] -- Up-to-date: /home/ashmu/ros2_ws/RS2/install/svg_generation/share/svg_generation/cmake/svg_generationConfig.cmake
+[0.451s] -- Up-to-date: /home/ashmu/ros2_ws/RS2/install/svg_generation/share/svg_generation/cmake/svg_generationConfig-version.cmake
+[0.451s] -- Up-to-date: /home/ashmu/ros2_ws/RS2/install/svg_generation/share/svg_generation/package.xml
+[0.453s] Invoked command in '/home/ashmu/ros2_ws/RS2/build/svg_generation' returned '0': /usr/bin/cmake --install /home/ashmu/ros2_ws/RS2/build/svg_generation

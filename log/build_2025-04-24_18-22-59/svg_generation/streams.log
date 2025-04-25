@@ -1,0 +1,20 @@
+[0.008s] Invoking command in '/home/ashmu/ros2_ws/RS2/build/svg_generation': /usr/bin/cmake --build /home/ashmu/ros2_ws/RS2/build/svg_generation -- -j12 -l12
+[0.052s] Built target ament_cmake_python_copy_svg_generation_setup
+[0.055s] Built target ament_cmake_python_copy_svg_generation
+[0.192s] running egg_info
+[0.193s] writing svg_generation.egg-info/PKG-INFO
+[0.193s] writing dependency_links to svg_generation.egg-info/dependency_links.txt
+[0.193s] writing top-level names to svg_generation.egg-info/top_level.txt
+[0.194s] reading manifest file 'svg_generation.egg-info/SOURCES.txt'
+[0.194s] writing manifest file 'svg_generation.egg-info/SOURCES.txt'
+[0.212s] Built target ament_cmake_python_build_svg_generation_egg
+[0.221s] Invoked command in '/home/ashmu/ros2_ws/RS2/build/svg_generation' returned '0': /usr/bin/cmake --build /home/ashmu/ros2_ws/RS2/build/svg_generation -- -j12 -l12
+[0.230s] Invoking command in '/home/ashmu/ros2_ws/RS2/build/svg_generation': /usr/bin/cmake --install /home/ashmu/ros2_ws/RS2/build/svg_generation
+[0.237s] -- Install configuration: ""
+[0.237s] [31mCMake Error at cmake_install.cmake:46 (file):
+[0.237s]   file INSTALL cannot find
+[0.237s]   "/home/ashmu/ros2_ws/RS2/src/svg_generation/scripts/svg_reader.py": No such
+[0.237s]   file or directory.
+[0.237s] 
+[0.237s] [0m
+[0.238s] Invoked command in '/home/ashmu/ros2_ws/RS2/build/svg_generation' returned '1': /usr/bin/cmake --install /home/ashmu/ros2_ws/RS2/build/svg_generation
