@@ -1,56 +1,64 @@
 import rclpy
 from rclpy.node import Node
-from geometry_msgs.msg import Pose
-from svgpathtools import svg2paths
+from visualization_msgs.msg import Marker, MarkerArray
 import numpy as np
-import tf_transformations
+from svgpathtools import svg2paths2
+import os
+import sys
+from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy
 
 
 class SVGPosePublisher(Node):
     def __init__(self):
-        super().__init__('svg_waypoint_publisher')
-        self.publisher_ = self.create_publisher(Pose, 'ur3e_target_pose', 10)
-        self.timer = self.create_timer(1.0, self.publish_next_pose)
+        super().__init__('svg_pose_publisher')
+        marker_pub = self.create_publisher(MarkerArray, 'visualization_marker_array', 10)
 
-        # Load and process SVG
-        self.poses = self.load_svg_as_poses('output.svg')
-        self.index = 0
+        # Path to output.svg in ros2_ws
+        self.svg_path = os.path.join('/home/ashmu/ros2_ws', 'output.svg')
+        if not os.path.exists(self.svg_path):
+            self.get_logger().error(f"SVG file not found at {self.svg_path}")
+            sys.exit(1)
 
-    def load_svg_as_poses(self, filename):
-        poses = []
-        paths, _ = svg2paths(filename)
+        self.all_markers = self.load_svg_paths()
+        marker_pub.publish(self.all_markers)
+        self.get_logger().info("Published all markers from SVG")
+
+    def load_svg_paths(self):
+        markers = MarkerArray()
+        paths, attributes, svg_attributes = svg2paths2(self.svg_path)
+        self.get_logger().info(f"SVG loaded with {len(paths)} paths")
+
+        marker_id = 0
         for path in paths:
             for i in np.linspace(0, 1, 100):
                 point = path.point(i)
-
-                pose = Pose()
-                pose.position.x = point.real * 0.001  # mm to m
-                pose.position.y = -point.imag * 0.001  # invert y for UR3e
-                pose.position.z = 0.0  # assume flat
-
-                # Orientation: down-facing tool (adjust if needed)
-                q = tf_transformations.quaternion_from_euler(0, 3.14, 0)
-                pose.orientation.x = q[0]
-                pose.orientation.y = q[1]
-                pose.orientation.z = q[2]
-                pose.orientation.w = q[3]
-
-                poses.append(pose)
-        return poses
-
-    def publish_next_pose(self):
-        if self.index < len(self.poses):
-            pose = self.poses[self.index]
-            self.publisher_.publish(pose)
-            self.get_logger().info(f'Published pose {self.index + 1}/{len(self.poses)}')
-            self.index += 1
-        else:
-            self.get_logger().info("Finished publishing all poses.")
+                marker = Marker()
+                marker.header.frame_id = 'map'
+                marker.header.stamp = self.get_clock().now().to_msg()
+                marker.ns = 'svg_waypoints'
+                marker.id = marker_id
+                marker.type = Marker.SPHERE
+                marker.action = Marker.ADD
+                marker.pose.position.x = point.real * 0.001
+                marker.pose.position.y = -point.imag * 0.001
+                marker.pose.position.z = 0.0
+                marker.scale.x = 0.01
+                marker.scale.y = 0.01
+                marker.scale.z = 0.01
+                marker.color.r = 0.0
+                marker.color.g = 0.5
+                marker.color.b = 1.0
+                marker.color.a = 1.0
+                markers.markers.append(marker)
+                marker_id += 1
+        return markers
 
 
 def main(args=None):
     rclpy.init(args=args)
-    node = SVGPosePublisher()
-    rclpy.spin(node)
-    node.destroy_node()
-    rclpy.shutdown()
+    try:
+        node = SVGPosePublisher()
+        rclpy.spin(node)
+        node.destroy_node()
+    finally:
+        rclpy.shutdown()
