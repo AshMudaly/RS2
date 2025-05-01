@@ -1,8 +1,0 @@
-setup.cfg
-setup.py
-svg_generation/__init__.py
-svg_generation/svg_reader.py
-svg_generation.egg-info/PKG-INFO
-svg_generation.egg-info/SOURCES.txt
-svg_generation.egg-info/dependency_links.txt
-svg_generation.egg-info/top_level.txt

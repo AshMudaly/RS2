@@ -1,4 +1,0 @@
-Invoking command in '/home/ashmu/ros2_ws/RS2/build/svg_generation': /usr/bin/cmake --build /home/ashmu/ros2_ws/RS2/build/svg_generation -- -j12 -l12
-Invoked command in '/home/ashmu/ros2_ws/RS2/build/svg_generation' returned '0': /usr/bin/cmake --build /home/ashmu/ros2_ws/RS2/build/svg_generation -- -j12 -l12
-Invoking command in '/home/ashmu/ros2_ws/RS2/build/svg_generation': /usr/bin/cmake --install /home/ashmu/ros2_ws/RS2/build/svg_generation
-Invoked command in '/home/ashmu/ros2_ws/RS2/build/svg_generation' returned '1': /usr/bin/cmake --install /home/ashmu/ros2_ws/RS2/build/svg_generation

@@ -1,64 +1,78 @@
 import rclpy
 from rclpy.node import Node
+from geometry_msgs.msg import PoseStamped, Point
 from visualization_msgs.msg import Marker, MarkerArray
-import numpy as np
-from svgpathtools import svg2paths2
+from svgpathtools import svg2paths2, Line, Arc
 import os
+import cmath
 import sys
-from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy
-
 
 class SVGPosePublisher(Node):
     def __init__(self):
-        super().__init__('svg_pose_publisher')
-        marker_pub = self.create_publisher(MarkerArray, 'visualization_marker_array', 10)
+        super().__init__('svg_waypoint_publisher')
+        self.waypoint_pub = self.create_publisher(Marker, 'svg_waypoints', 10) # Changed to Marker
 
-        # Path to output.svg in ros2_ws
-        self.svg_path = os.path.join('/home/ashmu/ros2_ws', 'output.svg')
-        if not os.path.exists(self.svg_path):
-            self.get_logger().error(f"SVG file not found at {self.svg_path}")
-            sys.exit(1)
+        # ... (rest of your __init__ code) ...
 
-        self.all_markers = self.load_svg_paths()
-        marker_pub.publish(self.all_markers)
-        self.get_logger().info("Published all markers from SVG")
-
-    def load_svg_paths(self):
-        markers = MarkerArray()
-        paths, attributes, svg_attributes = svg2paths2(self.svg_path)
-        self.get_logger().info(f"SVG loaded with {len(paths)} paths")
-
+    def process_svg_and_publish(self):
+        # ... (rest of your process_svg_and_publish code) ...
         marker_id = 0
-        for path in paths:
-            for i in np.linspace(0, 1, 100):
-                point = path.point(i)
-                marker = Marker()
-                marker.header.frame_id = 'map'
-                marker.header.stamp = self.get_clock().now().to_msg()
-                marker.ns = 'svg_waypoints'
-                marker.id = marker_id
-                marker.type = Marker.SPHERE
-                marker.action = Marker.ADD
-                marker.pose.position.x = point.real * 0.001
-                marker.pose.position.y = -point.imag * 0.001
-                marker.pose.position.z = 0.0
-                marker.scale.x = 0.01
-                marker.scale.y = 0.01
-                marker.scale.z = 0.01
-                marker.color.r = 0.0
-                marker.color.g = 0.5
-                marker.color.b = 1.0
-                marker.color.a = 1.0
-                markers.markers.append(marker)
-                marker_id += 1
-        return markers
 
+        for path, attr in zip(paths, attributes):
+            # ... (rest of the path processing) ...
+
+            for segment in path:
+                if isinstance(segment, Line):
+                    start = segment.start
+                    end = segment.end
+                    self.publish_waypoint(start.real * 0.001, -start.imag * 0.001, marker_id)
+                    marker_id += 1
+                    self.publish_waypoint(end.real * 0.001, -end.imag * 0.001, marker_id)
+                    marker_id += 1
+                elif isinstance(segment, Arc):
+                    n_points = 20
+                    for i in range(n_points + 1):
+                        t = i / n_points
+                        point = segment.point(t)
+                        self.publish_waypoint(point.real * 0.001, -point.imag * 0.001, marker_id)
+                        marker_id += 1
+                # ... (rest of segment processing) ...
+
+    def publish_waypoint(self, x, y, marker_id):
+        marker = Marker()
+        marker.header.frame_id = 'map'
+        marker.header.stamp = self.get_clock().now().to_msg()
+        marker.ns = 'svg_waypoints'
+        marker.id = marker_id
+        marker.type = Marker.SPHERE
+        marker.action = Marker.ADD
+        marker.pose.position.x = x
+        marker.pose.position.y = y
+        marker.pose.position.z = 0.0
+        marker.pose.orientation.w = 1.0
+        marker.scale.x = 0.01
+        marker.scale.y = 0.01
+        marker.scale.z = 0.01
+        marker.color.r = 1.0
+        marker.color.g = 0.0
+        marker.color.b = 0.0
+        marker.color.a = 1.0
+        self.waypoint_pub.publish(marker)
+        self.get_logger().info(f"Published waypoint: x={x:.3f}, y={y:.3f}, id={marker_id}")
+
+    # Removed create_waypoint_marker and waypoint_marker_array_pub
 
 def main(args=None):
     rclpy.init(args=args)
     try:
         node = SVGPosePublisher()
         rclpy.spin(node)
-        node.destroy_node()
+    except KeyboardInterrupt:
+        node.get_logger().info('Shutting down node')
     finally:
+        if 'node' in locals():
+            node.destroy_node()
         rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()

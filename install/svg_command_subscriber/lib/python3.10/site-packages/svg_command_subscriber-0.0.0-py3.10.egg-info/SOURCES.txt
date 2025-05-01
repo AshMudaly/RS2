@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/svg_command_subscriber/svg_command_subscriber.egg-info/PKG-INFO
+../../build/svg_command_subscriber/svg_command_subscriber.egg-info/SOURCES.txt
+../../build/svg_command_subscriber/svg_command_subscriber.egg-info/dependency_links.txt
+../../build/svg_command_subscriber/svg_command_subscriber.egg-info/entry_points.txt
+../../build/svg_command_subscriber/svg_command_subscriber.egg-info/requires.txt
+../../build/svg_command_subscriber/svg_command_subscriber.egg-info/top_level.txt
+../../build/svg_command_subscriber/svg_command_subscriber.egg-info/zip-safe
+resource/svg_command_subscriber
+svg_command_subscriber/__init__.py
+svg_command_subscriber/command_subscriber.py
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

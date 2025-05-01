@@ -1,9 +1,0 @@
-/home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/CMakeFiles/uninstall.dir
-/home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/CMakeFiles/svg_waypoint_publisher_uninstall.dir
-/home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/CMakeFiles/test.dir
-/home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/CMakeFiles/edit_cache.dir
-/home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/CMakeFiles/rebuild_cache.dir
-/home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/CMakeFiles/list_install_components.dir
-/home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/CMakeFiles/install.dir
-/home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/CMakeFiles/install/local.dir
-/home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/CMakeFiles/install/strip.dir

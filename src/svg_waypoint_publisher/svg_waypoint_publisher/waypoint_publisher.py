@@ -4,197 +4,134 @@ from geometry_msgs.msg import PoseStamped, Point
 from visualization_msgs.msg import Marker, MarkerArray
 import numpy as np
 import tf_transformations
-from svgpathtools import svg2paths2, Line, Arc
+from svgpathtools import svg2paths2, Line, Arc  # Import necessary classes
 import os
 import cmath
 from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy
-import time  # Import time for debugging
-import sys  # Import sys
-
+import sys
 
 class SVGPosePublisher(Node):
     def __init__(self):
-        super().__init__('svg_waypoint_publisher')
-        pose_qos = QoSProfile(
-            reliability=ReliabilityPolicy.RELIABLE,
-            history=HistoryPolicy.KEEP_LAST,
-            depth=10
-        )
-        self.publisher_ = self.create_publisher(PoseStamped, 'ur3e_target_pose',
-                                                qos_profile=pose_qos)
-        self.marker_pub = self.create_publisher(MarkerArray, 'visualization_marker_array', 10)
-        self.path_pub_ = self.create_publisher(MarkerArray, 'svg_path_marker_array', 10)  # New publisher for the SVG path
+        super().__init__('svg_waypoint_publisher')  # Node name is 'svg_waypoint_publisher'
+        self.marker_array_pub = self.create_publisher(MarkerArray, 'visualization_marker_array', 10)
+        self.waypoint_marker_array_pub = self.create_publisher(MarkerArray, 'svg_waypoints', 10)
 
-        # Use a parameter for the SVG file path (more flexible)
-        self.declare_parameter('svg_file', 'output.svg')  # Default value
-        self.svg_file = self.get_parameter('svg_file')._value
+        # Declare and get the SVG file path
+        self.declare_parameter('svg_file', 'output.svg')  # Default value is 'shape.svg'
+        self.svg_file = self.get_parameter('svg_file').get_parameter_value().string_value
         self.get_logger().info(f"Using SVG file: {self.svg_file}")
 
-        # Construct the SVG path.
+        # Construct the full path to the SVG file
         self.svg_path = os.path.join('/home/ashmu/ros2_ws', self.svg_file)
 
         if not os.path.exists(self.svg_path):
             self.get_logger().error(f"SVG file not found at {self.svg_path}")
             sys.exit(1)
 
-        self.poses = self.load_svg_black_paths(self.svg_path)
-        self.all_markers = self.create_markers(self.poses)
-        self.publish_all_markers()
-        self.path_markers = self.create_path_markers(self.svg_path)  # Create path markers
-        self.publish_path_markers() # Publish path markers
-        self.timer = self.create_timer(0.1, self.publish_next_pose)
-        self.index = 0
-        self.last_published_time = time.time()
+        self.process_svg_and_publish()
 
-    def load_svg_black_paths(self, filename):
-        poses = []
-        paths, attributes, svg_attributes = svg2paths2(filename)
-        self.get_logger().info(f"SVG loaded with {len(paths)} paths")
-        distance_threshold = 0.01
-        sampling_distance = 0.1  # Increased sampling distance for fewer waypoints
-        last_pose = None
+    def process_svg_and_publish(self):
+        markers = MarkerArray()
+        waypoint_markers = MarkerArray()
+        paths, attributes, svg_attributes = svg2paths2(self.svg_path)
+        line_marker_id = 0
+        waypoint_marker_id = 0
 
         for path, attr in zip(paths, attributes):
             color = attr.get('stroke', '').lower()
+            self.get_logger().info(f"Path color: {color}")
             if color != '#000000' and color != 'black':
                 continue
-            path_length = path.length()
-            num_samples = int(path_length / sampling_distance) + 1
 
-            for i in np.linspace(0, 1, num_samples):
-                point = path.point(i)
-                if last_pose is not None:
-                    distance = np.sqrt(
-                        (point.real - last_pose[0]) ** 2 +
-                        (point.imag - last_pose[1]) ** 2
-                    )
-                    if distance < distance_threshold:
-                        continue
-                tangent = path.derivative(i)
-                angle = cmath.phase(tangent)
-                roll = 0.0
-                pitch = 0.0
-                yaw = angle
-                pose_stamped = PoseStamped()
-                pose_stamped.header.frame_id = 'map'
-                pose_stamped.header.stamp = self.get_clock().now().to_msg()
-                pose_stamped.pose.position.x = point.real * 0.001
-                pose_stamped.pose.position.y = -point.imag * 0.001
-                pose_stamped.pose.position.z = 0.0
-                q = tf_transformations.quaternion_from_euler(roll, pitch, yaw)
-                pose_stamped.pose.orientation.x = q[0]
-                pose_stamped.pose.orientation.y = q[1]
-                pose_stamped.pose.orientation.z = q[2]
-                pose_stamped.pose.orientation.w = q[3]
-                poses.append(pose_stamped)
-                last_pose = (point.real, point.imag)
-        self.get_logger().info(f"Generated {len(poses)} poses from black paths")
-        return poses
+            line_marker = Marker()
+            line_marker.header.frame_id = 'map'
+            line_marker.header.stamp = self.get_clock().now().to_msg()
+            line_marker.ns = 'svg_paths'
+            line_marker.id = line_marker_id
+            line_marker.type = Marker.LINE_STRIP
+            line_marker.action = Marker.ADD
+            line_marker.pose.orientation.w = 1.0
+            line_marker.scale.x = 0.005
+            line_marker.color.r = 0.0
+            line_marker.color.g = 0.0
+            line_marker.color.b = 0.0
+            line_marker.color.a = 1.0
+            line_points = []
 
-    def create_markers(self, poses):
-        markers = []
-        for i, pose in enumerate(poses):
-            marker = Marker()
-            marker.header.frame_id = 'map'
-            marker.header.stamp = self.get_clock().now().to_msg()
-            marker.ns = 'waypoints'
-            marker.id = i
-            marker.type = Marker.SPHERE
-            marker.action = Marker.ADD
-            marker.pose = pose.pose
-            marker.scale.x = 0.01
-            marker.scale.y = 0.01
-            marker.scale.z = 0.01
-            marker.color.r = 0.0
-            marker.color.g = 0.5
-            marker.color.b = 1.0
-            marker.color.a = 1.0
-            markers.append(marker)
-        return markers
-
-    def publish_all_markers(self):
-        marker_array = MarkerArray()
-        marker_array.markers = self.all_markers
-        self.marker_pub.publish(marker_array)
-        self.get_logger().info(f"Published all {len(self.all_markers)} markers")
-
-    def create_path_markers(self, svg_file):
-        """
-        Creates a MarkerArray representing the SVG path for visualization in RViz.
-        """
-        markers = MarkerArray()
-        paths, attributes, svg_attributes = svg2paths2(svg_file)
-        marker_id = 0
-
-        for path, attr in zip(paths, attributes):
-            # Create a line strip marker for each path.
-            marker = Marker()
-            marker.header.frame_id = 'map'
-            marker.header.stamp = self.get_clock().now().to_msg()
-            marker.ns = 'svg_path'
-            marker.id = marker_id
-            marker.type = Marker.LINE_STRIP
-            marker.action = Marker.ADD
-            marker.pose.orientation.w = 1.0  # Default orientation
-            marker.scale.x = 0.005  # Line width
-            marker.color.r = 1.0  # Red
-            marker.color.g = 0.0
-            marker.color.b = 0.0
-            marker.color.a = 1.0
-            points = []
-
-            # Iterate through the segments of the path.
             for segment in path:
                 if isinstance(segment, Line):
                     start = segment.start
                     end = segment.end
-                    points.append(Point(x=start.real * 0.001, y=-start.imag * 0.001, z=0.0))
-                    points.append(Point(x=end.real * 0.001, y=-end.imag * 0.001, z=0.0))
+                    line_points.append(Point(x=start.real * 0.001, y=-start.imag * 0.001, z=0.0))
+                    line_points.append(Point(x=end.real * 0.001, y=-end.imag * 0.001, z=0.0))
+
+                    # Publish start and end points as waypoints
+                    waypoint_marker = self.create_waypoint_marker(start.real * 0.001, -start.imag * 0.001, waypoint_marker_id)
+                    waypoint_markers.markers.append(waypoint_marker)
+                    waypoint_marker_id += 1
+                    waypoint_marker = self.create_waypoint_marker(end.real * 0.001, -end.imag * 0.001, waypoint_marker_id)
+                    waypoint_markers.markers.append(waypoint_marker)
+                    waypoint_marker_id += 1
+
                 elif isinstance(segment, Arc):
-                    # Subsample the arc to get points along its curve
-                    n_points = 10  # Adjust for desired smoothness
+                    n_points = 20
                     for i in range(n_points + 1):
                         t = i / n_points
                         point = segment.point(t)
-                        points.append(Point(x=point.real * 0.001, y=-point.imag * 0.001, z=0.0))
+                        line_points.append(Point(x=point.real * 0.001, y=-point.imag * 0.001, z=0.0))
+
+                        # Publish each sampled point as a waypoint
+                        waypoint_marker = self.create_waypoint_marker(point.real * 0.001, -point.imag * 0.001, waypoint_marker_id)
+                        waypoint_markers.markers.append(waypoint_marker)
+                        waypoint_marker_id += 1
                 else:
-                    # Handle other segment types (e.g., CubicBezier, QuadraticBezier) as needed
                     self.get_logger().warn(f"Unsupported segment type: {type(segment)}")
 
-            marker.points = points
-            if len(points) > 1:  # Ensure the marker has at least two points
-                markers.markers.append(marker)
-                marker_id += 1
+            line_marker.points = line_points
+            if len(line_points) > 1:
+                markers.markers.append(line_marker)
+                line_marker_id += 1
             else:
-                self.get_logger().warn(f"Skipping marker with less than 2 points. Path: {path}")
-        return markers
-    def publish_path_markers(self):
-        """
-        Publishes the MarkerArray representing the SVG path.
-        """
-        self.path_pub_.publish(self.path_markers)
-        self.get_logger().info("Published SVG path markers")
+                self.get_logger().warn(f"Skipping line marker with less than 2 points. Path: {path}")
 
-    def publish_next_pose(self):
-        if self.index < len(self.poses):
-            pose_stamped = self.poses[self.index]
-            pose_stamped.header.stamp = self.get_clock().now().to_msg()
-            self.publisher_.publish(pose_stamped)
-            current_time = time.time()
-            if current_time - self.last_published_time >= 0.1:
-                self.get_logger().info(f'Published pose {self.index + 1}/{len(self.poses)}')
-                self.last_published_time = current_time
-            self.index += 1
-        else:
-            self.get_logger().info("All poses published.")
-            self.index = 0
+        self.marker_array_pub.publish(markers)
+        self.get_logger().info(f"Published {len(markers.markers)} markers representing the SVG paths.")
+
+        self.waypoint_marker_array_pub.publish(waypoint_markers)
+        self.get_logger().info(f"Published {len(waypoint_markers.markers)} waypoint markers from the SVG.")
+
+    def create_waypoint_marker(self, x, y, marker_id):
+        marker = Marker()
+        marker.header.frame_id = 'map'
+        marker.header.stamp = self.get_clock().now().to_msg()
+        marker.ns = 'svg_waypoints'
+        marker.id = marker_id
+        marker.type = Marker.SPHERE
+        marker.action = Marker.ADD
+        marker.pose.position.x = x
+        marker.pose.position.y = y
+        marker.pose.position.z = 0.0
+        marker.pose.orientation.w = 1.0
+        marker.scale.x = 0.01  # Adjust scale as needed
+        marker.scale.y = 0.01
+        marker.scale.z = 0.01
+        marker.color.r = 1.0
+        marker.color.g = 0.0
+        marker.color.b = 0.0
+        marker.color.a = 1.0
+        return marker
 
 def main(args=None):
     rclpy.init(args=args)
     try:
         node = SVGPosePublisher()
         rclpy.spin(node)
-        node.destroy_node()
+    except KeyboardInterrupt:
+        node.get_logger().info('Shutting down node')
     finally:
+        if 'node' in locals():  # Ensure node is defined before destroying
+            node.destroy_node()
         rclpy.shutdown()
 
+if __name__ == '__main__':
+    main()

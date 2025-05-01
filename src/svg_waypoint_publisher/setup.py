@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-        'svg_waypoint_publisher = svg_waypoint_publisher.waypoint_publisher:main',
+            'svg_waypoint_publisher = svg_waypoint_publisher.waypoint_publisher:main',
         ],
     },
 )
+

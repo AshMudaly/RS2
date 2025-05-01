@@ -1,0 +1,22 @@
+[0.696s] Invoking command in '/home/ashmu/ros2_ws/RS2/src/svg_command_subscriber': PYTHONPATH=/home/ashmu/ros2_ws/RS2/build/svg_command_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/svg_command_subscriber build --build-base /home/ashmu/ros2_ws/RS2/build/svg_command_subscriber/build install --record /home/ashmu/ros2_ws/RS2/build/svg_command_subscriber/install.log --single-version-externally-managed install_data
+[0.876s] running egg_info
+[0.877s] writing ../../build/svg_command_subscriber/svg_command_subscriber.egg-info/PKG-INFO
+[0.877s] writing dependency_links to ../../build/svg_command_subscriber/svg_command_subscriber.egg-info/dependency_links.txt
+[0.878s] writing entry points to ../../build/svg_command_subscriber/svg_command_subscriber.egg-info/entry_points.txt
+[0.878s] writing requirements to ../../build/svg_command_subscriber/svg_command_subscriber.egg-info/requires.txt
+[0.878s] writing top-level names to ../../build/svg_command_subscriber/svg_command_subscriber.egg-info/top_level.txt
+[0.879s] reading manifest file '../../build/svg_command_subscriber/svg_command_subscriber.egg-info/SOURCES.txt'
+[0.880s] writing manifest file '../../build/svg_command_subscriber/svg_command_subscriber.egg-info/SOURCES.txt'
+[0.880s] running build
+[0.880s] running build_py
+[0.880s] running install
+[0.881s] running install_lib
+[0.881s] running install_data
+[0.881s] copying resource/svg_command_subscriber -> /home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/share/ament_index/resource_index/packages
+[0.882s] copying package.xml -> /home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/share/svg_command_subscriber
+[0.882s] running install_egg_info
+[0.885s] Copying ../../build/svg_command_subscriber/svg_command_subscriber.egg-info to /home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/lib/python3.10/site-packages/svg_command_subscriber-0.0.0-py3.10.egg-info
+[0.885s] running install_scripts
+[0.904s] Installing svg_command_subscriber script to /home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/lib/svg_command_publisher
+[0.905s] writing list of installed files to '/home/ashmu/ros2_ws/RS2/build/svg_command_subscriber/install.log'
+[0.955s] Invoked command in '/home/ashmu/ros2_ws/RS2/src/svg_command_subscriber' returned '0': PYTHONPATH=/home/ashmu/ros2_ws/RS2/build/svg_command_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/svg_command_subscriber build --build-base /home/ashmu/ros2_ws/RS2/build/svg_command_subscriber/build install --record /home/ashmu/ros2_ws/RS2/build/svg_command_subscriber/install.log --single-version-externally-managed install_data

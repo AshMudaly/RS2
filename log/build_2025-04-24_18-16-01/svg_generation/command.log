@@ -1,2 +1,0 @@
-Invoking command in '/home/ashmu/ros2_ws/RS2/build/svg_generation': /usr/bin/cmake /home/ashmu/ros2_ws/RS2/src/svg_generation -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/ashmu/ros2_ws/RS2/install/svg_generation
-Invoked command in '/home/ashmu/ros2_ws/RS2/build/svg_generation' returned '1': /usr/bin/cmake /home/ashmu/ros2_ws/RS2/src/svg_generation -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/ashmu/ros2_ws/RS2/install/svg_generation

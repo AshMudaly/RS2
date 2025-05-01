@@ -1,4 +1,0 @@
-[0.009s] Invoking command in '/home/ashmu/ros2_ws/RS2/build/svg_generation': /usr/bin/cmake /home/ashmu/ros2_ws/RS2/src/svg_generation -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/ashmu/ros2_ws/RS2/install/svg_generation
-[0.016s] [0mCMake Error: The source directory "/home/ashmu/ros2_ws/RS2/src/svg_generation" does not appear to contain CMakeLists.txt.
-[0.016s] Specify --help for usage, or press the help button on the CMake GUI.[0m
-[0.017s] Invoked command in '/home/ashmu/ros2_ws/RS2/build/svg_generation' returned '1': /usr/bin/cmake /home/ashmu/ros2_ws/RS2/src/svg_generation -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/ashmu/ros2_ws/RS2/install/svg_generation
