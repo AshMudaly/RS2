@@ -9,10 +9,11 @@ import os
 import cmath
 from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy
 import sys
+from RS2_SelfieRobot.Image_Processor.Processor import ImageProcessor
 
 class SVGPosePublisher(Node):
     def __init__(self):
-        super().__init__('svg_waypoint_publisher')  # Node name is 'svg_waypoint_publisher'
+        super().__init__('svg_waypoint_publisherS')  # Node name is 'svg_waypoint_publisher'
         self.marker_array_pub = self.create_publisher(MarkerArray, 'visualization_marker_array', 10)
         self.waypoint_marker_array_pub = self.create_publisher(MarkerArray, 'svg_waypoints', 10)
 
