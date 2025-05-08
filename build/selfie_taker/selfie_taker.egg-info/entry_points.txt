@@ -1,0 +1,3 @@
+[console_scripts]
+take_selfie = selfie_taker.Processor:main
+

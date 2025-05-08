@@ -10,19 +10,19 @@ import cmath
 from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy
 import sys
 
-class SVGPosePublisher(Node):
+class SVGWaypointPublisherNode(Node):
     def __init__(self):
-        super().__init__('svg_waypoint_publisher')  # Node name is 'svg_waypoint_publisher'
+        super().__init__('svg_waypoint_publisher')  # Updated node name to follow ROS conventions
         self.marker_array_pub = self.create_publisher(MarkerArray, 'visualization_marker_array', 10)
         self.waypoint_marker_array_pub = self.create_publisher(MarkerArray, 'svg_waypoints', 10)
 
-        # Declare and get the SVG file path
-        self.declare_parameter('svg_file', 'output.svg')  # Default value is 'shape.svg'
+        # Declare and get the SVG file path (just the filename)
+        self.declare_parameter('svg_file', 'output.svg')  # Default value is 'output.svg'
         self.svg_file = self.get_parameter('svg_file').get_parameter_value().string_value
         self.get_logger().info(f"Using SVG file: {self.svg_file}")
 
-        # Construct the full path to the SVG file
-        self.svg_path = os.path.join('/home/ashmu/ros2_ws', self.svg_file)
+        # Construct the full path to the SVG file in the RS2 directory
+        self.svg_path = os.path.join('/home/ashmu/ros2_ws/RS2', self.svg_file)
 
         if not os.path.exists(self.svg_path):
             self.get_logger().error(f"SVG file not found at {self.svg_path}")
@@ -124,7 +124,7 @@ class SVGPosePublisher(Node):
 def main(args=None):
     rclpy.init(args=args)
     try:
-        node = SVGPosePublisher()
+        node = SVGWaypointPublisherNode() # Use the updated Node class name
         rclpy.spin(node)
     except KeyboardInterrupt:
         node.get_logger().info('Shutting down node')

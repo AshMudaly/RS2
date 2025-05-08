@@ -1,0 +1,44 @@
+running egg_info
+creating ../../build/selfie_taker/selfie_taker.egg-info
+writing ../../build/selfie_taker/selfie_taker.egg-info/PKG-INFO
+writing dependency_links to ../../build/selfie_taker/selfie_taker.egg-info/dependency_links.txt
+writing entry points to ../../build/selfie_taker/selfie_taker.egg-info/entry_points.txt
+writing requirements to ../../build/selfie_taker/selfie_taker.egg-info/requires.txt
+writing top-level names to ../../build/selfie_taker/selfie_taker.egg-info/top_level.txt
+writing manifest file '../../build/selfie_taker/selfie_taker.egg-info/SOURCES.txt'
+reading manifest file '../../build/selfie_taker/selfie_taker.egg-info/SOURCES.txt'
+writing manifest file '../../build/selfie_taker/selfie_taker.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ashmu/ros2_ws/RS2/build/selfie_taker/build
+creating /home/ashmu/ros2_ws/RS2/build/selfie_taker/build/lib
+creating /home/ashmu/ros2_ws/RS2/build/selfie_taker/build/lib/selfie_taker
+copying selfie_taker/Processor.py -> /home/ashmu/ros2_ws/RS2/build/selfie_taker/build/lib/selfie_taker
+copying selfie_taker/faceDetector.py -> /home/ashmu/ros2_ws/RS2/build/selfie_taker/build/lib/selfie_taker
+copying selfie_taker/svgSaver.py -> /home/ashmu/ros2_ws/RS2/build/selfie_taker/build/lib/selfie_taker
+copying selfie_taker/__init__.py -> /home/ashmu/ros2_ws/RS2/build/selfie_taker/build/lib/selfie_taker
+copying selfie_taker/lineGenerator.py -> /home/ashmu/ros2_ws/RS2/build/selfie_taker/build/lib/selfie_taker
+running install
+running install_lib
+creating /home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages/selfie_taker
+copying /home/ashmu/ros2_ws/RS2/build/selfie_taker/build/lib/selfie_taker/Processor.py -> /home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages/selfie_taker
+copying /home/ashmu/ros2_ws/RS2/build/selfie_taker/build/lib/selfie_taker/faceDetector.py -> /home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages/selfie_taker
+copying /home/ashmu/ros2_ws/RS2/build/selfie_taker/build/lib/selfie_taker/svgSaver.py -> /home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages/selfie_taker
+copying /home/ashmu/ros2_ws/RS2/build/selfie_taker/build/lib/selfie_taker/__init__.py -> /home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages/selfie_taker
+copying /home/ashmu/ros2_ws/RS2/build/selfie_taker/build/lib/selfie_taker/lineGenerator.py -> /home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages/selfie_taker
+byte-compiling /home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages/selfie_taker/Processor.py to Processor.cpython-310.pyc
+byte-compiling /home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages/selfie_taker/faceDetector.py to faceDetector.cpython-310.pyc
+byte-compiling /home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages/selfie_taker/svgSaver.py to svgSaver.cpython-310.pyc
+byte-compiling /home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages/selfie_taker/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages/selfie_taker/lineGenerator.py to lineGenerator.cpython-310.pyc
+running install_data
+creating /home/ashmu/ros2_ws/RS2/install/selfie_taker/share/ament_index
+creating /home/ashmu/ros2_ws/RS2/install/selfie_taker/share/ament_index/resource_index
+creating /home/ashmu/ros2_ws/RS2/install/selfie_taker/share/ament_index/resource_index/packages
+copying resource/selfie_taker -> /home/ashmu/ros2_ws/RS2/install/selfie_taker/share/ament_index/resource_index/packages
+copying package.xml -> /home/ashmu/ros2_ws/RS2/install/selfie_taker/share/selfie_taker
+running install_egg_info
+Copying ../../build/selfie_taker/selfie_taker.egg-info to /home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages/selfie_taker-0.0.0-py3.10.egg-info
+running install_scripts
+Installing take_selfie script to /home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/selfie_taker
+writing list of installed files to '/home/ashmu/ros2_ws/RS2/build/selfie_taker/install.log'
