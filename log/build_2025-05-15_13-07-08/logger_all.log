@@ -1,0 +1,391 @@
+[0.285s] [34mcolcon[0m [1;30mDEBUG[0m [32mCommand line arguments: ['/usr/bin/colcon', 'build'][0m
+[0.286s] [34mcolcon[0m [1;30mDEBUG[0m [32mParsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x79ffa9813640>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x79ffa9813010>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x79ffa9813010>>, mixin_verb=('build',))[0m
+[0.663s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) check parameters
+[0.663s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) check parameters
+[0.663s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) check parameters
+[0.663s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) check parameters
+[0.663s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) discover
+[0.663s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) discover
+[0.664s] [34mcolcon.colcon_core.package_discovery[0m [1;30mINFO[0m Crawling recursively for packages in '/home/ashmu/ros2_ws/RS2'
+[0.664s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.664s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore'
+[0.664s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore_ament_install'
+[0.664s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_pkg']
+[0.664s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_pkg'
+[0.664s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_meta']
+[0.664s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_meta'
+[0.664s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ros']
+[0.664s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ros'
+[0.710s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['cmake', 'python']
+[0.710s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'cmake'
+[0.710s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python'
+[0.710s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['python_setup_py']
+[0.710s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python_setup_py'
+[0.710s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.711s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extension 'ignore'
+[0.711s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) ignored
+[0.711s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.711s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extension 'ignore'
+[0.711s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) ignored
+[0.711s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.712s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extension 'ignore'
+[0.712s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) ignored
+[0.712s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.712s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore'
+[0.712s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore_ament_install'
+[0.712s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_pkg']
+[0.712s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_pkg'
+[0.712s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_meta']
+[0.712s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_meta'
+[0.712s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ros']
+[0.712s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ros'
+[0.713s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['cmake', 'python']
+[0.713s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'cmake'
+[0.713s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python'
+[0.713s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['python_setup_py']
+[0.713s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python_setup_py'
+[0.713s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/selfie_taker) by extensions ['ignore', 'ignore_ament_install']
+[0.713s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/selfie_taker) by extension 'ignore'
+[0.713s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/selfie_taker) by extension 'ignore_ament_install'
+[0.713s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/selfie_taker) by extensions ['colcon_pkg']
+[0.713s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/selfie_taker) by extension 'colcon_pkg'
+[0.714s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/selfie_taker) by extensions ['colcon_meta']
+[0.714s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/selfie_taker) by extension 'colcon_meta'
+[0.714s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/selfie_taker) by extensions ['ros']
+[0.714s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/selfie_taker) by extension 'ros'
+[0.719s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/selfie_taker' with type 'ros.ament_python' and name 'selfie_taker'[0m
+[0.719s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/svg_command_subscriber) by extensions ['ignore', 'ignore_ament_install']
+[0.719s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/svg_command_subscriber) by extension 'ignore'
+[0.719s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/svg_command_subscriber) by extension 'ignore_ament_install'
+[0.720s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/svg_command_subscriber) by extensions ['colcon_pkg']
+[0.720s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/svg_command_subscriber) by extension 'colcon_pkg'
+[0.720s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/svg_command_subscriber) by extensions ['colcon_meta']
+[0.720s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/svg_command_subscriber) by extension 'colcon_meta'
+[0.720s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/svg_command_subscriber) by extensions ['ros']
+[0.720s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/svg_command_subscriber) by extension 'ros'
+[0.721s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/svg_command_subscriber' with type 'ros.ament_python' and name 'svg_command_subscriber'[0m
+[0.721s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/svg_waypoint_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.721s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/svg_waypoint_publisher) by extension 'ignore'
+[0.721s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/svg_waypoint_publisher) by extension 'ignore_ament_install'
+[0.722s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/svg_waypoint_publisher) by extensions ['colcon_pkg']
+[0.722s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/svg_waypoint_publisher) by extension 'colcon_pkg'
+[0.722s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/svg_waypoint_publisher) by extensions ['colcon_meta']
+[0.722s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/svg_waypoint_publisher) by extension 'colcon_meta'
+[0.722s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/svg_waypoint_publisher) by extensions ['ros']
+[0.722s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/svg_waypoint_publisher) by extension 'ros'
+[0.723s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/svg_waypoint_publisher' with type 'ros.ament_python' and name 'svg_waypoint_publisher'[0m
+[0.723s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ur3e_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.724s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ur3e_controller) by extension 'ignore'
+[0.724s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ur3e_controller) by extension 'ignore_ament_install'
+[0.724s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ur3e_controller) by extensions ['colcon_pkg']
+[0.724s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ur3e_controller) by extension 'colcon_pkg'
+[0.724s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ur3e_controller) by extensions ['colcon_meta']
+[0.724s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ur3e_controller) by extension 'colcon_meta'
+[0.724s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ur3e_controller) by extensions ['ros']
+[0.724s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/ur3e_controller) by extension 'ros'
+[0.725s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/ur3e_controller' with type 'ros.ament_cmake' and name 'ur3e_controller'[0m
+[0.725s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) using defaults
+[0.726s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) discover
+[0.726s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) using defaults
+[0.726s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) discover
+[0.726s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) using defaults
+[0.761s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) check parameters
+[0.761s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) discover
+[0.763s] [34mcolcon.colcon_core.prefix_path.colcon[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install' in the environment variable COLCON_PREFIX_PATH doesn't exist[0m
+[0.764s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ur' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.764s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ur_calibration' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.764s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ur_robot_driver' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.764s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ur_bringup' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.764s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ros2_controllers' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.764s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/velocity_controllers' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.764s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ur_controllers' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.764s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ur_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.765s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ur_moveit_config' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.765s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ur_description' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.765s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ur_dashboard_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.765s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ur_client_library' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.765s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/tricycle_steering_controller' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.765s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/tricycle_controller' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.765s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ros2_control' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.765s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/transmission_interface' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.765s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/svg_waypoint_publisher' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.765s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/svg_command_subscriber' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.765s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/bicycle_steering_controller' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.766s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ackermann_steering_controller' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.766s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/steering_controllers_library' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.766s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/selfie_taker' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.766s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/rqt_joint_trajectory_controller' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.766s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/rqt_controller_manager' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.766s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ros2controlcli' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.766s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ros2_controllers_test_nodes' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.766s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/hardware_interface_testing' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.766s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/controller_manager' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.766s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ros2_control_test_assets' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.766s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/range_sensor_broadcaster' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.766s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/position_controllers' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.767s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/pose_broadcaster' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.767s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/pid_controller' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.767s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/mecanum_drive_controller' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.767s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/joint_trajectory_controller' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.767s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/joint_state_broadcaster' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.767s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/imu_sensor_broadcaster' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.767s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/gripper_controllers' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.767s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/gpio_controllers' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.767s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/effort_controllers' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.767s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/forward_command_controller' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.767s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/force_torque_sensor_broadcaster' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.768s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/diff_drive_controller' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.768s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/admittance_controller' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.768s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/control_toolbox' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.768s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/realtime_tools' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.768s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/kinematics_interface_kdl' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.768s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/kinematics_interface' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.768s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/joint_limits' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.768s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/controller_interface' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.768s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/hardware_interface' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.768s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/controller_manager_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.768s] [34mcolcon.colcon_ros.prefix_path.ament[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/control_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist[0m
+[0.769s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ur' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.769s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ur_calibration' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.769s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ur_robot_driver' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.769s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ur_bringup' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.769s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ros2_controllers' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.769s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/velocity_controllers' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.769s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ur_controllers' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.769s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ur_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.769s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ur_moveit_config' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.769s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ur_description' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.770s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ur_dashboard_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.770s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ur_client_library' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.770s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/tricycle_steering_controller' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.770s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/tricycle_controller' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.770s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ros2_control' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.770s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/transmission_interface' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.770s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/bicycle_steering_controller' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.770s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ackermann_steering_controller' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.770s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/steering_controllers_library' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.770s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/hardware_interface_testing' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.771s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/controller_manager' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.771s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/ros2_control_test_assets' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.771s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/range_sensor_broadcaster' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.771s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/position_controllers' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.771s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/pose_broadcaster' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.771s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/pid_controller' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.771s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/mecanum_drive_controller' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.771s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/joint_trajectory_controller' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.771s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/joint_state_broadcaster' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.772s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/imu_sensor_broadcaster' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.772s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/gripper_controllers' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.772s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/gpio_controllers' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.772s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/effort_controllers' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.772s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/forward_command_controller' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.772s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/force_torque_sensor_broadcaster' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.772s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/diff_drive_controller' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.774s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/admittance_controller' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.774s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/control_toolbox' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.774s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/realtime_tools' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.774s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/kinematics_interface_kdl' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.774s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/kinematics_interface' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.774s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/joint_limits' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.774s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/controller_interface' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.775s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/hardware_interface' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.775s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/controller_manager_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.775s] [34mcolcon.colcon_ros.prefix_path.catkin[0m [1;30mWARNING[0m [33mThe path '/home/ashmu/ros2_ws/install/control_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist[0m
+[0.778s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 4 installed packages in /home/ashmu/ros2_ws/RS2/install[0m
+[0.783s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 387 installed packages in /opt/ros/humble[0m
+[0.790s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) using defaults
+[0.904s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'selfie_taker' build argument 'cmake_args' from command line to 'None'
+[0.904s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'selfie_taker' build argument 'cmake_target' from command line to 'None'
+[0.904s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'selfie_taker' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.904s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'selfie_taker' build argument 'cmake_clean_cache' from command line to 'False'
+[0.904s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'selfie_taker' build argument 'cmake_clean_first' from command line to 'False'
+[0.904s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'selfie_taker' build argument 'cmake_force_configure' from command line to 'False'
+[0.904s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'selfie_taker' build argument 'ament_cmake_args' from command line to 'None'
+[0.904s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'selfie_taker' build argument 'catkin_cmake_args' from command line to 'None'
+[0.904s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'selfie_taker' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.905s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'selfie_taker' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ashmu/ros2_ws/RS2/build/selfie_taker', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ashmu/ros2_ws/RS2/install/selfie_taker', 'merge_install': False, 'path': '/home/ashmu/ros2_ws/RS2/src/selfie_taker', 'symlink_install': False, 'test_result_base': None}[0m
+[0.906s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'svg_command_subscriber' build argument 'cmake_args' from command line to 'None'
+[0.906s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'svg_command_subscriber' build argument 'cmake_target' from command line to 'None'
+[0.906s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'svg_command_subscriber' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.906s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'svg_command_subscriber' build argument 'cmake_clean_cache' from command line to 'False'
+[0.906s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'svg_command_subscriber' build argument 'cmake_clean_first' from command line to 'False'
+[0.906s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'svg_command_subscriber' build argument 'cmake_force_configure' from command line to 'False'
+[0.906s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'svg_command_subscriber' build argument 'ament_cmake_args' from command line to 'None'
+[0.906s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'svg_command_subscriber' build argument 'catkin_cmake_args' from command line to 'None'
+[0.906s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'svg_command_subscriber' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.906s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'svg_command_subscriber' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ashmu/ros2_ws/RS2/build/svg_command_subscriber', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber', 'merge_install': False, 'path': '/home/ashmu/ros2_ws/RS2/src/svg_command_subscriber', 'symlink_install': False, 'test_result_base': None}[0m
+[0.907s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'svg_waypoint_publisher' build argument 'cmake_args' from command line to 'None'
+[0.907s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'svg_waypoint_publisher' build argument 'cmake_target' from command line to 'None'
+[0.907s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'svg_waypoint_publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.907s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'svg_waypoint_publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.907s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'svg_waypoint_publisher' build argument 'cmake_clean_first' from command line to 'False'
+[0.907s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'svg_waypoint_publisher' build argument 'cmake_force_configure' from command line to 'False'
+[0.907s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'svg_waypoint_publisher' build argument 'ament_cmake_args' from command line to 'None'
+[0.907s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'svg_waypoint_publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.908s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'svg_waypoint_publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.908s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'svg_waypoint_publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher', 'merge_install': False, 'path': '/home/ashmu/ros2_ws/RS2/src/svg_waypoint_publisher', 'symlink_install': False, 'test_result_base': None}[0m
+[0.908s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'ur3e_controller' build argument 'cmake_args' from command line to 'None'
+[0.909s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'ur3e_controller' build argument 'cmake_target' from command line to 'None'
+[0.909s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'ur3e_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.909s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'ur3e_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.909s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'ur3e_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.909s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'ur3e_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.909s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'ur3e_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.909s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'ur3e_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.909s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'ur3e_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.909s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'ur3e_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ashmu/ros2_ws/RS2/build/ur3e_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ashmu/ros2_ws/RS2/install/ur3e_controller', 'merge_install': False, 'path': '/home/ashmu/ros2_ws/RS2/src/ur3e_controller', 'symlink_install': False, 'test_result_base': None}[0m
+[0.909s] [34mcolcon.colcon_core.executor[0m [1;30mINFO[0m Executing jobs using 'parallel' executor
+[0.912s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete[0m
+[0.912s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/ashmu/ros2_ws/RS2/src/selfie_taker' with build type 'ament_python'
+[0.913s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('selfie_taker', 'ament_prefix_path')
+[0.920s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.920s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ashmu/ros2_ws/RS2/install/selfie_taker/share/selfie_taker/hook/ament_prefix_path.ps1'
+[0.923s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/ashmu/ros2_ws/RS2/install/selfie_taker/share/selfie_taker/hook/ament_prefix_path.dsv'
+[0.924s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ashmu/ros2_ws/RS2/install/selfie_taker/share/selfie_taker/hook/ament_prefix_path.sh'
+[0.927s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.927s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.940s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/ashmu/ros2_ws/RS2/src/svg_command_subscriber' with build type 'ament_python'
+[0.940s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('svg_command_subscriber', 'ament_prefix_path')
+[0.941s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/share/svg_command_subscriber/hook/ament_prefix_path.ps1'
+[0.942s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/share/svg_command_subscriber/hook/ament_prefix_path.dsv'
+[0.944s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/share/svg_command_subscriber/hook/ament_prefix_path.sh'
+[0.945s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.946s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.958s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/ashmu/ros2_ws/RS2/src/svg_waypoint_publisher' with build type 'ament_python'
+[0.958s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('svg_waypoint_publisher', 'ament_prefix_path')
+[0.959s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/share/svg_waypoint_publisher/hook/ament_prefix_path.ps1'
+[0.961s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/share/svg_waypoint_publisher/hook/ament_prefix_path.dsv'
+[0.962s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/share/svg_waypoint_publisher/hook/ament_prefix_path.sh'
+[0.964s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.964s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.978s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/ashmu/ros2_ws/RS2/src/ur3e_controller' with build type 'ament_cmake'
+[0.979s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/ashmu/ros2_ws/RS2/src/ur3e_controller'
+[0.980s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.980s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.650s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/ashmu/ros2_ws/RS2/src/selfie_taker'
+[1.651s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.651s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[2.305s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/ashmu/ros2_ws/RS2/src/svg_command_subscriber'
+[2.306s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.306s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[3.005s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/ashmu/ros2_ws/RS2/src/svg_waypoint_publisher'
+[3.006s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.006s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[3.034s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/ashmu/ros2_ws/RS2/build/ur3e_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher:/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber:/home/ashmu/ros2_ws/RS2/install/selfie_taker:/home/ashmu/ros2_ws/install/svg_waypoint_publisher:/home/ashmu/ros2_ws/install/svg_command_subscriber:/home/ashmu/ros2_ws/install/selfie_taker:/home/ashmu/ros2_ws/install/rqt_joint_trajectory_controller:/home/ashmu/ros2_ws/install/rqt_controller_manager:/home/ashmu/ros2_ws/install/ros2controlcli:/home/ashmu/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --build /home/ashmu/ros2_ws/RS2/build/ur3e_controller -- -j12 -l12[0m
+[3.421s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/ashmu/ros2_ws/RS2/build/ur3e_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher:/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber:/home/ashmu/ros2_ws/RS2/install/selfie_taker:/home/ashmu/ros2_ws/install/svg_waypoint_publisher:/home/ashmu/ros2_ws/install/svg_command_subscriber:/home/ashmu/ros2_ws/install/selfie_taker:/home/ashmu/ros2_ws/install/rqt_joint_trajectory_controller:/home/ashmu/ros2_ws/install/rqt_controller_manager:/home/ashmu/ros2_ws/install/ros2controlcli:/home/ashmu/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --build /home/ashmu/ros2_ws/RS2/build/ur3e_controller -- -j12 -l12[0m
+[3.472s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/ashmu/ros2_ws/RS2/build/ur3e_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher:/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber:/home/ashmu/ros2_ws/RS2/install/selfie_taker:/home/ashmu/ros2_ws/install/svg_waypoint_publisher:/home/ashmu/ros2_ws/install/svg_command_subscriber:/home/ashmu/ros2_ws/install/selfie_taker:/home/ashmu/ros2_ws/install/rqt_joint_trajectory_controller:/home/ashmu/ros2_ws/install/rqt_controller_manager:/home/ashmu/ros2_ws/install/ros2controlcli:/home/ashmu/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --install /home/ashmu/ros2_ws/RS2/build/ur3e_controller[0m
+[3.518s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(ur3e_controller)
+[3.519s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/ashmu/ros2_ws/RS2/build/ur3e_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher:/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber:/home/ashmu/ros2_ws/RS2/install/selfie_taker:/home/ashmu/ros2_ws/install/svg_waypoint_publisher:/home/ashmu/ros2_ws/install/svg_command_subscriber:/home/ashmu/ros2_ws/install/selfie_taker:/home/ashmu/ros2_ws/install/rqt_joint_trajectory_controller:/home/ashmu/ros2_ws/install/rqt_controller_manager:/home/ashmu/ros2_ws/install/ros2controlcli:/home/ashmu/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/humble /usr/bin/cmake --install /home/ashmu/ros2_ws/RS2/build/ur3e_controller[0m
+[3.529s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/ur3e_controller' for CMake module files
+[3.531s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/ur3e_controller' for CMake config files
+[3.532s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('ur3e_controller', 'cmake_prefix_path')
+[3.533s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/hook/cmake_prefix_path.ps1'
+[3.535s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/hook/cmake_prefix_path.dsv'
+[3.536s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/hook/cmake_prefix_path.sh'
+[3.539s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/ur3e_controller/lib'
+[3.540s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/ur3e_controller/bin'
+[3.540s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/ur3e_controller/lib/pkgconfig/ur3e_controller.pc'
+[3.541s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/ur3e_controller/lib/python3.10/site-packages'
+[3.542s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/ur3e_controller/bin'
+[3.543s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/package.ps1'
+[3.547s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/package.dsv'
+[3.549s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/package.sh'
+[3.552s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/package.bash'
+[3.556s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/package.zsh'
+[3.559s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/colcon-core/packages/ur3e_controller)
+[3.561s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(ur3e_controller)
+[3.562s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/ur3e_controller' for CMake module files
+[3.563s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/ur3e_controller' for CMake config files
+[3.565s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('ur3e_controller', 'cmake_prefix_path')
+[3.565s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/hook/cmake_prefix_path.ps1'
+[3.567s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/hook/cmake_prefix_path.dsv'
+[3.570s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/hook/cmake_prefix_path.sh'
+[3.572s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/ur3e_controller/lib'
+[3.572s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/ur3e_controller/bin'
+[3.573s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/ur3e_controller/lib/pkgconfig/ur3e_controller.pc'
+[3.574s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/ur3e_controller/lib/python3.10/site-packages'
+[3.575s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/ur3e_controller/bin'
+[3.576s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/package.ps1'
+[3.578s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/package.dsv'
+[3.581s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/package.sh'
+[3.583s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/package.bash'
+[3.585s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/package.zsh'
+[3.588s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/colcon-core/packages/ur3e_controller)
+[4.598s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/ashmu/ros2_ws/RS2/src/svg_waypoint_publisher': PYTHONPATH=/home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/svg_waypoint_publisher build --build-base /home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/build install --record /home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/install.log --single-version-externally-managed install_data[0m
+[4.651s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/ashmu/ros2_ws/RS2/src/selfie_taker': PYTHONPATH=/home/ashmu/ros2_ws/RS2/build/selfie_taker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/selfie_taker build --build-base /home/ashmu/ros2_ws/RS2/build/selfie_taker/build install --record /home/ashmu/ros2_ws/RS2/build/selfie_taker/install.log --single-version-externally-managed install_data[0m
+[4.756s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/ashmu/ros2_ws/RS2/src/svg_command_subscriber': PYTHONPATH=/home/ashmu/ros2_ws/RS2/build/svg_command_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/svg_command_subscriber build --build-base /home/ashmu/ros2_ws/RS2/build/svg_command_subscriber/build install --record /home/ashmu/ros2_ws/RS2/build/svg_command_subscriber/install.log --single-version-externally-managed install_data[0m
+[5.721s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher' for CMake module files
+[5.723s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/ashmu/ros2_ws/RS2/src/svg_waypoint_publisher' returned '0': PYTHONPATH=/home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/svg_waypoint_publisher build --build-base /home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/build install --record /home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/install.log --single-version-externally-managed install_data[0m
+[5.725s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher' for CMake config files
+[5.728s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/lib'
+[5.728s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/bin'
+[5.729s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/lib/pkgconfig/svg_waypoint_publisher.pc'
+[5.729s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/lib/python3.10/site-packages'
+[5.730s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('svg_waypoint_publisher', 'pythonpath')
+[5.731s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/share/svg_waypoint_publisher/hook/pythonpath.ps1'
+[5.733s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/share/svg_waypoint_publisher/hook/pythonpath.dsv'
+[5.735s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/share/svg_waypoint_publisher/hook/pythonpath.sh'
+[5.737s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/bin'
+[5.738s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(svg_waypoint_publisher)
+[5.739s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/share/svg_waypoint_publisher/package.ps1'
+[5.741s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/share/svg_waypoint_publisher/package.dsv'
+[5.744s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/share/svg_waypoint_publisher/package.sh'
+[5.748s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/share/svg_waypoint_publisher/package.bash'
+[5.750s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/share/svg_waypoint_publisher/package.zsh'
+[5.752s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/share/colcon-core/packages/svg_waypoint_publisher)
+[5.828s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/selfie_taker' for CMake module files
+[5.831s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/ashmu/ros2_ws/RS2/src/selfie_taker' returned '0': PYTHONPATH=/home/ashmu/ros2_ws/RS2/build/selfie_taker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/selfie_taker build --build-base /home/ashmu/ros2_ws/RS2/build/selfie_taker/build install --record /home/ashmu/ros2_ws/RS2/build/selfie_taker/install.log --single-version-externally-managed install_data[0m
+[5.832s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/selfie_taker' for CMake config files
+[5.834s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/selfie_taker/lib'
+[5.835s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/selfie_taker/bin'
+[5.835s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/pkgconfig/selfie_taker.pc'
+[5.836s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages'
+[5.836s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('selfie_taker', 'pythonpath')
+[5.838s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ashmu/ros2_ws/RS2/install/selfie_taker/share/selfie_taker/hook/pythonpath.ps1'
+[5.840s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/ashmu/ros2_ws/RS2/install/selfie_taker/share/selfie_taker/hook/pythonpath.dsv'
+[5.842s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ashmu/ros2_ws/RS2/install/selfie_taker/share/selfie_taker/hook/pythonpath.sh'
+[5.844s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/selfie_taker/bin'
+[5.845s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(selfie_taker)
+[5.846s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ashmu/ros2_ws/RS2/install/selfie_taker/share/selfie_taker/package.ps1'
+[5.849s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/ashmu/ros2_ws/RS2/install/selfie_taker/share/selfie_taker/package.dsv'
+[5.851s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ashmu/ros2_ws/RS2/install/selfie_taker/share/selfie_taker/package.sh'
+[5.852s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ashmu/ros2_ws/RS2/install/selfie_taker/share/selfie_taker/package.bash'
+[5.854s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ashmu/ros2_ws/RS2/install/selfie_taker/share/selfie_taker/package.zsh'
+[5.855s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/ashmu/ros2_ws/RS2/install/selfie_taker/share/colcon-core/packages/selfie_taker)
+[5.962s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber' for CMake module files
+[5.964s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/ashmu/ros2_ws/RS2/src/svg_command_subscriber' returned '0': PYTHONPATH=/home/ashmu/ros2_ws/RS2/build/svg_command_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/svg_command_subscriber build --build-base /home/ashmu/ros2_ws/RS2/build/svg_command_subscriber/build install --record /home/ashmu/ros2_ws/RS2/build/svg_command_subscriber/install.log --single-version-externally-managed install_data[0m
+[5.964s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber' for CMake config files
+[5.966s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/lib'
+[5.966s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/bin'
+[5.966s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/lib/pkgconfig/svg_command_subscriber.pc'
+[5.967s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/lib/python3.10/site-packages'
+[5.968s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('svg_command_subscriber', 'pythonpath')
+[5.968s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/share/svg_command_subscriber/hook/pythonpath.ps1'
+[5.970s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/share/svg_command_subscriber/hook/pythonpath.dsv'
+[5.971s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/share/svg_command_subscriber/hook/pythonpath.sh'
+[5.973s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/bin'
+[5.973s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(svg_command_subscriber)
+[5.974s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/share/svg_command_subscriber/package.ps1'
+[5.975s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/share/svg_command_subscriber/package.dsv'
+[5.976s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/share/svg_command_subscriber/package.sh'
+[5.978s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/share/svg_command_subscriber/package.bash'
+[5.979s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/share/svg_command_subscriber/package.zsh'
+[5.980s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/share/colcon-core/packages/svg_command_subscriber)
+[5.980s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mclosing loop[0m
+[5.982s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mloop closed[0m
+[5.982s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete finished with '0'[0m
+[5.983s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoining thread[0m
+[5.995s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.996s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.996s] [34mcolcon.colcon_notification.desktop_notification[0m [1;30mINFO[0m Sending desktop notification using 'notify2'
+[6.022s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoined thread[0m
+[6.024s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/ashmu/ros2_ws/RS2/install/local_setup.ps1'
+[6.027s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/ashmu/ros2_ws/RS2/install/_local_setup_util_ps1.py'
+[6.031s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/ashmu/ros2_ws/RS2/install/setup.ps1'
+[6.036s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/ashmu/ros2_ws/RS2/install/local_setup.sh'
+[6.037s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/ashmu/ros2_ws/RS2/install/_local_setup_util_sh.py'
+[6.039s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/ashmu/ros2_ws/RS2/install/setup.sh'
+[6.043s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/ashmu/ros2_ws/RS2/install/local_setup.bash'
+[6.044s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/ashmu/ros2_ws/RS2/install/setup.bash'
+[6.048s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/ashmu/ros2_ws/RS2/install/local_setup.zsh'
+[6.049s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/ashmu/ros2_ws/RS2/install/setup.zsh'

@@ -1,0 +1,58 @@
+[0.809s] Invoking command in '/home/ashmu/ros2_ws/RS2/build/ur3e_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher:/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber:/home/ashmu/ros2_ws/RS2/install/selfie_taker:/home/ashmu/ros2_ws/install/ur_description:/home/ashmu/ros2_ws/install/svg_waypoint_publisher:/home/ashmu/ros2_ws/install/svg_command_subscriber:/home/ashmu/ros2_ws/install/selfie_taker:/home/ashmu/ros2_ws/install/rqt_joint_trajectory_controller:/home/ashmu/ros2_ws/install/rqt_controller_manager:/home/ashmu/ros2_ws/install/ros2controlcli:/home/ashmu/ros2_ws/install/ros2_controllers_test_nodes:/home/ashmu/ros2_ws/install/realtime_tools:/home/ashmu/ros2_ws/install/kinematics_interface:/home/ashmu/ros2_ws/install/joint_limits:/opt/ros/humble /usr/bin/cmake /home/ashmu/ros2_ws/RS2/src/ur3e_controller -DCMAKE_INSTALL_PREFIX=/home/ashmu/ros2_ws/RS2/install/ur3e_controller
+[0.828s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.972s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.978s] -- Found moveit_ros_planning_interface: 2.5.8 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[0.988s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[1.016s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.018s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.023s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.033s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.049s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.213s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.246s] -- Found parameter_traits: 0.4.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.271s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.274s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.424s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.463s] -- Found rclcpp_lifecycle: 16.0.12 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.480s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[1.531s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.554s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.649s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[1.671s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[1.686s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[1.710s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.781s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.781s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ashmu/ros2_ws/RS2/src/ur3e_controller/include>
+[1.781s] -- Configured cppcheck exclude dirs and/or files: 
+[1.784s] -- Added test 'lint_cmake' to check CMake code style
+[1.791s] -- Added test 'uncrustify' to check C / C++ code style
+[1.791s] -- Configured uncrustify additional arguments: 
+[1.792s] -- Added test 'xmllint' to check XML markup files
+[1.793s] -- Configuring done
+[1.816s] -- Generating done
+[1.822s] -- Build files have been written to: /home/ashmu/ros2_ws/RS2/build/ur3e_controller
+[1.837s] Invoked command in '/home/ashmu/ros2_ws/RS2/build/ur3e_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher:/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber:/home/ashmu/ros2_ws/RS2/install/selfie_taker:/home/ashmu/ros2_ws/install/ur_description:/home/ashmu/ros2_ws/install/svg_waypoint_publisher:/home/ashmu/ros2_ws/install/svg_command_subscriber:/home/ashmu/ros2_ws/install/selfie_taker:/home/ashmu/ros2_ws/install/rqt_joint_trajectory_controller:/home/ashmu/ros2_ws/install/rqt_controller_manager:/home/ashmu/ros2_ws/install/ros2controlcli:/home/ashmu/ros2_ws/install/ros2_controllers_test_nodes:/home/ashmu/ros2_ws/install/realtime_tools:/home/ashmu/ros2_ws/install/kinematics_interface:/home/ashmu/ros2_ws/install/joint_limits:/opt/ros/humble /usr/bin/cmake /home/ashmu/ros2_ws/RS2/src/ur3e_controller -DCMAKE_INSTALL_PREFIX=/home/ashmu/ros2_ws/RS2/install/ur3e_controller
+[1.840s] Invoking command in '/home/ashmu/ros2_ws/RS2/build/ur3e_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher:/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber:/home/ashmu/ros2_ws/RS2/install/selfie_taker:/home/ashmu/ros2_ws/install/ur_description:/home/ashmu/ros2_ws/install/svg_waypoint_publisher:/home/ashmu/ros2_ws/install/svg_command_subscriber:/home/ashmu/ros2_ws/install/selfie_taker:/home/ashmu/ros2_ws/install/rqt_joint_trajectory_controller:/home/ashmu/ros2_ws/install/rqt_controller_manager:/home/ashmu/ros2_ws/install/ros2controlcli:/home/ashmu/ros2_ws/install/ros2_controllers_test_nodes:/home/ashmu/ros2_ws/install/realtime_tools:/home/ashmu/ros2_ws/install/kinematics_interface:/home/ashmu/ros2_ws/install/joint_limits:/opt/ros/humble /usr/bin/cmake --build /home/ashmu/ros2_ws/RS2/build/ur3e_controller -- -j12 -l12
+[1.915s] [35m[1mConsolidate compiler generated dependencies of target ur_node[0m
+[1.948s] [100%] Built target ur_node
+[1.970s] Invoked command in '/home/ashmu/ros2_ws/RS2/build/ur3e_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher:/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber:/home/ashmu/ros2_ws/RS2/install/selfie_taker:/home/ashmu/ros2_ws/install/ur_description:/home/ashmu/ros2_ws/install/svg_waypoint_publisher:/home/ashmu/ros2_ws/install/svg_command_subscriber:/home/ashmu/ros2_ws/install/selfie_taker:/home/ashmu/ros2_ws/install/rqt_joint_trajectory_controller:/home/ashmu/ros2_ws/install/rqt_controller_manager:/home/ashmu/ros2_ws/install/ros2controlcli:/home/ashmu/ros2_ws/install/ros2_controllers_test_nodes:/home/ashmu/ros2_ws/install/realtime_tools:/home/ashmu/ros2_ws/install/kinematics_interface:/home/ashmu/ros2_ws/install/joint_limits:/opt/ros/humble /usr/bin/cmake --build /home/ashmu/ros2_ws/RS2/build/ur3e_controller -- -j12 -l12
+[1.985s] Invoking command in '/home/ashmu/ros2_ws/RS2/build/ur3e_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher:/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber:/home/ashmu/ros2_ws/RS2/install/selfie_taker:/home/ashmu/ros2_ws/install/ur_description:/home/ashmu/ros2_ws/install/svg_waypoint_publisher:/home/ashmu/ros2_ws/install/svg_command_subscriber:/home/ashmu/ros2_ws/install/selfie_taker:/home/ashmu/ros2_ws/install/rqt_joint_trajectory_controller:/home/ashmu/ros2_ws/install/rqt_controller_manager:/home/ashmu/ros2_ws/install/ros2controlcli:/home/ashmu/ros2_ws/install/ros2_controllers_test_nodes:/home/ashmu/ros2_ws/install/realtime_tools:/home/ashmu/ros2_ws/install/kinematics_interface:/home/ashmu/ros2_ws/install/joint_limits:/opt/ros/humble /usr/bin/cmake --install /home/ashmu/ros2_ws/RS2/build/ur3e_controller
+[1.997s] -- Install configuration: ""
+[1.997s] -- Execute custom install script
+[1.997s] -- Up-to-date symlink: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/lib/ur3e_controller/ur_node
+[1.997s] -- Up-to-date symlink: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ament_index/resource_index/package_run_dependencies/ur3e_controller
+[1.997s] -- Up-to-date symlink: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ament_index/resource_index/parent_prefix_path/ur3e_controller
+[1.997s] -- Up-to-date symlink: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/environment/ament_prefix_path.sh
+[1.997s] -- Up-to-date symlink: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/environment/ament_prefix_path.dsv
+[1.998s] -- Up-to-date symlink: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/environment/path.sh
+[1.998s] -- Up-to-date symlink: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/environment/path.dsv
+[1.998s] -- Up-to-date symlink: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/local_setup.bash
+[1.998s] -- Up-to-date symlink: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/local_setup.sh
+[1.998s] -- Up-to-date symlink: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/local_setup.zsh
+[1.998s] -- Up-to-date symlink: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/local_setup.dsv
+[1.998s] -- Symlinking: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/package.dsv
+[2.013s] -- Up-to-date symlink: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ament_index/resource_index/packages/ur3e_controller
+[2.013s] -- Up-to-date symlink: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/cmake/ur3e_controllerConfig.cmake
+[2.013s] -- Up-to-date symlink: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/cmake/ur3e_controllerConfig-version.cmake
+[2.013s] -- Up-to-date symlink: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/package.xml
+[2.016s] Invoked command in '/home/ashmu/ros2_ws/RS2/build/ur3e_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher:/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber:/home/ashmu/ros2_ws/RS2/install/selfie_taker:/home/ashmu/ros2_ws/install/ur_description:/home/ashmu/ros2_ws/install/svg_waypoint_publisher:/home/ashmu/ros2_ws/install/svg_command_subscriber:/home/ashmu/ros2_ws/install/selfie_taker:/home/ashmu/ros2_ws/install/rqt_joint_trajectory_controller:/home/ashmu/ros2_ws/install/rqt_controller_manager:/home/ashmu/ros2_ws/install/ros2controlcli:/home/ashmu/ros2_ws/install/ros2_controllers_test_nodes:/home/ashmu/ros2_ws/install/realtime_tools:/home/ashmu/ros2_ws/install/kinematics_interface:/home/ashmu/ros2_ws/install/joint_limits:/opt/ros/humble /usr/bin/cmake --install /home/ashmu/ros2_ws/RS2/build/ur3e_controller

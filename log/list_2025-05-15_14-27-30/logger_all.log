@@ -1,0 +1,86 @@
+[0.854s] colcon DEBUG Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/ashmu/ros2_ws/RS2']
+[0.854s] colcon DEBUG Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/ashmu/ros2_ws/RS2'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7ad49061bbb0>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7ad49061aad0>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7ad49061aad0>>, mixin_verb=('list',))
+[2.204s] colcon.colcon_core.package_discovery Level 1 discover_packages(colcon_meta) check parameters
+[2.204s] colcon.colcon_core.package_discovery Level 1 discover_packages(recursive) check parameters
+[2.204s] colcon.colcon_core.package_discovery Level 1 discover_packages(ignore) check parameters
+[2.205s] colcon.colcon_core.package_discovery Level 1 discover_packages(path) check parameters
+[2.205s] colcon.colcon_core.package_discovery Level 1 discover_packages(recursive) discover
+[2.205s] colcon.colcon_core.package_discovery INFO Crawling recursively for packages in '/home/ashmu/ros2_ws/RS2'
+[2.206s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2) by extensions ['ignore', 'ignore_ament_install']
+[2.206s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2) by extension 'ignore'
+[2.207s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2) by extension 'ignore_ament_install'
+[2.207s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2) by extensions ['colcon_pkg']
+[2.207s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2) by extension 'colcon_pkg'
+[2.207s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2) by extensions ['colcon_meta']
+[2.208s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2) by extension 'colcon_meta'
+[2.208s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2) by extensions ['ros']
+[2.208s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2) by extension 'ros'
+[2.281s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2) by extensions ['cmake', 'python']
+[2.281s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2) by extension 'cmake'
+[2.281s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2) by extension 'python'
+[2.282s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2) by extensions ['python_setup_py']
+[2.282s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2) by extension 'python_setup_py'
+[2.283s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/build) by extensions ['ignore', 'ignore_ament_install']
+[2.283s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/build) by extension 'ignore'
+[2.284s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/build) ignored
+[2.285s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/install) by extensions ['ignore', 'ignore_ament_install']
+[2.285s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/install) by extension 'ignore'
+[2.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/install) ignored
+[2.287s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/log) by extensions ['ignore', 'ignore_ament_install']
+[2.287s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/log) by extension 'ignore'
+[2.288s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/log) ignored
+[2.288s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src) by extensions ['ignore', 'ignore_ament_install']
+[2.289s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src) by extension 'ignore'
+[2.289s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src) by extension 'ignore_ament_install'
+[2.290s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src) by extensions ['colcon_pkg']
+[2.290s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src) by extension 'colcon_pkg'
+[2.290s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src) by extensions ['colcon_meta']
+[2.290s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src) by extension 'colcon_meta'
+[2.291s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src) by extensions ['ros']
+[2.291s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src) by extension 'ros'
+[2.291s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src) by extensions ['cmake', 'python']
+[2.291s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src) by extension 'cmake'
+[2.292s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src) by extension 'python'
+[2.292s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src) by extensions ['python_setup_py']
+[2.292s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src) by extension 'python_setup_py'
+[2.293s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/selfie_taker) by extensions ['ignore', 'ignore_ament_install']
+[2.293s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/selfie_taker) by extension 'ignore'
+[2.294s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/selfie_taker) by extension 'ignore_ament_install'
+[2.294s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/selfie_taker) by extensions ['colcon_pkg']
+[2.294s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/selfie_taker) by extension 'colcon_pkg'
+[2.294s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/selfie_taker) by extensions ['colcon_meta']
+[2.294s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/selfie_taker) by extension 'colcon_meta'
+[2.295s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/selfie_taker) by extensions ['ros']
+[2.295s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/selfie_taker) by extension 'ros'
+[2.317s] colcon.colcon_core.package_identification DEBUG Package '/home/ashmu/ros2_ws/RS2/src/selfie_taker' with type 'ros.ament_python' and name 'selfie_taker'
+[2.318s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/svg_command_subscriber) by extensions ['ignore', 'ignore_ament_install']
+[2.319s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/svg_command_subscriber) by extension 'ignore'
+[2.319s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/svg_command_subscriber) by extension 'ignore_ament_install'
+[2.320s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/svg_command_subscriber) by extensions ['colcon_pkg']
+[2.320s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/svg_command_subscriber) by extension 'colcon_pkg'
+[2.320s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/svg_command_subscriber) by extensions ['colcon_meta']
+[2.320s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/svg_command_subscriber) by extension 'colcon_meta'
+[2.321s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/svg_command_subscriber) by extensions ['ros']
+[2.321s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/svg_command_subscriber) by extension 'ros'
+[2.324s] colcon.colcon_core.package_identification DEBUG Package '/home/ashmu/ros2_ws/RS2/src/svg_command_subscriber' with type 'ros.ament_python' and name 'svg_command_subscriber'
+[2.325s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/svg_waypoint_publisher) by extensions ['ignore', 'ignore_ament_install']
+[2.326s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/svg_waypoint_publisher) by extension 'ignore'
+[2.326s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/svg_waypoint_publisher) by extension 'ignore_ament_install'
+[2.326s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/svg_waypoint_publisher) by extensions ['colcon_pkg']
+[2.326s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/svg_waypoint_publisher) by extension 'colcon_pkg'
+[2.327s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/svg_waypoint_publisher) by extensions ['colcon_meta']
+[2.327s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/svg_waypoint_publisher) by extension 'colcon_meta'
+[2.327s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/svg_waypoint_publisher) by extensions ['ros']
+[2.327s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/svg_waypoint_publisher) by extension 'ros'
+[2.331s] colcon.colcon_core.package_identification DEBUG Package '/home/ashmu/ros2_ws/RS2/src/svg_waypoint_publisher' with type 'ros.ament_python' and name 'svg_waypoint_publisher'
+[2.331s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/ur3e_controller) by extensions ['ignore', 'ignore_ament_install']
+[2.332s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/ur3e_controller) by extension 'ignore'
+[2.332s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/ur3e_controller) by extension 'ignore_ament_install'
+[2.333s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/ur3e_controller) by extensions ['colcon_pkg']
+[2.333s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/ur3e_controller) by extension 'colcon_pkg'
+[2.333s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/ur3e_controller) by extensions ['colcon_meta']
+[2.333s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/ur3e_controller) by extension 'colcon_meta'
+[2.334s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/ur3e_controller) by extensions ['ros']
+[2.334s] colcon.colcon_core.package_identification Level 1 _identify(/home/ashmu/ros2_ws/RS2/src/ur3e_controller) by extension 'ros'
+[2.338s] colcon.colcon_core.package_identification DEBUG Package '/home/ashmu/ros2_ws/RS2/src/ur3e_controller' with type 'ros.ament_cmake' and name 'ur3e_controller'
+[2.339s] colcon.colcon_core.package_discovery Level 1 discover_packages(recursive) using defaults

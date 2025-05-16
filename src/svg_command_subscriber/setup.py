@@ -19,8 +19,9 @@ setup(
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
-    'console_scripts': [
-        'svg_command_subscriber = svg_command_subscriber.command_subscriber:main'
- ],
+        'console_scripts': [
+            'svg_command_subscriber = svg_command_subscriber.command_subscriber:main',        
+            ],
     },
 )
+

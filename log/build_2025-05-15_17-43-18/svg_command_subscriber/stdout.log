@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing svg_command_subscriber.egg-info/PKG-INFO
+writing dependency_links to svg_command_subscriber.egg-info/dependency_links.txt
+writing entry points to svg_command_subscriber.egg-info/entry_points.txt
+writing requirements to svg_command_subscriber.egg-info/requires.txt
+writing top-level names to svg_command_subscriber.egg-info/top_level.txt
+reading manifest file 'svg_command_subscriber.egg-info/SOURCES.txt'
+writing manifest file 'svg_command_subscriber.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/lib/python3.10/site-packages/svg-command-subscriber.egg-link (link to .)
+Installing svg_command_subscriber script to /home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/lib/svg_command_publisher
+
+Installed /home/ashmu/ros2_ws/RS2/build/svg_command_subscriber
+running symlink_data
+symbolically linking /home/ashmu/ros2_ws/RS2/build/svg_command_subscriber/resource/svg_command_subscriber -> /home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/share/ament_index/resource_index/packages
+symbolically linking /home/ashmu/ros2_ws/RS2/build/svg_command_subscriber/package.xml -> /home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/share/svg_command_subscriber

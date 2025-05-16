@@ -1,0 +1,1 @@
+/home/ashmu/ros2_ws/RS2/build/ur3e_controller/ament_cmake_environment_hooks/local_setup.sh

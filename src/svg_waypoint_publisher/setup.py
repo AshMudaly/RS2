@@ -21,7 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'svg_waypoint_publisher = svg_waypoint_publisher.waypoint_publisher:main',
-        ],
+            ],
     },
 )
 

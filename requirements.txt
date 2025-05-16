@@ -1,0 +1,6 @@
+opencv-python
+numpy
+rembg
+svgwrite
+svgpathtools
+onnxruntime

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20250513-0510-Experimental"
+	Name="alec-Legion-Slim-5-16AHP9"
+	Generator="ctest-3.22.1"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="11.4.0"
+	OSName="Linux"
+	Hostname="alec-Legion-Slim-5-16AHP9"
+	OSRelease="6.8.0-58-generic"
+	OSVersion="#60~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar 28 16:09:21 UTC 2"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="25"
+	ModelID="117"
+	ProcessorCacheSize="1024"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="2047"
+	TotalPhysicalMemory="31391"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="4813.58"
+	>
+	<Testing>
+		<StartDateTime>May 13 15:10 AEST</StartDateTime>
+		<StartTestTime>1747113009</StartTestTime>
+		<TestList/>
+		<EndDateTime>May 13 15:10 AEST</EndDateTime>
+		<EndTestTime>1747113009</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
