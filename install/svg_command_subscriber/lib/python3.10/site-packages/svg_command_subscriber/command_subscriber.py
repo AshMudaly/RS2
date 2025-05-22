@@ -5,7 +5,7 @@ from visualization_msgs.msg import MarkerArray, Marker
 from std_msgs.msg import Int32
 import time
 
-class SVGCommandSubscriberNode(Node):
+class SVGCommandSubscriber(Node):
     def __init__(self):
         super().__init__('svg_command_subscriber')
         self.pose_publisher = self.create_publisher(PoseStamped, '/move_group/goal', 10)
@@ -93,7 +93,7 @@ class SVGCommandSubscriberNode(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    node = SVGCommandSubscriberNode()
+    node = SVGCommandSubscriber()
     rclpy.spin(node)
     node.destroy_node()
     rclpy.shutdown()

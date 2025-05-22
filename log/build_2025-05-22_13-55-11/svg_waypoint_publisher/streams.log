@@ -1,0 +1,37 @@
+[0.865s] Invoking command in '/home/ashmu/ros2_ws/RS2/src/svg_waypoint_publisher': PYTHONPATH=/home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/svg_waypoint_publisher build --build-base /home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/build install --record /home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/install.log --single-version-externally-managed install_data
+[1.102s] running egg_info
+[1.103s] creating ../../build/svg_waypoint_publisher/svg_waypoint_publisher.egg-info
+[1.103s] writing ../../build/svg_waypoint_publisher/svg_waypoint_publisher.egg-info/PKG-INFO
+[1.103s] writing dependency_links to ../../build/svg_waypoint_publisher/svg_waypoint_publisher.egg-info/dependency_links.txt
+[1.103s] writing entry points to ../../build/svg_waypoint_publisher/svg_waypoint_publisher.egg-info/entry_points.txt
+[1.103s] writing requirements to ../../build/svg_waypoint_publisher/svg_waypoint_publisher.egg-info/requires.txt
+[1.103s] writing top-level names to ../../build/svg_waypoint_publisher/svg_waypoint_publisher.egg-info/top_level.txt
+[1.103s] writing manifest file '../../build/svg_waypoint_publisher/svg_waypoint_publisher.egg-info/SOURCES.txt'
+[1.105s] reading manifest file '../../build/svg_waypoint_publisher/svg_waypoint_publisher.egg-info/SOURCES.txt'
+[1.105s] writing manifest file '../../build/svg_waypoint_publisher/svg_waypoint_publisher.egg-info/SOURCES.txt'
+[1.105s] running build
+[1.105s] running build_py
+[1.105s] creating /home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/build
+[1.105s] creating /home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/build/lib
+[1.106s] creating /home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/build/lib/svg_waypoint_publisher
+[1.106s] copying svg_waypoint_publisher/__init__.py -> /home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/build/lib/svg_waypoint_publisher
+[1.106s] copying svg_waypoint_publisher/waypoint_publisher.py -> /home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/build/lib/svg_waypoint_publisher
+[1.106s] running install
+[1.106s] running install_lib
+[1.107s] creating /home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/lib/python3.10/site-packages/svg_waypoint_publisher
+[1.107s] copying /home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/build/lib/svg_waypoint_publisher/__init__.py -> /home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/lib/python3.10/site-packages/svg_waypoint_publisher
+[1.107s] copying /home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/build/lib/svg_waypoint_publisher/waypoint_publisher.py -> /home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/lib/python3.10/site-packages/svg_waypoint_publisher
+[1.107s] byte-compiling /home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/lib/python3.10/site-packages/svg_waypoint_publisher/__init__.py to __init__.cpython-310.pyc
+[1.107s] byte-compiling /home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/lib/python3.10/site-packages/svg_waypoint_publisher/waypoint_publisher.py to waypoint_publisher.cpython-310.pyc
+[1.109s] running install_data
+[1.109s] creating /home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/share/ament_index
+[1.109s] creating /home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/share/ament_index/resource_index
+[1.109s] creating /home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/share/ament_index/resource_index/packages
+[1.109s] copying resource/svg_waypoint_publisher -> /home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/share/ament_index/resource_index/packages
+[1.109s] copying package.xml -> /home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/share/svg_waypoint_publisher
+[1.109s] running install_egg_info
+[1.111s] Copying ../../build/svg_waypoint_publisher/svg_waypoint_publisher.egg-info to /home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/lib/python3.10/site-packages/svg_waypoint_publisher-0.0.0-py3.10.egg-info
+[1.111s] running install_scripts
+[1.127s] Installing svg_waypoint_publisher script to /home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/lib/svg_waypoint_publisher
+[1.127s] writing list of installed files to '/home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/install.log'
+[1.146s] Invoked command in '/home/ashmu/ros2_ws/RS2/src/svg_waypoint_publisher' returned '0': PYTHONPATH=/home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/svg_waypoint_publisher build --build-base /home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/build install --record /home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/install.log --single-version-externally-managed install_data
