@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-1dbeb8c8cf77018cc41e.json",
+					"jsonFile" : "directory-.-520acb869d68d900f5d7.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.12"
@@ -58,7 +58,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ur_node::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ur_node-d7f2fe42ee0c4bd3630e.json",
+					"jsonFile" : "target-ur_node-7489d210e513a38befde.json",
 					"name" : "ur_node",
 					"projectIndex" : 0
 				}
