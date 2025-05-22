@@ -1,102 +1,146 @@
 import rclpy
 from rclpy.node import Node
-from geometry_msgs.msg import PoseStamped
-from visualization_msgs.msg import MarkerArray, Marker
-from std_msgs.msg import Int32
-import time
+from geometry_msgs.msg import Point
+from visualization_msgs.msg import Marker, MarkerArray
+import numpy as np
+from svgpathtools import svg2paths2, Line, Arc, CubicBezier, QuadraticBezier
+import os
+import sys
+from rdp import rdp
 
-class SVGCommandSubscriber(Node):
+class SVGWaypointPublisherNode(Node):
     def __init__(self):
-        super().__init__('svg_command_subscriber')
-        self.pose_publisher = self.create_publisher(PoseStamped, '/move_group/goal', 10)
-        self.status_subscriber = self.create_subscription(Int32, 'ur_status', self.status_callback, 10)
-        self.waypoint_subscriber = self.create_subscription(
-            MarkerArray,
-            '/svg_waypoints',
-            self.waypoint_callback,
-            10
-        )
+        super().__init__('svg_waypoint_publisher')
 
-        self.declare_parameter('fixed_z', 0.1)
-        self.declare_parameter('orientation_x', 0.0)
-        self.declare_parameter('orientation_y', 0.0)
-        self.declare_parameter('orientation_z', 0.0)
-        self.declare_parameter('orientation_w', 1.0)
-        self.declare_parameter('target_frame', 'map')
+        self.simplified_marker_array_pub = self.create_publisher(MarkerArray, 'simplified_svg_output', 10)
 
-        self.fixed_z = self.get_parameter('fixed_z').get_parameter_value().double_value
-        self.orientation = [
-            self.get_parameter('orientation_x').get_parameter_value().double_value,
-            self.get_parameter('orientation_y').get_parameter_value().double_value,
-            self.get_parameter('orientation_z').get_parameter_value().double_value,
-            self.get_parameter('orientation_w').get_parameter_value().double_value
-        ]
-        self.target_frame = self.get_parameter('target_frame').get_parameter_value().string_value
-        self.waypoints_queue = []
-        self.status_flag = 1  # Initialize status as ready (assuming initial state is ready)
+        self.declare_parameter('svg_file', 'output.svg')
+        self.svg_file = self.get_parameter('svg_file').get_parameter_value().string_value
+        self.get_logger().info(f"Using SVG file: {self.svg_file}")
 
-        self.get_logger().info("SVG Command Subscriber Node Started, listening for waypoints and status...")
+        self.declare_parameter('simplification_tolerance', 0.0005)
+        self.simplification_tolerance = self.get_parameter('simplification_tolerance').get_parameter_value().double_value
+        self.get_logger().info(f"Using simplification tolerance: {self.simplification_tolerance}")
 
-    def waypoint_callback(self, msg):
-        for marker in msg.markers:
-            if marker.type == Marker.SPHERE:
-                pose_msg = PoseStamped()
-                pose_msg.header.stamp = self.get_clock().now().to_msg()
-                pose_msg.header.frame_id = self.target_frame
+        self.svg_path = os.path.join('/home/ashmu/ros2_ws/RS2', self.svg_file)
 
-                pose_msg.pose.position.x = marker.pose.position.x
-                pose_msg.pose.position.y = marker.pose.position.y
-                pose_msg.pose.position.z = self.fixed_z
+        if not os.path.exists(self.svg_path):
+            self.get_logger().error(f"SVG file not found at {self.svg_path}")
+            sys.exit(1)
 
-                pose_msg.pose.orientation.x = self.orientation[0]
-                pose_msg.pose.orientation.y = self.orientation[1]
-                pose_msg.pose.orientation.z = self.orientation[2]
-                pose_msg.pose.orientation.w = self.orientation[3]
+        self.process_svg_and_publish()
 
-                self.get_logger().info(f"Received waypoint and added to queue: x={pose_msg.pose.position.x:.3f}, y={pose_msg.pose.position.y:.3f}, z={pose_msg.pose.position.z:.3f}")
-                self.waypoints_queue.append(pose_msg)
-        
-        # Start processing the queue if it's not empty and we are ready
-        if self.waypoints_queue and self.status_flag == 1:
-            self.publish_next_pose()
+    def process_svg_and_publish(self):
+        markers_simplified = MarkerArray()
 
-    def status_callback(self, msg):
-        if msg.data == 1:  # Success status received
-            self.get_logger().info("Received status: Success, moving to the next waypoint.")
-            self.status_flag = 1
-            if self.waypoints_queue:
-                self.publish_next_pose()
-        elif msg.data == 2:  # Currently executing
-            self.get_logger().info("Received status: Executing.")
-            self.status_flag = 2
-        elif msg.data == 3:  # Singularity detected
-            self.get_logger().warn("Received status: Singularity detected. Skipping current waypoint.")
-            self.status_flag = 1
-            if self.waypoints_queue:
-                self.waypoints_queue.pop(0) # Remove the problematic waypoint
-                self.publish_next_pose()
-        elif msg.data == 4:  # Execution failed
-            self.get_logger().error("Received status: Execution failed. Attempting next waypoint.")
-            self.status_flag = 1
-            if self.waypoints_queue:
-                self.waypoints_queue.pop(0) # Remove the failed waypoint
-                self.publish_next_pose()
+        paths, attributes, _ = svg2paths2(self.svg_path)
+        simplified_marker_base_id = 0
+        N_POINTS_PER_ARC_SEGMENT = 50
 
-    def publish_next_pose(self):
-        if self.waypoints_queue:
-            pose_msg = self.waypoints_queue.pop(0)
-            self.get_logger().info(f"Publishing goal pose: x={pose_msg.pose.position.x:.3f}, y={pose_msg.pose.position.y:.3f}, z={pose_msg.pose.position.z:.3f}")
-            self.pose_publisher.publish(pose_msg)
-            self.status_flag = 2  # Set status to "in motion"
-        else:
-            self.get_logger().info("Waypoint queue is empty.")
+        all_points = []
+        for path in paths:
+            for segment in path:
+                if isinstance(segment, Line):
+                    all_points.append([segment.start.real, -segment.start.imag])
+                    all_points.append([segment.end.real, -segment.end.imag])
+                elif isinstance(segment, (Arc, CubicBezier, QuadraticBezier)):
+                    for i in range(N_POINTS_PER_ARC_SEGMENT + 1):
+                        t = i / N_POINTS_PER_ARC_SEGMENT
+                        pt = segment.point(t)
+                        all_points.append([pt.real, -pt.imag])
+
+        if not all_points:
+            self.get_logger().warn("No points found in SVG to process.")
+            return
+
+        all_points_np = np.array(all_points)
+        center = np.mean(all_points_np, axis=0)
+        self.get_logger().info(f"SVG center offset: {center}")
+
+        for path, attr in zip(paths, attributes):
+            color = attr.get('stroke', '').lower()
+            if color != '#000000' and color != 'black':
+                continue
+
+            points_for_rdp = []
+
+            for segment in path:
+                if isinstance(segment, Line):
+                    x1 = segment.start.real - center[0]
+                    y1 = -segment.start.imag - center[1]
+                    x2 = segment.end.real - center[0]
+                    y2 = -segment.end.imag - center[1]
+                    points_for_rdp.extend([[x1, y1], [x2, y2]])
+                elif isinstance(segment, (Arc, CubicBezier, QuadraticBezier)):
+                    for i in range(N_POINTS_PER_ARC_SEGMENT + 1):
+                        t = i / N_POINTS_PER_ARC_SEGMENT
+                        pt = segment.point(t)
+                        x = pt.real - center[0]
+                        y = -pt.imag - center[1]
+                        points_for_rdp.append([x, y])
+
+            if len(points_for_rdp) >= 2:
+                simplified_points_np = rdp(np.array(points_for_rdp), epsilon=self.simplification_tolerance)
+                self.get_logger().info(f"Path: Original {len(points_for_rdp)}, Simplified {len(simplified_points_np)}")
+
+                # Blue line
+                line_marker = Marker()
+                line_marker.header.frame_id = 'map'
+                line_marker.header.stamp = self.get_clock().now().to_msg()
+                line_marker.ns = 'simplified_contours'
+                line_marker.id = simplified_marker_base_id
+                line_marker.type = Marker.LINE_STRIP
+                line_marker.action = Marker.ADD
+                line_marker.pose.orientation.w = 1.0
+                line_marker.scale.x = 0.008
+                line_marker.color.r = 0.0
+                line_marker.color.g = 0.0
+                line_marker.color.b = 1.0
+                line_marker.color.a = 1.0
+
+                # Red spheres
+                sphere_marker = Marker()
+                sphere_marker.header.frame_id = 'map'
+                sphere_marker.header.stamp = self.get_clock().now().to_msg()
+                sphere_marker.ns = 'simplified_contours'
+                sphere_marker.id = simplified_marker_base_id + 1
+                sphere_marker.type = Marker.SPHERE_LIST
+                sphere_marker.action = Marker.ADD
+                sphere_marker.pose.orientation.w = 1.0
+                sphere_marker.scale.x = 0.005
+                sphere_marker.scale.y = 0.005
+                sphere_marker.scale.z = 0.005
+                sphere_marker.color.r = 1.0
+                sphere_marker.color.g = 0.0
+                sphere_marker.color.b = 0.0
+                sphere_marker.color.a = 1.0
+
+                for p in simplified_points_np:
+                    pt = Point(x=p[0], y=p[1], z=0.0)
+                    line_marker.points.append(pt)
+                    sphere_marker.points.append(pt)
+
+                if len(line_marker.points) > 1:
+                    markers_simplified.markers.append(line_marker)
+                    markers_simplified.markers.append(sphere_marker)
+                    simplified_marker_base_id += 2
+                else:
+                    self.get_logger().warn(f"Skipping path with too few simplified points.")
+
+        self.simplified_marker_array_pub.publish(markers_simplified)
+        self.get_logger().info(f"Published {len(markers_simplified.markers)} markers to /simplified_svg_output.")
 
 def main(args=None):
     rclpy.init(args=args)
-    node = SVGCommandSubscriber()
-    rclpy.spin(node)
-    node.destroy_node()
-    rclpy.shutdown()
+    try:
+        node = SVGWaypointPublisherNode()
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        node.get_logger().info('Shutting down node')
+    finally:
+        if 'node' in locals():
+            node.destroy_node()
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()

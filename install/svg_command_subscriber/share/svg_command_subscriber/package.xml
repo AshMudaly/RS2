@@ -7,7 +7,7 @@
   <maintainer email="ashanthan.a.mudaly@student.uts.edu.au">ashmu</maintainer>
   <license>TODO: License declaration</license>
 
-  <depend>rcply</depend>
+  <depend>rclpy</depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

@@ -20,8 +20,6 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'svg_command_subscriber = svg_command_subscriber.command_subscriber:main',        
-            ],
+        ],
     },
 )
-
