@@ -1,5 +1,3 @@
-#include <cstdio>
-#include <memory>
 #include <rclcpp/rclcpp.hpp>
 #include <moveit/move_group_interface/move_group_interface.h>
 #include <moveit/planning_scene_interface/planning_scene_interface.h>
@@ -7,6 +5,8 @@
 #include <std_msgs/msg/int32.hpp>
 #include <shape_msgs/msg/solid_primitive.hpp>
 #include <geometric_shapes/solid_primitive_dims.h>
+#include <moveit_msgs/msg/collision_object.hpp>
+#include <moveit_msgs/msg/robot_trajectory.hpp>
 #include <chrono>
 
 class UR3eController : public rclcpp::Node {
@@ -15,11 +15,12 @@ public:
         this->declare_parameter("velocity_scaling", 0.1);
         this->get_parameter("velocity_scaling", velocity_scaling_);
 
-        status_pub_ = this->create_publisher<std_msgs::msg::Int32>("ur_status", 10);
+        status_pub_ = this->create_publisher<std_msgs::msg::Int32>("/ur_status", 10);
+
         pose_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(
             "/move_group/goal", 10,
             std::bind(&UR3eController::poseCallback, this, std::placeholders::_1)
-        );
+        );  
     }
 
     void initializeMoveGroup() {
@@ -31,10 +32,15 @@ public:
 
         // Add collision objects to the scene
         std::vector<std::vector<double>> objects = {
-            {0.2, 0.0, 0.6, 0.0, 0.0, 0.0, 1.0, 0.001, 1.2, 1.2},  // Back Wall
-            {0.0,0.0,-0.005, 0.0, 0.0, 0.0, 1.0, 1.2, 1.2, 0.001} //Floor
+            {0.0, -0.35, 0.6, 0.0, 0.0, 0.0, 1.0, 1.2, 0.001, 1.2},  // Back Wall
+            {0.0, 0.0, -0.005, 0.0, 0.0, 0.0, 1.0, 1.2, 1.2, 0.001} // Floor
         };
         addCollisionObjects(objects);
+
+        RCLCPP_INFO(this->get_logger(), "Publishing ready status.");
+        std_msgs::msg::Int32 ready_msg;
+        ready_msg.data = 0; // Ready
+        status_pub_->publish(ready_msg);
     }
 
 private:
@@ -43,9 +49,7 @@ private:
         move_group_interface_->setJointValueTarget(init_joint_positions);
 
         moveit::planning_interface::MoveGroupInterface::Plan plan;
-        bool success = static_cast<bool>(move_group_interface_->plan(plan));
-
-        if (success) {
+        if (move_group_interface_->plan(plan)) {
             RCLCPP_INFO(this->get_logger(), "Executing startup pose.");
             move_group_interface_->execute(plan);
         } else {
@@ -55,12 +59,8 @@ private:
 
     void scaleTrajectorySpeed(moveit_msgs::msg::RobotTrajectory &trajectory, double scale) {
         for (auto &point : trajectory.joint_trajectory.points) {
-            for (auto &vel : point.velocities) {
-                vel *= scale;
-            }
-            for (auto &acc : point.accelerations) {
-                acc *= scale;
-            }
+            for (auto &vel : point.velocities) vel *= scale;
+            for (auto &acc : point.accelerations) acc *= scale;
 
             int64_t total_ns = static_cast<int64_t>(
                 point.time_from_start.sec * 1e9 + point.time_from_start.nanosec
@@ -77,8 +77,9 @@ private:
         }
 
         RCLCPP_INFO(this->get_logger(), "Received new target pose.");
+
         std_msgs::msg::Int32 status_msg;
-        status_msg.data = 2;  // Currently executing
+        status_msg.data = 1;  // Executing
         status_pub_->publish(status_msg);
 
         move_group_interface_->setStartStateToCurrentState();
@@ -88,15 +89,14 @@ private:
         double fraction = move_group_interface_->computeCartesianPath(waypoints, 0.01, 0.0, trajectory);
 
         if (fraction < 0.9) {
-            RCLCPP_ERROR(this->get_logger(), "Singularity detected or planning failed (%.2f%%)", fraction * 100.0);
+            RCLCPP_ERROR(this->get_logger(), "Singularity or planning failed (%.2f%%)", fraction * 100.0);
             status_msg.data = 3;  // Singularity
         } else {
             scaleTrajectorySpeed(trajectory, velocity_scaling_);
-
             moveit::planning_interface::MoveGroupInterface::Plan plan;
             plan.trajectory_ = trajectory;
             auto result = move_group_interface_->execute(plan);
-            status_msg.data = (result == moveit::core::MoveItErrorCode::SUCCESS) ? 1 : 4;
+            status_msg.data = (result == moveit::core::MoveItErrorCode::SUCCESS) ? 2 : 4; // 2 = Done, 4 = Failed
         }
 
         status_pub_->publish(status_msg);
@@ -108,10 +108,7 @@ private:
 
         for (size_t i = 0; i < object_specs.size(); ++i) {
             const auto &spec = object_specs[i];
-            if (spec.size() != 10) {
-                RCLCPP_WARN(this->get_logger(), "Skipping object %zu: expected 10 values, got %zu", i, spec.size());
-                continue;
-            }
+            if (spec.size() != 10) continue;
 
             moveit_msgs::msg::CollisionObject object;
             object.header.frame_id = "base_link";

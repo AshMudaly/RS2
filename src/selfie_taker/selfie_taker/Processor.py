@@ -15,7 +15,7 @@ class SelfieProcessorNode(Node):
         super().__init__('selfie_processor_node')
         self.get_logger().info('Selfie processor node has started!')
 
-        self.declare_parameter('output_svg_path', '/home/ashmu/ros2_ws/RS2/output.svg')
+        self.declare_parameter('output_svg_path', '/home/alec/ros2_ws/src/RS2/output.svg')
         self.output_svg_path = self.get_parameter('output_svg_path').get_parameter_value().string_value
         self.get_logger().info(f"Output SVG will be saved to: {self.output_svg_path}")
 
