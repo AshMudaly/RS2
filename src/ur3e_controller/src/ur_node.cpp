@@ -91,15 +91,21 @@ private:
         if (fraction < 0.9) {
             RCLCPP_ERROR(this->get_logger(), "Singularity or planning failed (%.2f%%)", fraction * 100.0);
             status_msg.data = 3;  // Singularity
+            status_pub_->publish(status_msg);
         } else {
             scaleTrajectorySpeed(trajectory, velocity_scaling_);
             moveit::planning_interface::MoveGroupInterface::Plan plan;
             plan.trajectory_ = trajectory;
             auto result = move_group_interface_->execute(plan);
             status_msg.data = (result == moveit::core::MoveItErrorCode::SUCCESS) ? 2 : 4; // 2 = Done, 4 = Failed
-        }
+            status_pub_->publish(status_msg);
+}
 
-        status_pub_->publish(status_msg);
+// Publish ready status AFTER execution or error
+std_msgs::msg::Int32 ready_msg;
+ready_msg.data = 0;
+status_pub_->publish(ready_msg);
+
     }
 
     void addCollisionObjects(const std::vector<std::vector<double>> &object_specs) {
