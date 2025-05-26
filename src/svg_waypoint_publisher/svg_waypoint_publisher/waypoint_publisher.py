@@ -12,18 +12,7 @@ class SVGWaypointPublisher(Node):
 
         self.pose_array_pub = self.create_publisher(PoseArray, '/svg_waypoints/poses', 10)
 
-<<<<<<< HEAD
-        # Load and process SVG
-        self.svg_path = os.path.expanduser('~/ros2_ws/RS2/output.svg')
-
-        if not os.path.exists(self.svg_path):
-            self.get_logger().error(f'SVG file not found: {self.svg_path}')
-            return
-        
-        self.publish_markers_and_poses()
-=======
         svg_path = '/home/ashmu/ros2_ws/RS2/output.svg'
->>>>>>> 6de09c8 (ok re run)
 
         if not os.path.exists(svg_path):
             self.get_logger().error(f"SVG file not found: {svg_path}")
