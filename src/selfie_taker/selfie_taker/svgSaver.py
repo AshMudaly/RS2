@@ -1,19 +1,17 @@
+from svgpathtools import Path, Line, wsvg
 import numpy as np
 import cv2
 from rdp import rdp
-from tqdm import tqdm
-import svgwrite
-import time
+from tqdm import tqdm  # Import tqdm
 
 
-def save_as_svg(line_image, output_file, simplification_tolerance=2.0, svg_output_scale_factor=1.0):
+def save_as_svg(line_image, output_file, simplification_tolerance=1.0, svg_output_scale_factor=1.0):
     if line_image is None or line_image.size == 0:
         print("Error: Input line_image is empty or None.")
         return None
 
-    start_time = time.time()
     height, width = line_image.shape
-    svg_lines = []
+    svg_paths = []
 
     # Step 1: Normalize the image
     if line_image.dtype != np.uint8:
@@ -24,10 +22,14 @@ def save_as_svg(line_image, output_file, simplification_tolerance=2.0, svg_outpu
 
     # Step 2: Binarize and find contours
     _, binary_image = cv2.threshold(line_image, 127, 255, cv2.THRESH_BINARY)
+<<<<<<< HEAD
     contours, _ = cv2.findContours(binary_image, cv2.RETR_LIST, cv2.CHAIN_APPROX_NONE)
     contour_time = time.time()
+=======
+    contours, _ = cv2.findContours(binary_image, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
+>>>>>>> 6de09c8 (ok re run)
 
-    print("Processing contours and generating SVG lines...")
+    print("Processing contours and generating SVG paths...")
 
     base_pixel_to_meter_scale = 0.001  # 1 pixel = 1mm
     final_pixel_to_meter_scale = base_pixel_to_meter_scale * svg_output_scale_factor
@@ -35,38 +37,45 @@ def save_as_svg(line_image, output_file, simplification_tolerance=2.0, svg_outpu
     image_center_x_px = width / 2.0
     image_center_y_px = height / 2.0
 
+<<<<<<< HEAD
     MIN_CONTOUR_LENGTH = 5
 
     # Step 3: Simplify contours and convert to line segments
     for contour in tqdm(contours, desc="Simplifying and converting contours", unit="contour"):
         if len(contour) < MIN_CONTOUR_LENGTH:
+=======
+    for contour in tqdm(contours, desc="SVG Generation"):
+        if len(contour) < 2:
+>>>>>>> 6de09c8 (ok re run)
             continue
 
         contour_2d = contour.reshape(-1, 2)
-        simplified = rdp(contour_2d, epsilon=simplification_tolerance)
+        simplified_contour = rdp(contour_2d, epsilon=simplification_tolerance)
 
-        if len(simplified) < 2:
+        if len(simplified_contour) < 2:
             continue
 
-        for i in range(len(simplified) - 1):
-            x1_px, y1_px = simplified[i]
-            x2_px, y2_px = simplified[i + 1]
+        segments = []
+        for i in range(len(simplified_contour) - 1):
+            start_x_px, start_y_px = simplified_contour[i]
+            end_x_px, end_y_px = simplified_contour[i + 1]
 
-            # Scale to meters
-            x1_m = x1_px * final_pixel_to_meter_scale
-            y1_m = y1_px * final_pixel_to_meter_scale
-            x2_m = x2_px * final_pixel_to_meter_scale
-            y2_m = y2_px * final_pixel_to_meter_scale
+            # Scale
+            scaled_start_x = start_x_px * final_pixel_to_meter_scale
+            scaled_start_y = start_y_px * final_pixel_to_meter_scale
+            scaled_end_x = end_x_px * final_pixel_to_meter_scale
+            scaled_end_y = end_y_px * final_pixel_to_meter_scale
 
             # Translate and flip Y
             offset_x = image_center_x_px * final_pixel_to_meter_scale
             offset_y = image_center_y_px * final_pixel_to_meter_scale
 
-            start = (x1_m - offset_x, -(y1_m - offset_y))
-            end = (x2_m - offset_x, -(y2_m - offset_y))
+            start_complex = complex(scaled_start_x - offset_x, -(scaled_start_y - offset_y))
+            end_complex = complex(scaled_end_x - offset_x, -(scaled_end_y - offset_y))
 
-            svg_lines.append((start, end))
+            segments.append(Line(start_complex, end_complex))
 
+<<<<<<< HEAD
     line_collection_time = time.time()
 
     print(f"Generating SVG with {len(svg_lines)} line segments...")
@@ -90,5 +99,20 @@ def save_as_svg(line_image, output_file, simplification_tolerance=2.0, svg_outpu
     print(f"- Line simplification & collection: {(line_collection_time - contour_time):.2f}s")
     print(f"- SVG writing: {(save_time - line_collection_time):.2f}s")
     print(f"- Total time: {(save_time - start_time):.2f}s")
+=======
+        if segments:
+            svg_paths.append(Path(*segments))
 
+    # Save SVG without viewBox (not supported by svgpathtools)
+    wsvg(
+        svg_paths,
+        filename=output_file,
+        attributes=[{'stroke': 'black', 'stroke-width': '0.002', 'fill': 'none'} for _ in svg_paths]
+    )
+
+    drawing_width = width * final_pixel_to_meter_scale
+    drawing_height = height * final_pixel_to_meter_scale
+>>>>>>> 6de09c8 (ok re run)
+
+    print(f"SVG saved to {output_file} with {len(svg_paths)} paths. Drawing size: {drawing_width:.3f}m x {drawing_height:.3f}m")
     return output_file

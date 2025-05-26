@@ -1,22 +1,18 @@
 import rclpy
 from rclpy.node import Node
-from visualization_msgs.msg import Marker, MarkerArray
-from geometry_msgs.msg import Point, PoseStamped
-from std_msgs.msg import Header, ColorRGBA
+from geometry_msgs.msg import Pose, PoseArray
 from svgpathtools import svg2paths
 from rdp import rdp
 import numpy as np
-import time
 import os
 
-class SVGWaypointPublisherNode(Node):
+class SVGWaypointPublisher(Node):
     def __init__(self):
         super().__init__('svg_waypoint_publisher')
 
-        # Publishers
-        self.marker_pub = self.create_publisher(MarkerArray, '/simplified_svg_output', 10)
-        self.pose_pub = self.create_publisher(PoseStamped, '/move_group/goal', 10)
+        self.pose_array_pub = self.create_publisher(PoseArray, '/svg_waypoints/poses', 10)
 
+<<<<<<< HEAD
         # Load and process SVG
         self.svg_path = os.path.expanduser('~/ros2_ws/RS2/output.svg')
 
@@ -25,60 +21,44 @@ class SVGWaypointPublisherNode(Node):
             return
         
         self.publish_markers_and_poses()
+=======
+        svg_path = '/home/ashmu/ros2_ws/RS2/output.svg'
+>>>>>>> 6de09c8 (ok re run)
 
-    def publish_markers_and_poses(self):
-        marker_array = MarkerArray()
-        marker_id = 0
+        if not os.path.exists(svg_path):
+            self.get_logger().error(f"SVG file not found: {svg_path}")
+            return
 
-        paths, _ = svg2paths(self.svg_path)
+        self.process_and_publish(svg_path)
+
+    def process_and_publish(self, svg_path):
+        paths, _ = svg2paths(svg_path)
+        pose_array = PoseArray()
+        pose_array.header.frame_id = 'map'
+
         for path in paths:
-            line_points = []
+            points = []
             for segment in path:
                 for t in np.linspace(0, 1, num=20):
-                    point = segment.point(t)
-                    line_points.append([point.real / 100.0, point.imag / 100.0])  # scale to meters
+                    pt = segment.point(t)
+                    points.append([pt.real / 100.0, pt.imag / 100.0])  # scale to meters
 
-            simplified_points = rdp(line_points, epsilon=0.005)
+            simplified = rdp(points, epsilon=0.005)
 
-            marker = Marker()
-            marker.header.frame_id = 'map'
-            marker.header.stamp = self.get_clock().now().to_msg()
-            marker.ns = 'svg_path'
-            marker.id = marker_id
-            marker_id += 1
-            marker.type = Marker.LINE_STRIP
-            marker.action = Marker.ADD
-            marker.scale.x = 0.002  # line width
-            marker.color = ColorRGBA(r=1.0, g=0.0, b=0.0, a=1.0)
+            for pt in simplified:
+                pose = Pose()
+                pose.position.x = pt[0]
+                pose.position.y = pt[1]
+                pose.position.z = 0.1
+                pose.orientation.w = 1.0
+                pose_array.poses.append(pose)
 
-            for point in simplified_points:
-                marker.points.append(Point(x=point[0], y=point[1], z=0.0))
-
-                # Publish PoseStamped to the robot
-                pose = PoseStamped()
-                pose.header.frame_id = 'map'
-                pose.header.stamp = self.get_clock().now().to_msg()
-                pose.pose.position.x = point[0]
-                pose.pose.position.y = point[1]
-                pose.pose.position.z = 0.1  # safe height above table
-                pose.pose.orientation.x = 0.0
-                pose.pose.orientation.y = 0.0
-                pose.pose.orientation.z = 0.0
-                pose.pose.orientation.w = 1.0  # no rotation
-
-                self.pose_pub.publish(pose)
-                self.get_logger().info(f'Published pose: x={point[0]:.3f}, y={point[1]:.3f}, z=0.1')
-
-                time.sleep(1.0)  # Delay for robot to execute
-
-            marker_array.markers.append(marker)
-
-        self.marker_pub.publish(marker_array)
-        self.get_logger().info('Published all markers and poses.')
+        self.pose_array_pub.publish(pose_array)
+        self.get_logger().info(f"Published {len(pose_array.poses)} poses to /svg_waypoints/poses.")
 
 def main(args=None):
     rclpy.init(args=args)
-    node = SVGWaypointPublisherNode()
+    node = SVGWaypointPublisher()
     rclpy.spin(node)
     node.destroy_node()
     rclpy.shutdown()
