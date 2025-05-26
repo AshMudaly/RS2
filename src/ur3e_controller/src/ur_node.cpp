@@ -2,8 +2,11 @@
 #include <memory>
 #include <rclcpp/rclcpp.hpp>
 #include <moveit/move_group_interface/move_group_interface.h>
+#include <moveit/planning_scene_interface/planning_scene_interface.h>
 #include <geometry_msgs/msg/pose_stamped.hpp>
 #include <std_msgs/msg/int32.hpp>
+#include <shape_msgs/msg/solid_primitive.hpp>
+#include <geometric_shapes/solid_primitive_dims.h>
 #include <chrono>
 
 class UR3eController : public rclcpp::Node {
@@ -25,6 +28,13 @@ public:
         );
         move_group_interface_->setMaxVelocityScalingFactor(velocity_scaling_);
         startupInitPose();
+
+        // Add collision objects to the scene
+        std::vector<std::vector<double>> objects = {
+            {0.2, 0.0, 0.6, 0.0, 0.0, 0.0, 1.0, 0.001, 1.2, 1.2},  // Back Wall
+            {0.0,0.0,-0.005, 0.0, 0.0, 0.0, 1.0, 1.2, 1.2, 0.001} //Floor
+        };
+        addCollisionObjects(objects);
     }
 
 private:
@@ -92,6 +102,45 @@ private:
         status_pub_->publish(status_msg);
     }
 
+    void addCollisionObjects(const std::vector<std::vector<double>> &object_specs) {
+        moveit::planning_interface::PlanningSceneInterface planning_scene_interface;
+        std::vector<moveit_msgs::msg::CollisionObject> collision_objects;
+
+        for (size_t i = 0; i < object_specs.size(); ++i) {
+            const auto &spec = object_specs[i];
+            if (spec.size() != 10) {
+                RCLCPP_WARN(this->get_logger(), "Skipping object %zu: expected 10 values, got %zu", i, spec.size());
+                continue;
+            }
+
+            moveit_msgs::msg::CollisionObject object;
+            object.header.frame_id = "base_link";
+            object.id = "object_" + std::to_string(i);
+
+            shape_msgs::msg::SolidPrimitive primitive;
+            primitive.type = primitive.BOX;
+            primitive.dimensions = {spec[7], spec[8], spec[9]};
+
+            geometry_msgs::msg::Pose pose;
+            pose.position.x = spec[0];
+            pose.position.y = spec[1];
+            pose.position.z = spec[2];
+            pose.orientation.x = spec[3];
+            pose.orientation.y = spec[4];
+            pose.orientation.z = spec[5];
+            pose.orientation.w = spec[6];
+
+            object.primitives.push_back(primitive);
+            object.primitive_poses.push_back(pose);
+            object.operation = object.ADD;
+
+            collision_objects.push_back(object);
+        }
+
+        planning_scene_interface.applyCollisionObjects(collision_objects);
+        RCLCPP_INFO(this->get_logger(), "Added %zu collision objects.", collision_objects.size());
+    }
+
     rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr pose_sub_;
     rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr status_pub_;
     std::shared_ptr<moveit::planning_interface::MoveGroupInterface> move_group_interface_;
@@ -104,5 +153,4 @@ int main(int argc, char *argv[]) {
     node->initializeMoveGroup();
     rclcpp::spin(node);
     rclcpp::shutdown();
-    return 0;
 }
