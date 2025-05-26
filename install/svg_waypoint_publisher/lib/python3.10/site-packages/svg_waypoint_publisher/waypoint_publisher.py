@@ -18,9 +18,12 @@ class SVGWaypointPublisherNode(Node):
         self.pose_pub = self.create_publisher(PoseStamped, '/move_group/goal', 10)
 
         # Load and process SVG
-        self.svg_path = os.path.join(
-            os.path.dirname(__file__), 'output.svg'  # Make sure output.svg is in the same folder
-        )
+        self.svg_path = os.path.expanduser('~/ros2_ws/RS2/output.svg')
+
+        if not os.path.exists(self.svg_path):
+            self.get_logger().error(f'SVG file not found: {self.svg_path}')
+            return
+        
         self.publish_markers_and_poses()
 
     def publish_markers_and_poses(self):

@@ -1,0 +1,334 @@
+[0.000000] (-) TimerEvent: {}
+[0.000160] (selfie_taker) JobQueued: {'identifier': 'selfie_taker', 'dependencies': OrderedDict()}
+[0.000184] (svg_command_subscriber) JobQueued: {'identifier': 'svg_command_subscriber', 'dependencies': OrderedDict()}
+[0.000199] (svg_waypoint_publisher) JobQueued: {'identifier': 'svg_waypoint_publisher', 'dependencies': OrderedDict()}
+[0.000212] (ur3e_controller) JobQueued: {'identifier': 'ur3e_controller', 'dependencies': OrderedDict()}
+[0.000226] (selfie_taker) JobStarted: {'identifier': 'selfie_taker'}
+[0.007035] (svg_command_subscriber) JobStarted: {'identifier': 'svg_command_subscriber'}
+[0.010972] (svg_waypoint_publisher) JobStarted: {'identifier': 'svg_waypoint_publisher'}
+[0.015863] (ur3e_controller) JobStarted: {'identifier': 'ur3e_controller'}
+[0.099046] (-) TimerEvent: {}
+[0.199536] (-) TimerEvent: {}
+[0.300037] (-) TimerEvent: {}
+[0.400489] (-) TimerEvent: {}
+[0.500956] (-) TimerEvent: {}
+[0.592594] (ur3e_controller) JobProgress: {'identifier': 'ur3e_controller', 'progress': 'cmake'}
+[0.593452] (ur3e_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/ashmu/ros2_ws/RS2/src/ur3e_controller', '-DCMAKE_INSTALL_PREFIX=/home/ashmu/ros2_ws/RS2/install/ur3e_controller'], 'cwd': '/home/ashmu/ros2_ws/RS2/build/ur3e_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'ashmu'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ashmu'), ('OLDPWD', '/home/ashmu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1271'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ashmu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ashmu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/ashmu/QtCreator/latest/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ashlaptop:@/tmp/.ICE-unix/1224,unix/ashlaptop:/tmp/.ICE-unix/1224'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d7417474_886d_4db1_854f_5ffd29b198d8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QX8162'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.196'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ashmu/ros2_ws/RS2/build/ur3e_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.601036] (-) TimerEvent: {}
+[0.655077] (ur3e_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.701167] (-) TimerEvent: {}
+[0.713924] (ur3e_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.722611] (ur3e_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.801286] (-) TimerEvent: {}
+[0.804047] (ur3e_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.810173] (ur3e_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.810560] (ur3e_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.810664] (ur3e_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.813600] (ur3e_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.896461] (svg_waypoint_publisher) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/svg_waypoint_publisher', 'build', '--build-base', '/home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/build', 'install', '--record', '/home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ashmu/ros2_ws/RS2/src/svg_waypoint_publisher', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_AU:en', 'USER': 'ashmu', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/ashmu', 'OLDPWD': '/home/ashmu', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1271', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ashmu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ashmu', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/ashmu/QtCreator/latest/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ashlaptop:@/tmp/.ICE-unix/1224,unix/ashlaptop:/tmp/.ICE-unix/1224', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/d7417474_886d_4db1_854f_5ffd29b198d8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.QX8162', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.196', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.901396] (-) TimerEvent: {}
+[0.907339] (ur3e_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.913528] (ur3e_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.913869] (ur3e_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.914144] (ur3e_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.916945] (ur3e_controller) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.925278] (selfie_taker) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/selfie_taker', 'build', '--build-base', '/home/ashmu/ros2_ws/RS2/build/selfie_taker/build', 'install', '--record', '/home/ashmu/ros2_ws/RS2/build/selfie_taker/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ashmu/ros2_ws/RS2/src/selfie_taker', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_AU:en', 'USER': 'ashmu', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/ashmu', 'OLDPWD': '/home/ashmu', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1271', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ashmu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ashmu', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/ashmu/QtCreator/latest/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ashlaptop:@/tmp/.ICE-unix/1224,unix/ashlaptop:/tmp/.ICE-unix/1224', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/d7417474_886d_4db1_854f_5ffd29b198d8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.QX8162', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.196', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ashmu/ros2_ws/RS2/build/selfie_taker', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ashmu/ros2_ws/RS2/build/selfie_taker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.954875] (svg_command_subscriber) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/svg_command_subscriber', 'build', '--build-base', '/home/ashmu/ros2_ws/RS2/build/svg_command_subscriber/build', 'install', '--record', '/home/ashmu/ros2_ws/RS2/build/svg_command_subscriber/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ashmu/ros2_ws/RS2/src/svg_command_subscriber', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_AU:en', 'USER': 'ashmu', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/ashmu', 'OLDPWD': '/home/ashmu', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1271', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ashmu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ashmu', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/ashmu/QtCreator/latest/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ashlaptop:@/tmp/.ICE-unix/1224,unix/ashlaptop:/tmp/.ICE-unix/1224', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/d7417474_886d_4db1_854f_5ffd29b198d8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.QX8162', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.196', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ashmu/ros2_ws/RS2/build/svg_command_subscriber', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ashmu/ros2_ws/RS2/build/svg_command_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[1.001575] (-) TimerEvent: {}
+[1.060186] (ur3e_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.089308] (svg_waypoint_publisher) StdoutLine: {'line': b'running egg_info\n'}
+[1.090724] (svg_waypoint_publisher) StdoutLine: {'line': b'creating ../../build/svg_waypoint_publisher/svg_waypoint_publisher.egg-info\n'}
+[1.090943] (selfie_taker) StdoutLine: {'line': b'running egg_info\n'}
+[1.091061] (svg_waypoint_publisher) StdoutLine: {'line': b'writing ../../build/svg_waypoint_publisher/svg_waypoint_publisher.egg-info/PKG-INFO\n'}
+[1.091172] (svg_waypoint_publisher) StdoutLine: {'line': b'writing dependency_links to ../../build/svg_waypoint_publisher/svg_waypoint_publisher.egg-info/dependency_links.txt\n'}
+[1.091287] (svg_waypoint_publisher) StdoutLine: {'line': b'writing entry points to ../../build/svg_waypoint_publisher/svg_waypoint_publisher.egg-info/entry_points.txt\n'}
+[1.091387] (svg_waypoint_publisher) StdoutLine: {'line': b'writing requirements to ../../build/svg_waypoint_publisher/svg_waypoint_publisher.egg-info/requires.txt\n'}
+[1.091439] (svg_waypoint_publisher) StdoutLine: {'line': b'writing top-level names to ../../build/svg_waypoint_publisher/svg_waypoint_publisher.egg-info/top_level.txt\n'}
+[1.091508] (svg_waypoint_publisher) StdoutLine: {'line': b"writing manifest file '../../build/svg_waypoint_publisher/svg_waypoint_publisher.egg-info/SOURCES.txt'\n"}
+[1.092640] (selfie_taker) StdoutLine: {'line': b'creating ../../build/selfie_taker/selfie_taker.egg-info\n'}
+[1.092777] (selfie_taker) StdoutLine: {'line': b'writing ../../build/selfie_taker/selfie_taker.egg-info/PKG-INFO\n'}
+[1.092865] (svg_waypoint_publisher) StdoutLine: {'line': b"reading manifest file '../../build/svg_waypoint_publisher/svg_waypoint_publisher.egg-info/SOURCES.txt'\n"}
+[1.092983] (selfie_taker) StdoutLine: {'line': b'writing dependency_links to ../../build/selfie_taker/selfie_taker.egg-info/dependency_links.txt\n'}
+[1.093058] (selfie_taker) StdoutLine: {'line': b'writing entry points to ../../build/selfie_taker/selfie_taker.egg-info/entry_points.txt\n'}
+[1.093131] (selfie_taker) StdoutLine: {'line': b'writing requirements to ../../build/selfie_taker/selfie_taker.egg-info/requires.txt\n'}
+[1.093205] (selfie_taker) StdoutLine: {'line': b'writing top-level names to ../../build/selfie_taker/selfie_taker.egg-info/top_level.txt\n'}
+[1.093293] (selfie_taker) StdoutLine: {'line': b"writing manifest file '../../build/selfie_taker/selfie_taker.egg-info/SOURCES.txt'\n"}
+[1.093438] (svg_waypoint_publisher) StdoutLine: {'line': b"writing manifest file '../../build/svg_waypoint_publisher/svg_waypoint_publisher.egg-info/SOURCES.txt'\n"}
+[1.093562] (svg_waypoint_publisher) StdoutLine: {'line': b'running build\n'}
+[1.093625] (svg_waypoint_publisher) StdoutLine: {'line': b'running build_py\n'}
+[1.093698] (svg_waypoint_publisher) StdoutLine: {'line': b'creating /home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/build\n'}
+[1.093782] (svg_waypoint_publisher) StdoutLine: {'line': b'creating /home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/build/lib\n'}
+[1.093833] (svg_waypoint_publisher) StdoutLine: {'line': b'creating /home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/build/lib/svg_waypoint_publisher\n'}
+[1.093893] (svg_waypoint_publisher) StdoutLine: {'line': b'copying svg_waypoint_publisher/__init__.py -> /home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/build/lib/svg_waypoint_publisher\n'}
+[1.093942] (svg_waypoint_publisher) StdoutLine: {'line': b'copying svg_waypoint_publisher/waypoint_publisher.py -> /home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/build/lib/svg_waypoint_publisher\n'}
+[1.094081] (svg_waypoint_publisher) StdoutLine: {'line': b'running install\n'}
+[1.094371] (svg_waypoint_publisher) StdoutLine: {'line': b'running install_lib\n'}
+[1.094452] (selfie_taker) StdoutLine: {'line': b"reading manifest file '../../build/selfie_taker/selfie_taker.egg-info/SOURCES.txt'\n"}
+[1.094937] (selfie_taker) StdoutLine: {'line': b"writing manifest file '../../build/selfie_taker/selfie_taker.egg-info/SOURCES.txt'\n"}
+[1.095053] (svg_waypoint_publisher) StdoutLine: {'line': b'creating /home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/lib/python3.10/site-packages/svg_waypoint_publisher\n'}
+[1.095139] (selfie_taker) StdoutLine: {'line': b'running build\n'}
+[1.095250] (selfie_taker) StdoutLine: {'line': b'running build_py\n'}
+[1.095314] (selfie_taker) StdoutLine: {'line': b'creating /home/ashmu/ros2_ws/RS2/build/selfie_taker/build\n'}
+[1.095358] (selfie_taker) StdoutLine: {'line': b'creating /home/ashmu/ros2_ws/RS2/build/selfie_taker/build/lib\n'}
+[1.095400] (selfie_taker) StdoutLine: {'line': b'creating /home/ashmu/ros2_ws/RS2/build/selfie_taker/build/lib/selfie_taker\n'}
+[1.095439] (selfie_taker) StdoutLine: {'line': b'copying selfie_taker/Processor.py -> /home/ashmu/ros2_ws/RS2/build/selfie_taker/build/lib/selfie_taker\n'}
+[1.095480] (svg_waypoint_publisher) StdoutLine: {'line': b'copying /home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/build/lib/svg_waypoint_publisher/__init__.py -> /home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/lib/python3.10/site-packages/svg_waypoint_publisher\n'}
+[1.095559] (svg_waypoint_publisher) StdoutLine: {'line': b'copying /home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/build/lib/svg_waypoint_publisher/waypoint_publisher.py -> /home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/lib/python3.10/site-packages/svg_waypoint_publisher\n'}
+[1.095602] (selfie_taker) StdoutLine: {'line': b'copying selfie_taker/faceDetector.py -> /home/ashmu/ros2_ws/RS2/build/selfie_taker/build/lib/selfie_taker\n'}
+[1.095649] (selfie_taker) StdoutLine: {'line': b'copying selfie_taker/svgSaver.py -> /home/ashmu/ros2_ws/RS2/build/selfie_taker/build/lib/selfie_taker\n'}
+[1.095688] (selfie_taker) StdoutLine: {'line': b'copying selfie_taker/__init__.py -> /home/ashmu/ros2_ws/RS2/build/selfie_taker/build/lib/selfie_taker\n'}
+[1.095742] (selfie_taker) StdoutLine: {'line': b'copying selfie_taker/lineGenerator.py -> /home/ashmu/ros2_ws/RS2/build/selfie_taker/build/lib/selfie_taker\n'}
+[1.095778] (svg_waypoint_publisher) StdoutLine: {'line': b'byte-compiling /home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/lib/python3.10/site-packages/svg_waypoint_publisher/__init__.py to __init__.cpython-310.pyc\n'}
+[1.095813] (selfie_taker) StdoutLine: {'line': b'running install\n'}
+[1.095861] (svg_waypoint_publisher) StdoutLine: {'line': b'byte-compiling /home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/lib/python3.10/site-packages/svg_waypoint_publisher/waypoint_publisher.py to waypoint_publisher.cpython-310.pyc\n'}
+[1.095916] (selfie_taker) StdoutLine: {'line': b'running install_lib\n'}
+[1.096527] (selfie_taker) StdoutLine: {'line': b'creating /home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages/selfie_taker\n'}
+[1.096583] (selfie_taker) StdoutLine: {'line': b'copying /home/ashmu/ros2_ws/RS2/build/selfie_taker/build/lib/selfie_taker/Processor.py -> /home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages/selfie_taker\n'}
+[1.096645] (selfie_taker) StdoutLine: {'line': b'copying /home/ashmu/ros2_ws/RS2/build/selfie_taker/build/lib/selfie_taker/faceDetector.py -> /home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages/selfie_taker\n'}
+[1.096684] (selfie_taker) StdoutLine: {'line': b'copying /home/ashmu/ros2_ws/RS2/build/selfie_taker/build/lib/selfie_taker/svgSaver.py -> /home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages/selfie_taker\n'}
+[1.096764] (selfie_taker) StdoutLine: {'line': b'copying /home/ashmu/ros2_ws/RS2/build/selfie_taker/build/lib/selfie_taker/__init__.py -> /home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages/selfie_taker\n'}
+[1.096807] (svg_waypoint_publisher) StdoutLine: {'line': b'running install_data\n'}
+[1.096863] (svg_waypoint_publisher) StdoutLine: {'line': b'creating /home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/share/ament_index\n'}
+[1.096926] (selfie_taker) StdoutLine: {'line': b'copying /home/ashmu/ros2_ws/RS2/build/selfie_taker/build/lib/selfie_taker/lineGenerator.py -> /home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages/selfie_taker\n'}
+[1.096988] (svg_waypoint_publisher) StdoutLine: {'line': b'creating /home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/share/ament_index/resource_index\n'}
+[1.097028] (svg_waypoint_publisher) StdoutLine: {'line': b'creating /home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/share/ament_index/resource_index/packages\n'}
+[1.097082] (svg_waypoint_publisher) StdoutLine: {'line': b'copying resource/svg_waypoint_publisher -> /home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/share/ament_index/resource_index/packages\n'}
+[1.097141] (svg_waypoint_publisher) StdoutLine: {'line': b'copying package.xml -> /home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/share/svg_waypoint_publisher\n'}
+[1.097193] (selfie_taker) StdoutLine: {'line': b'byte-compiling /home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages/selfie_taker/Processor.py to Processor.cpython-310.pyc\n'}
+[1.097253] (svg_waypoint_publisher) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.097925] (selfie_taker) StdoutLine: {'line': b'byte-compiling /home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages/selfie_taker/faceDetector.py to faceDetector.cpython-310.pyc\n'}
+[1.098267] (selfie_taker) StdoutLine: {'line': b'byte-compiling /home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages/selfie_taker/svgSaver.py to svgSaver.cpython-310.pyc\n'}
+[1.098842] (selfie_taker) StdoutLine: {'line': b'byte-compiling /home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages/selfie_taker/__init__.py to __init__.cpython-310.pyc\n'}
+[1.098963] (svg_waypoint_publisher) StdoutLine: {'line': b'Copying ../../build/svg_waypoint_publisher/svg_waypoint_publisher.egg-info to /home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/lib/python3.10/site-packages/svg_waypoint_publisher-0.0.0-py3.10.egg-info\n'}
+[1.099049] (selfie_taker) StdoutLine: {'line': b'byte-compiling /home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages/selfie_taker/lineGenerator.py to lineGenerator.cpython-310.pyc\n'}
+[1.099205] (selfie_taker) StdoutLine: {'line': b'running install_data\n'}
+[1.099274] (selfie_taker) StdoutLine: {'line': b'creating /home/ashmu/ros2_ws/RS2/install/selfie_taker/share/ament_index\n'}
+[1.099339] (selfie_taker) StdoutLine: {'line': b'creating /home/ashmu/ros2_ws/RS2/install/selfie_taker/share/ament_index/resource_index\n'}
+[1.099419] (selfie_taker) StdoutLine: {'line': b'creating /home/ashmu/ros2_ws/RS2/install/selfie_taker/share/ament_index/resource_index/packages\n'}
+[1.099457] (selfie_taker) StdoutLine: {'line': b'copying resource/selfie_taker -> /home/ashmu/ros2_ws/RS2/install/selfie_taker/share/ament_index/resource_index/packages\n'}
+[1.099514] (selfie_taker) StdoutLine: {'line': b'copying package.xml -> /home/ashmu/ros2_ws/RS2/install/selfie_taker/share/selfie_taker\n'}
+[1.099617] (svg_waypoint_publisher) StdoutLine: {'line': b'running install_scripts\n'}
+[1.099662] (selfie_taker) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.101069] (selfie_taker) StdoutLine: {'line': b'Copying ../../build/selfie_taker/selfie_taker.egg-info to /home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/python3.10/site-packages/selfie_taker-0.0.0-py3.10.egg-info\n'}
+[1.101562] (-) TimerEvent: {}
+[1.101700] (selfie_taker) StdoutLine: {'line': b'running install_scripts\n'}
+[1.117744] (selfie_taker) StdoutLine: {'line': b'Installing take_selfie script to /home/ashmu/ros2_ws/RS2/install/selfie_taker/lib/selfie_taker\n'}
+[1.118053] (selfie_taker) StdoutLine: {'line': b"writing list of installed files to '/home/ashmu/ros2_ws/RS2/build/selfie_taker/install.log'\n"}
+[1.118509] (svg_waypoint_publisher) StdoutLine: {'line': b'Installing svg_waypoint_publisher script to /home/ashmu/ros2_ws/RS2/install/svg_waypoint_publisher/lib/svg_waypoint_publisher\n'}
+[1.118886] (svg_waypoint_publisher) StdoutLine: {'line': b"writing list of installed files to '/home/ashmu/ros2_ws/RS2/build/svg_waypoint_publisher/install.log'\n"}
+[1.121599] (svg_command_subscriber) StdoutLine: {'line': b'running egg_info\n'}
+[1.123633] (svg_command_subscriber) StdoutLine: {'line': b'creating ../../build/svg_command_subscriber/svg_command_subscriber.egg-info\n'}
+[1.123863] (svg_command_subscriber) StdoutLine: {'line': b'writing ../../build/svg_command_subscriber/svg_command_subscriber.egg-info/PKG-INFO\n'}
+[1.124014] (svg_command_subscriber) StdoutLine: {'line': b'writing dependency_links to ../../build/svg_command_subscriber/svg_command_subscriber.egg-info/dependency_links.txt\n'}
+[1.124154] (svg_command_subscriber) StdoutLine: {'line': b'writing entry points to ../../build/svg_command_subscriber/svg_command_subscriber.egg-info/entry_points.txt\n'}
+[1.124295] (svg_command_subscriber) StdoutLine: {'line': b'writing requirements to ../../build/svg_command_subscriber/svg_command_subscriber.egg-info/requires.txt\n'}
+[1.124387] (svg_command_subscriber) StdoutLine: {'line': b'writing top-level names to ../../build/svg_command_subscriber/svg_command_subscriber.egg-info/top_level.txt\n'}
+[1.124506] (svg_command_subscriber) StdoutLine: {'line': b"writing manifest file '../../build/svg_command_subscriber/svg_command_subscriber.egg-info/SOURCES.txt'\n"}
+[1.125873] (svg_command_subscriber) StdoutLine: {'line': b"reading manifest file '../../build/svg_command_subscriber/svg_command_subscriber.egg-info/SOURCES.txt'\n"}
+[1.126403] (svg_command_subscriber) StdoutLine: {'line': b"writing manifest file '../../build/svg_command_subscriber/svg_command_subscriber.egg-info/SOURCES.txt'\n"}
+[1.126522] (svg_command_subscriber) StdoutLine: {'line': b'running build\n'}
+[1.126596] (svg_command_subscriber) StdoutLine: {'line': b'running build_py\n'}
+[1.126675] (svg_command_subscriber) StdoutLine: {'line': b'creating /home/ashmu/ros2_ws/RS2/build/svg_command_subscriber/build\n'}
+[1.126722] (svg_command_subscriber) StdoutLine: {'line': b'creating /home/ashmu/ros2_ws/RS2/build/svg_command_subscriber/build/lib\n'}
+[1.126792] (svg_command_subscriber) StdoutLine: {'line': b'creating /home/ashmu/ros2_ws/RS2/build/svg_command_subscriber/build/lib/svg_command_subscriber\n'}
+[1.126832] (svg_command_subscriber) StdoutLine: {'line': b'copying svg_command_subscriber/__init__.py -> /home/ashmu/ros2_ws/RS2/build/svg_command_subscriber/build/lib/svg_command_subscriber\n'}
+[1.126890] (svg_command_subscriber) StdoutLine: {'line': b'copying svg_command_subscriber/command_subscriber.py -> /home/ashmu/ros2_ws/RS2/build/svg_command_subscriber/build/lib/svg_command_subscriber\n'}
+[1.126986] (svg_command_subscriber) StdoutLine: {'line': b'running install\n'}
+[1.127304] (svg_command_subscriber) StdoutLine: {'line': b'running install_lib\n'}
+[1.128036] (svg_command_subscriber) StdoutLine: {'line': b'creating /home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/lib/python3.10/site-packages/svg_command_subscriber\n'}
+[1.128112] (svg_command_subscriber) StdoutLine: {'line': b'copying /home/ashmu/ros2_ws/RS2/build/svg_command_subscriber/build/lib/svg_command_subscriber/__init__.py -> /home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/lib/python3.10/site-packages/svg_command_subscriber\n'}
+[1.128176] (svg_command_subscriber) StdoutLine: {'line': b'copying /home/ashmu/ros2_ws/RS2/build/svg_command_subscriber/build/lib/svg_command_subscriber/command_subscriber.py -> /home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/lib/python3.10/site-packages/svg_command_subscriber\n'}
+[1.128813] (svg_command_subscriber) StdoutLine: {'line': b'byte-compiling /home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/lib/python3.10/site-packages/svg_command_subscriber/__init__.py to __init__.cpython-310.pyc\n'}
+[1.129029] (svg_command_subscriber) StdoutLine: {'line': b'byte-compiling /home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/lib/python3.10/site-packages/svg_command_subscriber/command_subscriber.py to command_subscriber.cpython-310.pyc\n'}
+[1.130292] (svg_command_subscriber) StdoutLine: {'line': b'running install_data\n'}
+[1.130407] (svg_command_subscriber) StdoutLine: {'line': b'creating /home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/share/ament_index\n'}
+[1.130467] (svg_command_subscriber) StdoutLine: {'line': b'creating /home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/share/ament_index/resource_index\n'}
+[1.130539] (svg_command_subscriber) StdoutLine: {'line': b'creating /home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/share/ament_index/resource_index/packages\n'}
+[1.130648] (svg_command_subscriber) StdoutLine: {'line': b'copying resource/svg_command_subscriber -> /home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/share/ament_index/resource_index/packages\n'}
+[1.130705] (svg_command_subscriber) StdoutLine: {'line': b'copying package.xml -> /home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/share/svg_command_subscriber\n'}
+[1.130758] (svg_command_subscriber) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.132465] (svg_command_subscriber) StdoutLine: {'line': b'Copying ../../build/svg_command_subscriber/svg_command_subscriber.egg-info to /home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/lib/python3.10/site-packages/svg_command_subscriber-0.0.0-py3.10.egg-info\n'}
+[1.133179] (svg_command_subscriber) StdoutLine: {'line': b'running install_scripts\n'}
+[1.146976] (ur3e_controller) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.153729] (svg_command_subscriber) StdoutLine: {'line': b'Installing svg_command_subscriber script to /home/ashmu/ros2_ws/RS2/install/svg_command_subscriber/lib/svg_command_subscriber\n'}
+[1.154085] (svg_command_subscriber) StdoutLine: {'line': b"writing list of installed files to '/home/ashmu/ros2_ws/RS2/build/svg_command_subscriber/install.log'\n"}
+[1.159338] (svg_waypoint_publisher) CommandEnded: {'returncode': 0}
+[1.166414] (svg_waypoint_publisher) JobEnded: {'identifier': 'svg_waypoint_publisher', 'rc': 0}
+[1.168487] (selfie_taker) CommandEnded: {'returncode': 0}
+[1.172261] (selfie_taker) JobEnded: {'identifier': 'selfie_taker', 'rc': 0}
+[1.186168] (ur3e_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.186343] (svg_command_subscriber) CommandEnded: {'returncode': 0}
+[1.189625] (ur3e_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.190812] (svg_command_subscriber) JobEnded: {'identifier': 'svg_command_subscriber', 'rc': 0}
+[1.197239] (ur3e_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.201687] (-) TimerEvent: {}
+[1.205808] (ur3e_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.217342] (ur3e_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.248500] (ur3e_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.250459] (ur3e_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.301806] (-) TimerEvent: {}
+[1.343635] (ur3e_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.367254] (ur3e_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.401238] (ur3e_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.401911] (-) TimerEvent: {}
+[1.407816] (ur3e_controller) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.487871] (ur3e_controller) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.488321] (ur3e_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.502065] (-) TimerEvent: {}
+[1.567355] (ur3e_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.568242] (ur3e_controller) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.602167] (-) TimerEvent: {}
+[1.603604] (ur3e_controller) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)\n'}
+[1.622717] (ur3e_controller) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread \n'}
+[1.702389] (-) TimerEvent: {}
+[1.746976] (ur3e_controller) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[1.780223] (ur3e_controller) StdoutLine: {'line': b'-- Found parameter_traits: 0.4.0 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[1.788188] (ur3e_controller) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.790278] (ur3e_controller) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.12 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[1.802493] (-) TimerEvent: {}
+[1.807204] (ur3e_controller) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem \n'}
+[1.902659] (-) TimerEvent: {}
+[1.911792] (ur3e_controller) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[1.936667] (ur3e_controller) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[2.002755] (-) TimerEvent: {}
+[2.035786] (ur3e_controller) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono \n'}
+[2.059134] (ur3e_controller) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options \n'}
+[2.074871] (ur3e_controller) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread \n'}
+[2.095973] (ur3e_controller) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.102875] (-) TimerEvent: {}
+[2.161810] (ur3e_controller) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.162189] (ur3e_controller) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ashmu/ros2_ws/RS2/src/ur3e_controller/include>\n'}
+[2.162314] (ur3e_controller) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.164760] (ur3e_controller) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.172026] (ur3e_controller) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.172228] (ur3e_controller) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.173165] (ur3e_controller) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.173963] (ur3e_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.194764] (ur3e_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[2.199871] (ur3e_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/ashmu/ros2_ws/RS2/build/ur3e_controller\n'}
+[2.202992] (-) TimerEvent: {}
+[2.215380] (ur3e_controller) CommandEnded: {'returncode': 0}
+[2.216255] (ur3e_controller) JobProgress: {'identifier': 'ur3e_controller', 'progress': 'build'}
+[2.217665] (ur3e_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ashmu/ros2_ws/RS2/build/ur3e_controller', '--', '-j12', '-l12'], 'cwd': '/home/ashmu/ros2_ws/RS2/build/ur3e_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'ashmu'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ashmu'), ('OLDPWD', '/home/ashmu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1271'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ashmu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ashmu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/ashmu/QtCreator/latest/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ashlaptop:@/tmp/.ICE-unix/1224,unix/ashlaptop:/tmp/.ICE-unix/1224'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d7417474_886d_4db1_854f_5ffd29b198d8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QX8162'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.196'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ashmu/ros2_ws/RS2/build/ur3e_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.277060] (ur3e_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ur_node.dir/src/ur_node.cpp.o\x1b[0m\n'}
+[2.303126] (-) TimerEvent: {}
+[2.403504] (-) TimerEvent: {}
+[2.503946] (-) TimerEvent: {}
+[2.604357] (-) TimerEvent: {}
+[2.704707] (-) TimerEvent: {}
+[2.805052] (-) TimerEvent: {}
+[2.905400] (-) TimerEvent: {}
+[3.005855] (-) TimerEvent: {}
+[3.106213] (-) TimerEvent: {}
+[3.206588] (-) TimerEvent: {}
+[3.306918] (-) TimerEvent: {}
+[3.407275] (-) TimerEvent: {}
+[3.507634] (-) TimerEvent: {}
+[3.607992] (-) TimerEvent: {}
+[3.708353] (-) TimerEvent: {}
+[3.808744] (-) TimerEvent: {}
+[3.909123] (-) TimerEvent: {}
+[4.009470] (-) TimerEvent: {}
+[4.109864] (-) TimerEvent: {}
+[4.210225] (-) TimerEvent: {}
+[4.310594] (-) TimerEvent: {}
+[4.410940] (-) TimerEvent: {}
+[4.511318] (-) TimerEvent: {}
+[4.611683] (-) TimerEvent: {}
+[4.712030] (-) TimerEvent: {}
+[4.812389] (-) TimerEvent: {}
+[4.912778] (-) TimerEvent: {}
+[5.013134] (-) TimerEvent: {}
+[5.113494] (-) TimerEvent: {}
+[5.213865] (-) TimerEvent: {}
+[5.314228] (-) TimerEvent: {}
+[5.414604] (-) TimerEvent: {}
+[5.514963] (-) TimerEvent: {}
+[5.615323] (-) TimerEvent: {}
+[5.715684] (-) TimerEvent: {}
+[5.816045] (-) TimerEvent: {}
+[5.916414] (-) TimerEvent: {}
+[6.016758] (-) TimerEvent: {}
+[6.117100] (-) TimerEvent: {}
+[6.217460] (-) TimerEvent: {}
+[6.317842] (-) TimerEvent: {}
+[6.418205] (-) TimerEvent: {}
+[6.518590] (-) TimerEvent: {}
+[6.618964] (-) TimerEvent: {}
+[6.719337] (-) TimerEvent: {}
+[6.819719] (-) TimerEvent: {}
+[6.920055] (-) TimerEvent: {}
+[7.020393] (-) TimerEvent: {}
+[7.120780] (-) TimerEvent: {}
+[7.221146] (-) TimerEvent: {}
+[7.321508] (-) TimerEvent: {}
+[7.421949] (-) TimerEvent: {}
+[7.522313] (-) TimerEvent: {}
+[7.622677] (-) TimerEvent: {}
+[7.723013] (-) TimerEvent: {}
+[7.823306] (-) TimerEvent: {}
+[7.923669] (-) TimerEvent: {}
+[8.024032] (-) TimerEvent: {}
+[8.124398] (-) TimerEvent: {}
+[8.224793] (-) TimerEvent: {}
+[8.325137] (-) TimerEvent: {}
+[8.425483] (-) TimerEvent: {}
+[8.525866] (-) TimerEvent: {}
+[8.626223] (-) TimerEvent: {}
+[8.726603] (-) TimerEvent: {}
+[8.826953] (-) TimerEvent: {}
+[8.927304] (-) TimerEvent: {}
+[9.027652] (-) TimerEvent: {}
+[9.128005] (-) TimerEvent: {}
+[9.228356] (-) TimerEvent: {}
+[9.328724] (-) TimerEvent: {}
+[9.429008] (-) TimerEvent: {}
+[9.529356] (-) TimerEvent: {}
+[9.629722] (-) TimerEvent: {}
+[9.730044] (-) TimerEvent: {}
+[9.830309] (-) TimerEvent: {}
+[9.930642] (-) TimerEvent: {}
+[10.030992] (-) TimerEvent: {}
+[10.131344] (-) TimerEvent: {}
+[10.231710] (-) TimerEvent: {}
+[10.332062] (-) TimerEvent: {}
+[10.432411] (-) TimerEvent: {}
+[10.532783] (-) TimerEvent: {}
+[10.633085] (-) TimerEvent: {}
+[10.733367] (-) TimerEvent: {}
+[10.833723] (-) TimerEvent: {}
+[10.934008] (-) TimerEvent: {}
+[11.034406] (-) TimerEvent: {}
+[11.134776] (-) TimerEvent: {}
+[11.220624] (ur3e_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ur_node\x1b[0m\n'}
+[11.234863] (-) TimerEvent: {}
+[11.335105] (-) TimerEvent: {}
+[11.435461] (-) TimerEvent: {}
+[11.535836] (-) TimerEvent: {}
+[11.636199] (-) TimerEvent: {}
+[11.694518] (ur3e_controller) StdoutLine: {'line': b'[100%] Built target ur_node\n'}
+[11.705433] (ur3e_controller) CommandEnded: {'returncode': 0}
+[11.706253] (ur3e_controller) JobProgress: {'identifier': 'ur3e_controller', 'progress': 'install'}
+[11.715157] (ur3e_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ashmu/ros2_ws/RS2/build/ur3e_controller'], 'cwd': '/home/ashmu/ros2_ws/RS2/build/ur3e_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'ashmu'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ashmu'), ('OLDPWD', '/home/ashmu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1271'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ashmu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ashmu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/ashmu/QtCreator/latest/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ashlaptop:@/tmp/.ICE-unix/1224,unix/ashlaptop:/tmp/.ICE-unix/1224'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d7417474_886d_4db1_854f_5ffd29b198d8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QX8162'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.196'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ashmu/ros2_ws/RS2/build/ur3e_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[11.721133] (ur3e_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.721393] (ur3e_controller) StdoutLine: {'line': b'-- Installing: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/lib/ur3e_controller/ur_node\n'}
+[11.724830] (ur3e_controller) StdoutLine: {'line': b'-- Set runtime path of "/home/ashmu/ros2_ws/RS2/install/ur3e_controller/lib/ur3e_controller/ur_node" to ""\n'}
+[11.725099] (ur3e_controller) StdoutLine: {'line': b'-- Installing: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ament_index/resource_index/package_run_dependencies/ur3e_controller\n'}
+[11.725205] (ur3e_controller) StdoutLine: {'line': b'-- Installing: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ament_index/resource_index/parent_prefix_path/ur3e_controller\n'}
+[11.725387] (ur3e_controller) StdoutLine: {'line': b'-- Installing: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/environment/ament_prefix_path.sh\n'}
+[11.725471] (ur3e_controller) StdoutLine: {'line': b'-- Installing: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/environment/ament_prefix_path.dsv\n'}
+[11.725675] (ur3e_controller) StdoutLine: {'line': b'-- Installing: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/environment/path.sh\n'}
+[11.725729] (ur3e_controller) StdoutLine: {'line': b'-- Installing: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/environment/path.dsv\n'}
+[11.725771] (ur3e_controller) StdoutLine: {'line': b'-- Installing: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/local_setup.bash\n'}
+[11.725851] (ur3e_controller) StdoutLine: {'line': b'-- Installing: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/local_setup.sh\n'}
+[11.725907] (ur3e_controller) StdoutLine: {'line': b'-- Installing: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/local_setup.zsh\n'}
+[11.726017] (ur3e_controller) StdoutLine: {'line': b'-- Installing: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/local_setup.dsv\n'}
+[11.726164] (ur3e_controller) StdoutLine: {'line': b'-- Installing: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/package.dsv\n'}
+[11.726318] (ur3e_controller) StdoutLine: {'line': b'-- Installing: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ament_index/resource_index/packages/ur3e_controller\n'}
+[11.726456] (ur3e_controller) StdoutLine: {'line': b'-- Installing: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/cmake/ur3e_controllerConfig.cmake\n'}
+[11.726551] (ur3e_controller) StdoutLine: {'line': b'-- Installing: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/cmake/ur3e_controllerConfig-version.cmake\n'}
+[11.726613] (ur3e_controller) StdoutLine: {'line': b'-- Installing: /home/ashmu/ros2_ws/RS2/install/ur3e_controller/share/ur3e_controller/package.xml\n'}
+[11.728453] (ur3e_controller) CommandEnded: {'returncode': 0}
+[11.736287] (-) TimerEvent: {}
+[11.737185] (ur3e_controller) JobEnded: {'identifier': 'ur3e_controller', 'rc': 0}
+[11.737896] (-) EventReactorShutdown: {}

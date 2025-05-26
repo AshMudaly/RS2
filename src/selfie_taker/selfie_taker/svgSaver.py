@@ -15,14 +15,17 @@ def save_as_svg(line_image, output_file, simplification_tolerance=2.0, svg_outpu
     height, width = line_image.shape
     svg_lines = []
 
+    # Step 1: Normalize the image
     if line_image.dtype != np.uint8:
         if line_image.max() <= 1.0:
             line_image = (line_image * 255).astype(np.uint8)
         else:
             line_image = line_image.astype(np.uint8)
 
+    # Step 2: Binarize and find contours
     _, binary_image = cv2.threshold(line_image, 127, 255, cv2.THRESH_BINARY)
     contours, _ = cv2.findContours(binary_image, cv2.RETR_LIST, cv2.CHAIN_APPROX_NONE)
+    contour_time = time.time()
 
     print("Processing contours and generating SVG lines...")
 
@@ -34,7 +37,8 @@ def save_as_svg(line_image, output_file, simplification_tolerance=2.0, svg_outpu
 
     MIN_CONTOUR_LENGTH = 5
 
-    for contour in tqdm(contours, desc="Simplifying and converting contours"):
+    # Step 3: Simplify contours and convert to line segments
+    for contour in tqdm(contours, desc="Simplifying and converting contours", unit="contour"):
         if len(contour) < MIN_CONTOUR_LENGTH:
             continue
 
@@ -63,17 +67,28 @@ def save_as_svg(line_image, output_file, simplification_tolerance=2.0, svg_outpu
 
             svg_lines.append((start, end))
 
+    line_collection_time = time.time()
+
     print(f"Generating SVG with {len(svg_lines)} line segments...")
 
-    dwg = svgwrite.Drawing(output_file, size=(f"{width * final_pixel_to_meter_scale}m", f"{height * final_pixel_to_meter_scale}m"))
-    for start, end in tqdm(svg_lines, desc="Writing SVG lines"):
+    # Step 4: Write SVG with progress bar
+    drawing_width_mm = width * final_pixel_to_meter_scale * 1000
+    drawing_height_mm = height * final_pixel_to_meter_scale * 1000
+
+    dwg = svgwrite.Drawing(output_file, size=(f"{drawing_width_mm}mm", f"{drawing_height_mm}mm"))
+    for start, end in tqdm(svg_lines, desc="Writing SVG lines", unit="line"):
         dwg.add(dwg.line(start=start, end=end, stroke='black', stroke_width=0.002))
 
     dwg.save()
-    elapsed_time = time.time() - start_time
+    save_time = time.time()
 
-    print(f"SVG saved to {output_file} with {len(svg_lines)} lines.")
+    # Step 5: Print timing summary
+    print(f"\nSVG saved to {output_file} with {len(svg_lines)} lines.")
     print(f"Drawing size: {width * final_pixel_to_meter_scale:.3f}m x {height * final_pixel_to_meter_scale:.3f}m")
-    print(f"Total processing time: {elapsed_time:.2f} seconds")
+    print(f"\nTiming breakdown:")
+    print(f"- Contour extraction: {(contour_time - start_time):.2f}s")
+    print(f"- Line simplification & collection: {(line_collection_time - contour_time):.2f}s")
+    print(f"- SVG writing: {(save_time - line_collection_time):.2f}s")
+    print(f"- Total time: {(save_time - start_time):.2f}s")
 
     return output_file
