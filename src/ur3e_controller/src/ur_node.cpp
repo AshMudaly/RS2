@@ -12,7 +12,7 @@
 class UR3eController : public rclcpp::Node {
 public:
     UR3eController() : Node("ur3e_controller") {
-        this->declare_parameter("velocity_scaling", 0.1);
+        this->declare_parameter("velocity_scaling", 1);
         this->get_parameter("velocity_scaling", velocity_scaling_);
 
         status_pub_ = this->create_publisher<std_msgs::msg::Int32>("/ur_status", 10);
