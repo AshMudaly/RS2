@@ -26,8 +26,8 @@ class SVGWaypointPublisher(Node):
 
         self.workspace_x_min = -0.125
         self.workspace_x_max = 0.125
-        self.workspace_y_min = 0.255
-        self.workspace_y_max = 0.455
+        self.workspace_y_min = 0.310
+        self.workspace_y_max = 0.490
         self.workspace_width = self.workspace_x_max - self.workspace_x_min
         self.workspace_height = self.workspace_y_max - self.workspace_y_min
         self.workspace_aspect = self.workspace_width / self.workspace_height
@@ -111,11 +111,11 @@ class SVGWaypointPublisher(Node):
         self.pose_array.poses = []
         self.processed_points = []
 
-        Z_DRAW = 0.1559
+        Z_DRAW = 0.157
         Z_TRAVEL = 0.1625
 
         for i, points_np in enumerate(all_points):
-            if points_np.shape[0] < 100:
+            if points_np.shape[0] < 75:
                 self.get_logger().warn(f"Skipping contour {i} with less than 2 points before RDP.")
                 continue
             simplified_raw = rdp(points_np.tolist(), epsilon=0.005)

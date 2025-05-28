@@ -45,9 +45,8 @@ public:
 
 private:
     void startupInitPose() {
-        std::vector<double> init_joint_positions = {2.61799, -0.7854, 1.0472, -1.5708, -1.5708, 0.0};
+        std::vector<double> init_joint_positions = {1.8151, -1.1868, 1.50098, -1.8849, -1.5708, 0.0};
         move_group_interface_->setJointValueTarget(init_joint_positions);
-
         moveit::planning_interface::MoveGroupInterface::Plan plan;
         if (move_group_interface_->plan(plan)) {
             RCLCPP_INFO(this->get_logger(), "Executing startup pose.");
